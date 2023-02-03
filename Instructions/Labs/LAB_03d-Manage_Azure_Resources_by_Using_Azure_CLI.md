@@ -1,9 +1,3 @@
----
-lab:
-    title: '03d - Manage Azure resources by Using Azure CLI'
-    module: 'Administer Azure Resources'
----
-
 # Lab 03d - Manage Azure resources by Using Azure CLI
 # Student lab manual
 
@@ -18,7 +12,7 @@ Now that you explored the basic Azure administration capabilities associated wit
 In this lab, you will:
 
 + Task 1: Start a Bash session in Azure Cloud Shell
-+ Task 2: Create a resource group and an Azure managed disk by using Azure CLI
++ Task 2: Create an Azure managed disk by using Azure CLI
 + Task 3: Configure the managed disk by using Azure CLI
 
 ## Estimated timing: 20 minutes
@@ -35,26 +29,23 @@ In this task, you will open a Bash session in Cloud Shell.
 
 1. If prompted to select either **Bash** or **PowerShell**, select **Bash**. 
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
-
-1. If prompted, click **Create storage**, and wait until the Azure Cloud Shell pane is displayed. 
+    >**Note**: If you have Cloud Shell open from the previous lab (03c), you can change from PowerShell to Bash in the top-left corner drop-down menu in the Cloud Shell pane.
 
 1. Ensure **Bash** appears in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-#### Task 2: Create a resource group and an Azure managed disk by using Azure CLI
+#### Task 2: Create an Azure managed disk by using Azure CLI
 
-In this task, you will create a resource group and an Azure managed disk by using Azure CLI session within Cloud Shell.
+In this task, you will create an Azure managed disk by using Azure CLI session within Cloud Shell.
 
-1. To create a resource group in the same Azure region as the **az104-03c-rg1** resource group you created in the previous lab, from the Bash session within Cloud Shell, run the following:
+1. To set a variable for your existing resource group and location from the Bash session within Cloud Shell, run the following:
 
    ```sh
-   LOCATION=$(az group show --name 'az104-03c-rg1' --query location --out tsv)
+   #Note - ensure you change the following resource group name to match the RG in your lab environment
+   LOCATION=$(az group show --name 'rg1-az104-student01' --query location --out tsv)
 
-   RGNAME='az104-03d-rg1'
-
-   az group create --name $RGNAME --location $LOCATION
+   RGNAME='rg1-az104-student01'  
    ```
-1. To retrieve properties of the newly created resource group, run the following:
+1. To retrieve properties of the existing resource group, run the following:
 
    ```sh
    az group show --name $RGNAME
@@ -70,13 +61,15 @@ In this task, you will create a resource group and an Azure managed disk by usin
    --sku 'Standard_LRS' \
    --size-gb 32
    ```
-    >**Note**: When using multi-line syntax, ensure that each line ends with back-slash (`\`) with no trailing spaces and that there are no leading spaces at the beginning of each line.
+    >**Note**: When using multi-line syntax, ensure that each line ends with back-slash (`\`) with no trailing spaces and that there are no leading spaces at the beginning of each line. 
 
 1. To retrieve properties of the newly created disk, run the following:
 
    ```sh
    az disk show --resource-group $RGNAME --name $DISKNAME
    ```
+
+    >**Note**: For an easier to read output, try adding '-o table' to the end of the previous command _[ex: az disk show --resource-group $RGNAME --name $DISKNAME -o table]_
 
 #### Task 3: Configure the managed disk by using Azure CLI
 
@@ -110,28 +103,24 @@ In this task, you will managing configuration of the Azure managed disk by using
 
  > **Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
- > **Note**:  Don't worry if the lab resources cannot be immediately removed. Sometimes resources have dependencies and take a long time to delete. It is a common Administrator task to monitor resource usage, so just periodically review your resources in the Portal to see how the cleanup is going. 
+ > **Note**: Don't worry if the lab resources cannot be immediately removed. Sometimes resources have dependencies and take a long time to delete. It is a common Administrator task to monitor resource usage, so just periodically review your resources in the Portal to see how the cleanup is going. 
 
-1. In the Azure portal, open the **Bash** shell session within the **Cloud Shell** pane.
+1. In the Azure portal, In the Azure portal, search for and select **Resource groups**.
 
-1. List all resource groups created throughout the labs of this module by running the following command:
+> **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-   ```sh
-   az group list --query "[?starts_with(name,'az104-03')].name" --output tsv
-   ```
+2. Select your first resource group _[ex: rg1-az104-student01]_
+3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
+4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
+5. Confirm delete by typing **yes** and selecting **Delete**.
+6. Repeat the previous steps to delete resources in your remaining resource groups.
 
-1. Delete all resource groups you created throughout the labs of this module by running the following command:
-
-   ```sh
-   az group list --query "[?starts_with(name,'az104-03')].[name]" --output tsv | xargs -L1 bash -c 'az group delete --name $0 --no-wait --yes'
-   ```
-
-    >**Note**: The command executes asynchronously (as determined by the --nowait parameter), so while you will be able to run another Azure CLI command immediately afterwards within the same Bash session, it will take a few minutes before the resource groups are actually removed.
+ > **Note**:  **Do not delete** any resource groups throughout the remainder of AZ 104 labs. If you delete any of your RGs in your instructor-provided Azure tenant, please notify your instructor.
 
 #### Review
 
 In this lab, you have:
 
 - Started a Bash session in Azure Cloud Shell
-- Created a resource group and an Azure managed disk by using Azure CLI
+- Created an Azure managed disk by using Azure CLI
 - Configured the managed disk by using Azure CLI
