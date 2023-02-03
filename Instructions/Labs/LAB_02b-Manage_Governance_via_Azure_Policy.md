@@ -1,9 +1,3 @@
----
-lab:
-    title: '02b - Manage Governance via Azure Policy'
-    module: 'Administer Governance and Compliance'
----
-
 # Lab 02b - Manage Governance via Azure Policy
 # Student lab manual
 
@@ -41,9 +35,12 @@ In this lab, we will:
 
 In this task, you will create and assign a tag to an Azure resource group via the Azure portal.
 
-1. In the Azure portal, start a **PowerShell** session within the **Cloud Shell**.
+1. In the Azure portal, start a **PowerShell** session within the **Cloud Shell**. Cloud Shell is located in the top-right portion of the screen. It is the first icon to the right of the topmost search bar. 
 
-    >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message, select the subscription you are using in this lab, and click **Create storage**. 
+   >**Note**: If this is the first time you are starting **Cloud Shell** and you are presented with the **You have no storage mounted** message.
+   >>If using a intructor-provided tenant,  select **Show advanced settings**. Subscription, region, and resource group should have values populated and left as-is. For **Storage account**, select **create new** and provide a **globally unique** name [Example: cshellstorageaz104kdnjzn]. For **File share**, select **create new** and provide a name. It does not have to be globally unique [Example: cloudshell].
+  
+   >>If using a personal Azure tenant, select the subscription you are using in this lab, and click **Create storage**. 
 
 1. From the Cloud Shell pane, run the following to identify the name of the storage account used by Cloud Shell:
 
@@ -59,11 +56,15 @@ In this task, you will create and assign a tag to an Azure resource group via th
 
 1. In the Azure portal, search and select **Storage accounts** and, in the list of the storage accounts, click the entry representing the storage account you identified in the previous step.
 
-1. On the storage account blade, click the link representing the name of the resource group containing the storage account.
+2. On the left-hand column, scroll down in the storage account blade and under **Settings** select **Locks**.
+
+3. Select **+ Add**. Give the lock a name _[ex: delete-lock]_. For Lock type, select **Delete**. Add a note as needed _[ex: This lock is to prevent accidental deletion of cloud shell storage account]_.
+
+1. Back on the storage account blade, scroll up to the top and select **Overview**. Once in the Overview pane, click the link representing the name of the resource group containing the storage account.
 
     **Note**: note what resource group the storage account is in, you'll need it later in the lab.
 
-1. On the resource group blade, click Click **edit** next to **Tags** to create new tags.
+1. On the resource group blade, click **edit** next to **Tags** to create new tags.
 
 1. Create a tag with the following settings and Apply your change:
 
@@ -72,7 +73,7 @@ In this task, you will create and assign a tag to an Azure resource group via th
     | Name | **Role** |
     | Value | **Infra** |
 
-1. Navigate back to the storage account blade. Review the **Overview** information and note that the new tag was not automatically assigned to the storage account. 
+1. Navigate back to the storage account blade. Review the **Overview** information and note that the new tag was **not automatically assigned** to the storage account. 
 
 #### Task 2: Enforce tagging via an Azure policy
 
@@ -100,7 +101,7 @@ In this task, you will assign the built-in *Require a tag and its value on resou
     | Setting | Value |
     | --- | --- |
     | Assignment name | **Require Role tag with Infra value**|
-    | Description | **Require Role tag with Infra value for all resources in the Cloud Shell resource group**|
+    | Description | **Require Role tag with Infra value for all resources in the resource group containing Cloud Shell storage account**|
     | Policy enforcement | Enabled |
 
     >**Note**: The **Assignment name** is automatically populated with the policy name you selected, but you can change it. You can also add an optional **Description**. **Assigned by** is automatically populated based on the user name creating the assignment. 
@@ -161,8 +162,8 @@ In this task, we will use a different policy definition to remediate any non-com
 
     | Setting | Value |
     | --- | --- |
-    | Assignment name | **Inherit the Role tag and its Infra value from the Cloud Shell resource group if missing**|
-    | Description | **Inherit the Role tag and its Infra value from the Cloud Shell resource group if missing**|
+    | Assignment name | **Inherit the Role tag and its Infra value from the resource group containing the Cloud Shell storage account if missing**|
+    | Description | **Inherit the Role tag and its Infra value from the resource group containing the Cloud Shell storage account if missing**|
     | Policy enforcement | Enabled |
 
 1. Click **Next** and set **Parameters** to the following values:
@@ -210,11 +211,14 @@ In this task, we will use a different policy definition to remediate any non-com
 
 1. In the **Authoring** section, click **Assignments**, click the ellipsis icon to the right of the assignment you created in the previous task and click **Delete assignment**. 
 
-1. In the portal, search for and select **Storage accounts**.
+1. In the portal, search for and select **Resource groups**.
 
-1. In the list of storage accounts, select the resource group corresponding to the storage account you created in the last task of this lab. Select **Tags** and click **Delete** (Trash can to the right) to the **Role:Infra** tag and press **Apply**. 
+1. In the list of resource groups, select the one that contains the Cloud Shell storage account. Select **Tags** and click **Delete** (Trash can to the right) to the **Role:Infra** tag and press **Apply**. 
 
-1. Click **Overview** and click **Delete** on the top of the storage account blade. When prompted for the confirmation, in the **Delete storage account** blade, type the name of the storage account to confirm and click **Delete**. 
+1. Click **Overview** and select the most recent storage account you created [not Cloud Shell storage acc]. Select **Delete** on the top of the storage account blade. When prompted for the confirmation, in the **Delete storage account** blade, type the name of the storage account to confirm and click **Delete**. 
+
+**Bonus**: Navigate to your Cloud Shell storage account. Select **Delete** on the top of the storage account blade. Notice it can't be deleted because of the delete lock  we assigned to it previously _[steps 5 and 6]_. Please leave the delete lock in place as you will be using Cloud Shell the remainder of the labs. 
+   >**Note**: You will be creating and deleting many resources throughout the remaining labs, but it's generally easier to have a single Cloud Shell storage account persist.
 
 #### Review
 
