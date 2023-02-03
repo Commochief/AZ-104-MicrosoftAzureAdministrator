@@ -1,12 +1,12 @@
----
-lab:
-    title: '01 - Manage Azure Active Directory Identities'
-    module: 'Administer Identity'
----
-
 # Lab 01 - Manage Azure Active Directory Identities
 
-# Student lab manual
+# Important note for labs in **Azure Government** tenant
+
+Labs 01 and 02a _**will only function if you have full ownership of your tenant**_. If you are using a provided student account, you do not have required permissions and should utilize the interactive lab simulation below **or** sign up for a [free Azure account + tenant](https://azure.microsoft.com/en-us/free/search/)
+
+*Note when using free Azure tenant - Please notify your instructor, if applicable, if you're using this option. There are minor differences in the lab steps and JSON parameters that must be modified.*
+
+
 
 ## Lab scenario
 
@@ -42,11 +42,13 @@ In this task, you will create and configure Azure AD users.
 
 1. In the Azure portal, search for and select **Azure Active Directory**.
 
-1. On the Azure Active Directory blade, scroll down to the **Manage** section, click **User settings**, and review available configuration options.
+1. On the Azure Active Directory blade, scroll down to the **Manage** section, click **User settings**, and review available configuration options. Notice they will be greyed out unless you have sufficient permissions to make changes.
+
+**From this point onward, you will run into permission limitations (as mentioned at the beginning of this readme) if you are using an instructor-provided account.
 
 1. On the Azure Active Directory blade, in the **Manage** section, click **Users**, and then click your user account to display its **Profile** settings. 
 
-1. Click **edit**, in the **Settings** section, set **Usage location** to **United States** and click **save** to apply the change.
+1. Click **Edit properties**, in the **Settings** section, set **Usage location** to **United States** and click **save** to apply the change.
 
     >**Note**: This is necessary in order to assign an Azure AD Premium P2 license to your user account later in this lab.
 
