@@ -53,6 +53,7 @@ https://docs.microsoft.com/en-us/azure/security/fundamentals/identity-management
 Resource Naming Guidance/Tagging Guidance: 
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming
 
+Azure Subscription Limits:https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits
 
 Here is the link to the CAF (Cloud Adoption Framework). One thing to remember is the CAF is written with commercial in mind not specifically DoD (the MLZ is the formal DoD specific landing zone construct) but the information in the CAF is invaluable for planning and understanding.
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/
