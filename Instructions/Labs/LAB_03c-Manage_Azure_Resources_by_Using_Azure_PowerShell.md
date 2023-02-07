@@ -50,9 +50,9 @@ In this task, you will create an Azure managed disk in an existing resource grou
 
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $location = (Get-AzResourceGroup -Name rg1-az104-student01).Location
+   $location = (Get-AzResourceGroup -Name rg1-az104-jsocstudent01).Location
 
-   $rgName = 'rg1-az104-student01'  
+   $rgName = 'rg1-az104-jsocstudent01'  
    ```
 1. To retrieve properties of the existing resource group defined in the previous step, run the following:
 

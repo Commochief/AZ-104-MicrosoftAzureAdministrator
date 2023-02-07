@@ -59,7 +59,7 @@ In this task, you will deploy an Azure virtual machine that you will use later i
   
     ```powershell
     #Note - ensure you change the following resource group name to match the RG in your lab environment
-    $rgName = 'rg1-az104-student01'
+    $rgName = 'rg1-az104-jsocstudent01'
     ```
     
 1. From the Cloud Shell pane, run the following to deploy the virtual machine by using the uploaded template and parameter files:
@@ -76,7 +76,7 @@ In this task, you will deploy an Azure virtual machine that you will use later i
 
     >**Note**: If you got an error stating the VM size is not available please ask your instructor for assistance and try these steps.
     > 1. Click on the `{}` button in your CloudShell, select the **az104-07-vm-parameters.json** from the left hand side bar and take a note of the `vmSize` parameter value.
-    > 1. Check the location in which the 'az104-04-rg1' resource group is deployed. You can run `az group show -n rg1-az104-student01 --query location` in your CloudShell to get it.
+    > 1. Check the location in which the 'az104-04-rg1' resource group is deployed. You can run `az group show -n rg1-az104-jsocstudent01 --query location` in your CloudShell to get it.
     > 1. Run `az vm list-skus --location <Replace with your location> -o table --query "[? contains(name,'Standard_D2s')].name"` in your CloudShell.
     > 1. Replace the value of `vmSize` parameter with one of the values returned by the command you just run.
     > 1. Now redeploy your templates by running the `New-AzResourceGroupDeployment` command again. You can press the up button a few times which would bring the last executed command.
@@ -94,7 +94,7 @@ In this task, you will create and configure an Azure Storage account.
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Storage account name | any **globally unique name** between 3 and 24 in length consisting of letters and digits _[ex:az104lab07jdie42]_ |
     | Region | the name of an Azure region where you can create an Azure Storage account  |
     | Performance | **Standard** |
@@ -308,7 +308,7 @@ In this task, you will configure network access for Azure Storage.
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

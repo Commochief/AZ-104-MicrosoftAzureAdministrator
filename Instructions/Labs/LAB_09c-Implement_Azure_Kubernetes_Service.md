@@ -59,7 +59,7 @@ In this task, you will deploy an Azure Kubernetes Services cluster by using the 
     | Setting | Value |
     | ---- | ---- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Cluster preset configuration | **Dev/Test ($)** |
     | Kubernetes cluster name | **az104-9c-aks1** |
     | Region | USGov Virginia |
@@ -116,7 +116,7 @@ In this task, you will deploy a pod into the Azure Kubernetes Service cluster.
 
     ```sh
     #Note - ensure you change your resource group name to match your environment.
-    RESOURCE_GROUP='rg1-az104-student01'
+    RESOURCE_GROUP='rg1-az104-jsocstudent01'
 
     AKS_CLUSTER='az104-9c-aks1'
 
@@ -189,7 +189,7 @@ In this task, you will scale horizontally the number of pods and then number of 
 
     ```sh
     #Note - ensure you change your resource group name to match your environment.
-    RESOURCE_GROUP='rg1-az104-student01'
+    RESOURCE_GROUP='rg1-az104-jsocstudent01'
 
     AKS_CLUSTER='az104-9c-aks1'
 
@@ -246,7 +246,7 @@ In this task, you will scale horizontally the number of pods and then number of 
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

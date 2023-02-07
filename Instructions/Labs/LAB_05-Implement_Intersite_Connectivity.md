@@ -50,7 +50,7 @@ In this task, you will deploy three virtual machines, each into a separate virtu
    $location2 = 'usgovarizona'
 
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
    ```
 
    >**Note**: The regions used above were tested and known to work when this lab was last officially reviewed. If you would prefer to use different locations, or they no longer work, you will need to identify two different regions that Standard D2Sv3 virtual machines can be deployed into.
@@ -115,7 +115,7 @@ In this task, you will configure local and global peering between the virtual ne
     
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
 
@@ -151,7 +151,7 @@ In this task, you will configure local and global peering between the virtual ne
     
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    $vnet0 = Get-AzVirtualNetwork -Name 'az104-05-vnet0' -ResourceGroupName $rgname
 
@@ -189,7 +189,7 @@ In this task, you will configure local and global peering between the virtual ne
     
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    $vnet1 = Get-AzVirtualNetwork -Name 'az104-05-vnet1' -ResourceGroupName $rgname
 
@@ -268,7 +268,7 @@ In this task, you will test connectivity between virtual machines on the three v
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

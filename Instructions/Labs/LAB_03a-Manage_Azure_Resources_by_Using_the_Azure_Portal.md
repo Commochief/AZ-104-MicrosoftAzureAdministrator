@@ -36,7 +36,7 @@ In this task, you will use the Azure portal to create a disk in a resource group
     |Setting|Value|
     |---|---|
     |Subscription| the name of the Azure subscription you are using in this lab |
-    |Resource Group| the name of your existing RG _[ex: rg1-az104-student01]_ |
+    |Resource Group| the name of your existing RG _[ex: rg1-az104-jsocstudent01]_ |
     |Disk name| **az104-03a-disk1** |
     |Region| **(US) USGov Virginia** |
     |Availability zone| **None** |
@@ -56,13 +56,13 @@ In this task, we will move the disk resource you created in the previous task to
 
 1. Search for and select **Resource groups**. 
 
-1. On the **Resource groups** blade, click the entry representing the resource group you deployed the disk to in the previous task _[ex: rg1-az104-student01]_.
+1. On the **Resource groups** blade, click the entry representing the resource group you deployed the disk to in the previous task _[ex: rg1-az104-jsocstudent01]_.
 
 1. From the **Overview** blade of the resource group, in the list of resource group resources, select the entry representing the newly created disk, click **Move** in the toolbar, and, in the drop-down list, select **Move to another resource group**.
 
     >**Note**: This method allows you to move multiple resources at the same time. 
 
-1. In the target **Resource group** text box, select the remaining resource group _[ex: rg2-az104-student01]_. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
+1. In the target **Resource group** text box, select the remaining resource group _[ex: rg2-az104-jsocstudent01]_. On the Review tab, select the checkbox **I understand that tools and scripts associated with moved resources will not work until I update them to use new resource IDs**, and click **Move**.
 
     >**Note**: You need to wait for the move to complete before proceeding to the next task. The move might take about 10 minutes. Now is a good time to stretch your legs and take a short break while the migration completes. You can determine that the operation was completed by monitoring activity log entries of the source or target resource group. 
 
@@ -75,7 +75,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
     |Setting|Value|
     |---|---|
     |Subscription| the name of the subscription you are using in this lab |
-    |Resource Group| select your second resource group _[ex: rg2-az104-student01]_ |
+    |Resource Group| select your second resource group _[ex: rg2-az104-jsocstudent01]_ |
     |Disk name| **az104-03a-disk2** |
     |Region| USGov Virginia |
     |Availability zone| **None** |
@@ -87,7 +87,7 @@ In this task, you will apply a resource lock to an Azure resource group containi
 
 1. Click **Go to resource**.
 
-1. On the Overview page of the Disk, click the name of the resource group _[ex: rg2-az104-student01]_.
+1. On the Overview page of the Disk, click the name of the resource group _[ex: rg2-az104-jsocstudent01]_.
 
 1. On the resource group blade, click **Locks** then **+ Add** and specify the following settings:
 

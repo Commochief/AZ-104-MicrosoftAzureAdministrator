@@ -33,7 +33,7 @@
             "value": "10.0.0.0/24"
         },
         "virtualNetworkResourceGroup": {
-            "value": "rg1-az104-student01"
+            "value": "rg1-az104-jsocstudent01"
         },
         "subnet0Name": {
             "value": "subnet0"

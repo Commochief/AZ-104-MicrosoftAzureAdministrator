@@ -59,7 +59,7 @@ In this task, you will deploy four virtual machines into the same Azure region. 
     Now the resource group name:
     ```powershell
     #Note - ensure you change the following resource group name to match the RG in your lab environment
-    $rgName = 'rg1-az104-student01'
+    $rgName = 'rg1-az104-jsocstudent01'
     ```
 
 1. From the Cloud Shell pane, run the following to create the three virtual networks and four Azure VMs into them by using the template and parameter files you uploaded:
@@ -84,7 +84,7 @@ In this task, you will deploy four virtual machines into the same Azure region. 
 
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
    $location = (Get-AzResourceGroup -ResourceGroupName $rgName).location
    $vmNames = (Get-AzVM -ResourceGroupName $rgName).Name
 
@@ -197,7 +197,7 @@ In this task, you will test transitivity of virtual network peering by using Net
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Source type | **Virtual machine** |
     | Virtual machine | **az104-06-vm0** |
     | Destination | **Specify manually** |
@@ -304,7 +304,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Location | the name of the Azure region in which you created the virtual networks |
     | Name | **az104-06-rt23** |
     | Propagate gateway routes | **Disabled** |
@@ -347,7 +347,7 @@ In this task, you will configure and test routing between the two spoke virtual 
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Region | the name of the Azure region in which you created the virtual networks |
     | Name | **az104-06-rt32** |
     | Propagate gateway routes | **Disabled** |
@@ -415,7 +415,7 @@ In this task, you will implement an Azure Load Balancer in front of the two Azur
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Name | **az104-06-lb4** |
     | Region | name of the Azure region into which you deployed all other resources in this lab |
     | SKU  | **Standard** |
@@ -509,7 +509,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Application gateway name | **az104-06-appgw5** |
     | Region | name of the Azure region into which you deployed all other resources in this lab |
     | Tier | **Standard V2** |
@@ -593,7 +593,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

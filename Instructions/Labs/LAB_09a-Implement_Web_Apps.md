@@ -41,7 +41,7 @@ In this task, you will create an Azure web app.
     | Setting | Value |
     | --- | ---|
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Web app name | any globally unique name |
     | Publish | **Code** |
     | Runtime stack | **PHP 8.0** |
@@ -209,7 +209,7 @@ In this task, you will configure and test autoscaling of Azure web app.
 
    ```powershell
    #note - ensure the value for $rgName matches the resource group in your environment.
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    $webapp = Get-AzWebApp -ResourceGroupName $rgName
    ```
@@ -242,7 +242,7 @@ In this task, you will configure and test autoscaling of Azure web app.
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

@@ -52,7 +52,7 @@ In this task, you will deploy a virtual machine that will be used to test monito
     
    ```powershell
    #ensure the following value for $rgName matches the resource group in your enviornment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
     ```
 
 1. From the Cloud Shell pane, run the following to create the first virtual network and deploy a virtual machine into it by using the template and parameter files you uploaded:
@@ -92,7 +92,7 @@ In this task, you will create and configure an Azure Log Analytics workspace and
     | Settings | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Log Analytics Workspace | any unique name _[ex: loganalyticsaz104student01bkf]_ |
     | Region | **USGov Virginia** |
 
@@ -108,7 +108,7 @@ In this task, you will create and configure an Azure Log Analytics workspace and
     | --- | --- |
     | Automation account name | any unique name _[ex: aaccountaz104student01bkf]_ |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Region | **USGov Virginia** |
 
     >**Note**: Make sure that you specify the Azure region based on the [Workspace mappings documentation](https://docs.microsoft.com/en-us/azure/automation/how-to/region-mappings)
@@ -219,7 +219,7 @@ In this task, you will configure Azure virtual machine diagnostic settings.
     | Settings | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | **rg1-az104-student01** |
+    | Resource group | **rg1-az104-jsocstudent01** |
     | Action group name | **az104-11-ag1** |
     | Display name | **az104-11-ag1** |
 
@@ -319,7 +319,7 @@ In this task, you will configure Azure virtual machine diagnostic settings.
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

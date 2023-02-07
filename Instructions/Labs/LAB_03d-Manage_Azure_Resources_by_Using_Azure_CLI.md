@@ -41,9 +41,9 @@ In this task, you will create an Azure managed disk by using Azure CLI session w
 
    ```sh
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   LOCATION=$(az group show --name 'rg1-az104-student01' --query location --out tsv)
+   LOCATION=$(az group show --name 'rg1-az104-jsocstudent01' --query location --out tsv)
 
-   RGNAME='rg1-az104-student01'  
+   RGNAME='rg1-az104-jsocstudent01'  
    ```
 1. To retrieve properties of the existing resource group, run the following:
 
@@ -109,7 +109,7 @@ In this task, you will managing configuration of the Azure managed disk by using
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.

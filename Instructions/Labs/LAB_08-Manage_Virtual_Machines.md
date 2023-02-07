@@ -43,7 +43,7 @@ In this task, you will deploy Azure virtual machines into different availability
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Virtual machine name | **az104-08-vm0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines _[ex: USGov Virginia]_ |
     | Availability options | **Availability zone** |
@@ -114,11 +114,11 @@ In this task, you will deploy Azure virtual machines into different availability
 
     | Setting | Value |
     | --- | --- |
-    | Resource Group | **rg1-az104-student01** |
+    | Resource Group | **rg1-az104-jsocstudent01** |
     | Network Interface Name | **az104-08-vm1-nic1** |
     | Public IP Address Name | **az104-08-vm1-ip** |
     | Virtual Machine Name, Virtual Machine Name1, Virtual Machine Computer Name   | **az104-08-vm1** |
-    | Virtual Machine RG | **rg1-az104-student01** |    
+    | Virtual Machine RG | **rg1-az104-jsocstudent01** |    
     | Admin Username | **Student** |
     | Admin Password | **Provide a secure password**  |
     | Zone | **2** |
@@ -357,7 +357,7 @@ In this task, you will deploy Azure virtual machine scale set across availabilit
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource group | the name of your existing resource group **rg1-az104-student01** |
+    | Resource group | the name of your existing resource group **rg1-az104-jsocstudent01** |
     | Virtual machine scale set name | **az10408vmss0** |
     | Region | select one of the regions that support availability zones and where you can provision Azure virtual machines different from the one you used to deploy virtual machines earlier in this lab |
     | Availability zone | **Zones 1, 2, 3** |
@@ -550,7 +550,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 1. From the Cloud Shell pane, run the following to identify the public IP address of the load balancer in front of the Azure virtual machine scale set **az10408vmss0**.
 
    ```powershell
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    $lbpipName = 'az10408vmss0-ip'
 
@@ -608,7 +608,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 
    ```powershell
    #note - ensure you change $rgname value to match the RG in your environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
    $vmssName = 'az10408vmss0'
    ./az104-08-configure_VMSS_disks.ps1
    ```
@@ -627,7 +627,7 @@ In this task, you will change the size of virtual machine scale set instances, c
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.
