@@ -33,7 +33,7 @@ Here is the link to the CAF (Cloud Adoption Framework). One thing to remember is
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/
 I use this image a lot to help breakdown areas of responsibility and control:
 
- 
+![image](../media/ns-arch-cust-expanded.svg)
 
 Subscription naming also becomes important which is why we provided a naming standard which is adapted directly from the CAF Naming Guidance.
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming
