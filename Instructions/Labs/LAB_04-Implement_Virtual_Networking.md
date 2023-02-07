@@ -42,7 +42,7 @@ In this task, you will create a virtual network with multiple subnets by using t
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you will be using in this lab |
-    | Resource Group | the name of existing resource group _[ex: rg1-az104-student01]_ |
+    | Resource Group | the name of existing resource group _[ex: rg1-az104-jsocstudent01]_ |
     | Name | **az104-04-vnet1** |
     | Region | the name of any Azure region available in the subscription you will use in this lab |
 
@@ -102,7 +102,7 @@ In this task, you will deploy Azure virtual machines into different subnets of t
 
    ```powershell
    #Note - ensure you change the following resource group name to match the RG in your lab environment
-   $rgName = 'rg1-az104-student01'
+   $rgName = 'rg1-az104-jsocstudent01'
 
    New-AzResourceGroupDeployment `
       -ResourceGroupName $rgName `
@@ -116,7 +116,7 @@ In this task, you will deploy Azure virtual machines into different subnets of t
 
     >**Note**: If you got an error stating the VM size is not available please ask your instructor for assistance and try these steps:
     > 1. Click on the `{}` button in your CloudShell, select the **az104-04-vms-loop-parameters.json** from the left hand side bar and take a note of the `vmSize` parameter value.
-    > 1. Check the location in which the 'rg1-az104-student01' resource group is deployed. You can run `az group show -n rg1-az104-student01 --query location` in your CloudShell to get it.
+    > 1. Check the location in which the 'rg1-az104-jsocstudent01' resource group is deployed. You can run `az group show -n rg1-az104-jsocstudent01 --query location` in your CloudShell to get it.
     > 1. Run `az vm list-skus --location <Replace with your location> -o table --query "[? contains(name,'Standard_D2s')].name"` in your CloudShell. If there are no listed SKUs (i.e. there are no results), then you cannot deploy any D2S virtual machines in that region. You will need to find a region that will allow you to deploy D2S virtual machines. 
     > 1. Replace the value of `vmSize` parameter with one of the values returned by the command you just run.
     > 1. Now redeploy your templates by running the `New-AzResourceGroupDeployment` command again. You can press the up button a few times which would bring the last executed command.
@@ -129,7 +129,7 @@ In this task, you will configure static assignment of public and private IP addr
 
    >**Note**: Private and public IP addresses are actually assigned to the network interfaces, which, in turn are attached to Azure virtual machines, however, it is fairly common to refer to IP addresses assigned to Azure VMs instead.
 
-1. In the Azure portal, search for and select **Resource groups**, and, on the **Resource groups** blade, click **rg1-az104-student01**.
+1. In the Azure portal, search for and select **Resource groups**, and, on the **Resource groups** blade, click **rg1-az104-jsocstudent01**.
 
 1. On the **az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vnet1**.
 
@@ -200,7 +200,7 @@ In this task, you will configure network security groups in order to allow for r
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **rg1-az104-student01** |
+    | Resource Group | **rg1-az104-jsocstudent01** |
     | Name | **az104-04-nsg01** |
     | Region | the name of the Azure region where you deployed all other resources in this lab |
 
@@ -257,7 +257,7 @@ In this task, you will configure DNS name resolution within a virtual network by
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **rg1-az104-student01** |
+    | Resource Group | **rg1-az104-jsocstudent01** |
     | Name | **contoso.org** |
 
 1. Click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
@@ -313,7 +313,7 @@ In this task, you will configure external DNS name resolution by using Azure pub
     | Setting | Value |
     | --- | --- |
     | Subscription | the name of the Azure subscription you are using in this lab |
-    | Resource Group | **rg1-az104-student01** |
+    | Resource Group | **rg1-az104-jsocstudent01** |
     | Name | the DNS domain name you identified earlier in this task _[ex: az104student4795.com]_|
 
 1. Click **Review and Create**. Let validation occur, and hit **Create** again to submit your deployment.
@@ -382,7 +382,7 @@ In this task, you will configure external DNS name resolution by using Azure pub
 
 > **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
-2. Select your first resource group _[ex: rg1-az104-student01]_
+2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.
 4. Click **Delete** in the top-right portion of the Azure Portal within the resource group pane.
 5. Confirm delete by typing **yes** and selecting **Delete**.
