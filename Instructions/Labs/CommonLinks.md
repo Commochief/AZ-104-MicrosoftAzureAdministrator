@@ -2,19 +2,19 @@
 
 Here is a set of links  that will help overall.
 
-                Azure Architecture Center – Has a ton of reference architectures. Some examples for starters (hint…hint for AZ-305)
+Azure Architecture Center – Has a ton of reference architectures. Some examples for starters (hint…hint for AZ-305)
 Hub-spoke network topology in Azure - Azure Reference Architectures | Microsoft Docs
 Implement a secure hybrid network - Azure Architecture Center | Microsoft Docs
 Secure and govern workloads with network level segmentation - Azure Reference Architectures | Microsoft Docs
-                
-                Secure Azure Cloud Architecture
-                https://learn.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture
 
-                Azure Isolation Guidance
-                https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance
+Secure Azure Cloud Architecture
+https://learn.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture
 
-                Azure FedRAMP Audit Scope by Service
-                https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope?branch=pr-en-us-76518
+Azure Isolation Guidance
+https://learn.microsoft.com/en-us/azure/azure-government/azure-secure-isolation-guidance
+
+Azure FedRAMP Audit Scope by Service
+https://learn.microsoft.com/en-us/azure/azure-government/compliance/azure-services-in-fedramp-auditscope?branch=pr-en-us-76518
 
 AzureAD Security and Best Practices
 https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2
