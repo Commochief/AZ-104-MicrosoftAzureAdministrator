@@ -3,9 +3,12 @@
 Here is a set of links  that will help overall.
 
 Azure Architecture Center – Has a ton of reference architectures. Some examples for starters (hint…hint for AZ-305)
-Hub-spoke network topology in Azure - Azure Reference Architectures | Microsoft Docs
-Implement a secure hybrid network - Azure Architecture Center | Microsoft Docs
-Secure and govern workloads with network level segmentation - Azure Reference Architectures | Microsoft Docs
+
+[Hub-spoke network topology in Azure - Azure Reference Architectures | Microsoft Docs](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/hub-spoke?tabs=cli)
+
+[Implement a secure hybrid network - Azure Architecture Center | Microsoft Docs](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz?tabs=portal)
+
+[Secure and govern workloads with network level segmentation - Azure Reference Architectures | Microsoft Docs](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/network-level-segmentation)
 
 Secure Azure Cloud Architecture
 https://learn.microsoft.com/en-us/azure/azure-government/compliance/secure-azure-computing-architecture
