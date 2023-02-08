@@ -106,7 +106,9 @@ In this task, you will deploy Azure virtual machines into different availability
 
 1. On the deployment blade, click **Template**.
 
-1. Review the template representing the deployment in progress and click **Deploy**.
+1. Review the template representing the deployment in progress and click **Deploy**. 
+
+    >**Note**: If you have clicked off the deployment, navigate to the Resource Group the VM was created in and go to the Deployment blade. Once there find the VM deploment and click the name to naviagte back to the proper page. From here click **Deploy** at the top of the page.
 
     >**Note**: You will use this option to deploy the second virtual machine with matching configuration except for the availability zone.
 
