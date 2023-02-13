@@ -63,3 +63,6 @@ I use this image a lot to help breakdown areas of responsibility and control:
 
 Subscription naming also becomes important which is why we provided a naming standard which is adapted directly from the CAF Naming Guidance.
 https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/resource-naming
+
+Azure ARM API Template
+https://learn.microsoft.com/en-us/azure/templates/
