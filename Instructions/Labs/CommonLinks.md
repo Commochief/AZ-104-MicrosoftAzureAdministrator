@@ -10,6 +10,8 @@ https://learn.microsoft.com/en-us/certifications/exams/az-305
 
 https://learn.microsoft.com/en-us/training/paths/az-104-administrator-prerequisites/
 
+Certification Poster: https://aka.ms/TrainCertPoster
+
 Main Instruction File: https://github.com/Commochief/AZ-104-MicrosoftAzureAdministrator/blob/master/Instructions/Labs/AZ-104-Capstone_Exercise.md
  
 Lab Files (for example only): https://github.com/Commochief/AZ-104-MicrosoftAzureAdministrator/tree/master/Allfiles/Labs/Capstone
