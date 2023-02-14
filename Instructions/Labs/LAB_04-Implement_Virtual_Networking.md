@@ -131,7 +131,7 @@ In this task, you will configure static assignment of public and private IP addr
 
 1. In the Azure portal, search for and select **Resource groups**, and, on the **Resource groups** blade, click **rg1-az104-jsocstudent01**.
 
-1. On the **az104-04-rg1** resource group blade, in the list of its resources, click **az104-04-vnet1**.
+1. On the **rg1-az104-jsocstudent01** resource group blade, in the list of its resources, click **az104-04-vnet1**.
 
 1. On the **az104-04-vnet1** virtual network blade, review the **Connected devices** section and verify that there are two network interfaces **az104-04-nic0** and **az104-04-nic1** attached to the virtual network.
 
