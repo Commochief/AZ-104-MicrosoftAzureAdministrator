@@ -66,3 +66,16 @@ https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best
 
 Azure ARM API Template
 https://learn.microsoft.com/en-us/azure/templates/
+
+AzureAD Zero Trust Links
+Dashboard: https://techcommunity.microsoft.com/t5/public-sector-blog/announcing-the-azure-sentinel-zero-trust-tic3-0-workbook/ba-p/2313761
+Deployment: https://www.microsoft.com/en-us/security/blog/2020/04/30/zero-trust-deployment-guide-azure-active-directory/
+Zero Trust: By the numbers:
+    [Identity & Access Management (1 of 6)](https://devblogs.microsoft.com/azuregov/implementing-zero-trust-with-microsoft-azure-identity-and-access-management-1-of-6/)
+    [Protecting Cloud Workloads with Azure Security Center (2 of 6)](https://devblogs.microsoft.com/azuregov/protecting-cloud-workloads-for-zero-trust-with-azure-security-center-2-of-6/)
+    [Monitoring Cloud Security for Zero Trust with Azure Sentinel (3 of 6)](https://devblogs.microsoft.com/azuregov/monitoring-cloud-security-for-zero-trust-with-azure-sentinel-3-of-6/)
+    [Enforcing Policy with Azure Policy (4 of 6)](https://devblogs.microsoft.com/azuregov/enforcing-policy-for-zero-trust-with-azure-policy-4-of-6/)
+    [Insider Threat Monitoring for Microsoft Azure (5 of 6)](https://devblogs.microsoft.com/azuregov/insider-threat-monitoring-for-zero-trust-with-microsoft-azure-5-of-6/)
+    [Supply Chain Risk Management with Microsoft Azure (6 of 6)](https://devblogs.microsoft.com/azuregov/supply-chain-risk-management-for-zero-trust-with-microsoft-azure-6-of-6/)
+
+Guidance: https://learn.microsoft.com/en-us/security/zero-trust/
