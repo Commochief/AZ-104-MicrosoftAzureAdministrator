@@ -1,0 +1,19 @@
+LOCATION=usgovvirginia
+
+#JSOC Student 01
+az group create --name rg1-az104-jsocstudent01 -l $LOCATION
+az group create --name rg2-az104-jsocstudent01 -l $LOCATION
+
+#Assign RBAC JSOC Student 01
+JS1=$(az ad user show --id jsoc.student1@mtnnet.us --query "id" --output tsv)
+az role assignment create --assignee $JS1 --role Owner -g rg1-az104-jsocstudent01
+az role assignment create --assignee $JS1 --role Owner -g rg2-az104-jsocstudent01
+
+#JSOC Student 02
+az group create --name rg1-az104-jsocstudent01 -l $LOCATION
+az group create --name rg2-az104-jsocstudent01 -l $LOCATION
+
+#Assign RBAC JSOC Student 02
+JS1=$(az ad user show --id jsoc.student1@mtnnet.us --query "id" --output tsv)
+az role assignment create --assignee $JS1 --role Owner -g rg1-az104-jsocstudent01
+az role assignment create --assignee $JS1 --role Owner -g rg2-az104-jsocstudent01

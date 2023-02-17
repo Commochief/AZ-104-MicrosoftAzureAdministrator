@@ -186,7 +186,7 @@ In this task, you will test transitivity of virtual network peering by using Net
 
 1. In the Azure portal, search for and select **Network Watcher**.
 
-    >**Note**: This section requires "read" permissions on the NetworkWatcherRG. If using an instructor-provided account, this permission should be already taken care of and assigned. If in the Network Watcher pane "Status" shows as "Disabled", notify your instructor.
+    >**Note**: This section requires "read" permissions on the zNetworkWatcherRG. If using an instructor-provided account, this permission should be already taken care of and assigned. If in the Network Watcher pane "Status" shows as "Disabled", notify your instructor.
 
 1. On the **Network Watcher** blade, expand the listing of Azure regions and verify the service is enabled in region you are using. 
 
@@ -591,7 +591,7 @@ In this task, you will implement an Azure Application Gateway in front of the tw
 
 1. In the Azure portal, In the Azure portal, search for and select **Resource groups**.
 
-> **Note**:  You can safely ignore the NetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
+> **Note**:  You can safely ignore the zNetworkWatcherRG as you only have read permissions if using an instructor-provided account. That RG is needed for lab 06.
 
 2. Select your first resource group _[ex: rg1-az104-jsocstudent01]_
 3. Select each resource, except your **Cloud Shell storage account**, by checking the box to the left of each resource name.

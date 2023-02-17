@@ -1,14 +1,11 @@
 # List of Common Links
+## Table Of Contents
+ Here is a set of links  that will help overall.
 
-Here is a set of links  that will help overall.
-
-https://esi.microsoft.com
-
-https://learn.microsoft.com/en-us/certifications/exams/az-104
-
-https://learn.microsoft.com/en-us/certifications/exams/az-305
-
-https://learn.microsoft.com/en-us/training/paths/az-104-administrator-prerequisites/
+    - (https://esi.microsoft.com)
+    - (https://learn.microsoft.com/en-us/certifications/exams/az-104)
+    - (https://learn.microsoft.com/en-us/certifications/exams/az-305)
+    - (https://learn.microsoft.com/en-us/training/paths/az-104-administrator-prerequisites/)
 
 Certification Poster: https://aka.ms/TrainCertPoster
 
@@ -68,6 +65,9 @@ https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best
 
 Azure ARM API Template
 https://learn.microsoft.com/en-us/azure/templates/
+
+Azure ARM Template - Multiple Resource Copy Info: https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/copy-resources
+
 
 AzureAD Zero Trust Links
 
