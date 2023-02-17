@@ -47,7 +47,7 @@ Labs to Reference:
 
 In this task, you will deploy a virtual machine that will be used to test website and configuration scenarios.
 
-1. Using the principles learned in the previous labs and Architectural diagram, provision a small landing zone hub using whatever meathod you prefer.
+1. Using the principles learned in the previous labs and Architectural diagram, provision a small landing zone hub using whatever method you prefer.
 2. The jumpbox provisioned within this 'on-premises hub' should be used for web testing of the applications later deployed.
 
 Labs to Reference:
