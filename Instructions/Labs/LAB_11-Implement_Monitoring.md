@@ -199,9 +199,9 @@ In this task, you will configure Azure virtual machine diagnostic settings.
 
     >**Note**: Creating an alert rule from Metrics is not supported for metrics from the Guest (classic) metric namespace. This can be accomplished by using Azure Resource Manager templates, as described in the document [Send Guest OS metrics to the Azure Monitor metric store using a Resource Manager template for a Windows virtual machine](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/collect-custom-metrics-guestos-resource-manager-vm)
 
-1. On the **Create alert rule** blade, in the **Condition** section, click the existing condition entry.
+1. On the **Create alert rule** blade, in the **Condition** section, we will configure the **Alert Logic**.
 
-1. On the **Configure signal logic** blade, in the list of signals, in the **Alert logic** section, specify the following settings (leave others with their default values) and click **Done**:
+1. In the **Condition** section, in the **Alert logic** sub-section, specify the following settings (leave others with their default values) and click **Done**:
 
     | Settings | Value |
     | --- | --- |
