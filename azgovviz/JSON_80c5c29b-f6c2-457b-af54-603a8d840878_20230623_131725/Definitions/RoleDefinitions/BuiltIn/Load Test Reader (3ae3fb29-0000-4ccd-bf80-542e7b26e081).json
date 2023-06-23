@@ -1,0 +1,25 @@
+{
+  "roleName": "Load Test Reader",
+  "type": "BuiltInRole",
+  "description": "View and list all load tests and load test resources but can not make any changes",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.7057085Z",
+  "updatedOn": "2021-11-18T22:51:31.7057085Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,36 @@
+{
+  "identity": {
+    "principalId": "b802840b-340c-4d4d-bca0-349e4c8482a1",
+    "tenantId": "80c5c29b-f6c2-457b-af54-603a8d840878",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "NIST SP 800-53 Rev. 4",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/cf25b9c1-bd23-4eb6-bd2c-f4f3ac644a5f",
+    "scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+    "notScopes": [],
+    "parameters": {},
+    "metadata": {
+      "assignedBy": "Dale Shigekane",
+      "parameterScopes": {},
+      "createdBy": "c596dec3-abd9-4146-8c4b-830663b458be",
+      "createdOn": "2023-04-21T03:51:46.5666142Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": []
+  },
+  "id": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/Microsoft.Authorization/policyAssignments/c84c61c4b1b34dd2b280da09",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "c84c61c4b1b34dd2b280da09",
+  "location": "usgovvirginia",
+  "systemData": {
+    "createdBy": "dale@mtnnet.us",
+    "createdByType": "User",
+    "createdAt": "2023-04-21T03:51:43.3860164Z",
+    "lastModifiedBy": "dale@mtnnet.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2023-04-21T03:51:43.3860164Z"
+  }
+}

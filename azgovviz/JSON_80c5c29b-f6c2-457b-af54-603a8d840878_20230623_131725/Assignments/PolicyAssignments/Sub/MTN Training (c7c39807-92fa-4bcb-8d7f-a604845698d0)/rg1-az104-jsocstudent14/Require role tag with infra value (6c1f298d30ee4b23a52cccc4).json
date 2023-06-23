@@ -1,0 +1,38 @@
+{
+  "properties": {
+    "displayName": "Require role tag with infra value",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1e30110a-5ceb-460c-a204-c1c3969c6d62",
+    "scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent14",
+    "notScopes": [],
+    "parameters": {
+      "tagName": {
+        "value": "Role"
+      },
+      "tagValue": {
+        "value": "Infra"
+      }
+    },
+    "description": "Require Role tag with Infra value for all resources in the resource group containing Cloud Shell storage account",
+    "metadata": {
+      "assignedBy": "JSOC Student14",
+      "parameterScopes": {},
+      "createdBy": "24bcd483-e8c5-4ada-95df-b63bf16e533c",
+      "createdOn": "2023-04-17T17:56:59.4162776Z",
+      "updatedBy": "24bcd483-e8c5-4ada-95df-b63bf16e533c",
+      "updatedOn": "2023-04-18T14:32:34.2679603Z"
+    },
+    "enforcementMode": "DoNotEnforce",
+    "nonComplianceMessages": []
+  },
+  "id": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent14/providers/Microsoft.Authorization/policyAssignments/6c1f298d30ee4b23a52cccc4",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "6c1f298d30ee4b23a52cccc4",
+  "systemData": {
+    "createdBy": "jsoc.student14@mtnnet.us",
+    "createdByType": "User",
+    "createdAt": "2023-04-17T17:56:59.3789604Z",
+    "lastModifiedBy": "jsoc.student14@mtnnet.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2023-04-18T14:32:34.238137Z"
+  }
+}

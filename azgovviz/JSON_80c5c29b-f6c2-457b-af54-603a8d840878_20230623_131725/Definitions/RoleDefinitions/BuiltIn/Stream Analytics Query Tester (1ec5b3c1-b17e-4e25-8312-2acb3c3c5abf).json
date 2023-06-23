@@ -1,0 +1,25 @@
+{
+  "roleName": "Stream Analytics Query Tester",
+  "type": "BuiltInRole",
+  "description": "Lets you perform query testing without creating a stream analytics job first",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.StreamAnalytics/locations/TestQuery/action",
+        "Microsoft.StreamAnalytics/locations/OperationResults/read",
+        "Microsoft.StreamAnalytics/locations/SampleInput/action",
+        "Microsoft.StreamAnalytics/locations/CompileQuery/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-04-22T03:34:10.3447953Z",
+  "updatedOn": "2021-09-11T01:21:48.2404574Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

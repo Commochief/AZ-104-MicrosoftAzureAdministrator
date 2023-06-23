@@ -1,0 +1,42 @@
+{
+  "displayName": "Azure Event Hub namespaces should have local authentication methods disabled",
+  "policyType": "BuiltIn",
+  "mode": "Indexed",
+  "description": "Disabling local authentication methods improves security by ensuring that Azure Event Hub namespaces exclusively require Azure Active Directory identities for authentication. Learn more at: https://aka.ms/disablelocalauth-eh.",
+  "metadata": {
+    "version": "1.0.0",
+    "category": "Event Hub"
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "displayName": "Effect",
+        "description": "Enable or disable the execution of the policy"
+      },
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Audit"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.EventHub/namespaces"
+        },
+        {
+          "field": "Microsoft.EventHub/namespaces/disableLocalAuth",
+          "notEquals": true
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

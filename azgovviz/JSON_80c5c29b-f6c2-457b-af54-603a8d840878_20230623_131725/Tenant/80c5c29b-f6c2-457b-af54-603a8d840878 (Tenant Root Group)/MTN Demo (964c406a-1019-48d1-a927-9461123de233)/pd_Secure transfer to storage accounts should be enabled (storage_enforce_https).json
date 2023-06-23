@@ -1,0 +1,61 @@
+{
+  "displayName": "Secure transfer to storage accounts should be enabled",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Storage Enforce Https",
+  "metadata": {
+    "category": "Storage",
+    "createdBy": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+    "createdOn": "2023-01-11T15:09:46.8921134Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "The effect determines what happens when the policy rule is evaluated to match",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.Storage/storageAccounts",
+          "field": "type"
+        },
+        {
+          "anyOf": [
+            {
+              "allOf": [
+                {
+                  "less": "2019-04-01",
+                  "value": "[requestContext().apiVersion]"
+                },
+                {
+                  "exists": "false",
+                  "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly"
+                }
+              ]
+            },
+            {
+              "equals": "false",
+              "field": "Microsoft.Storage/storageAccounts/supportsHttpsTrafficOnly"
+            }
+          ]
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

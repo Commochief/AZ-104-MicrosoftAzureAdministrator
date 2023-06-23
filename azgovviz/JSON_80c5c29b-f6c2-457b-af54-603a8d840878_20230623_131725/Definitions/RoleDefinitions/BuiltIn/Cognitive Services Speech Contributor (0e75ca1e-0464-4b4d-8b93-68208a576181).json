@@ -1,0 +1,28 @@
+{
+  "roleName": "Cognitive Services Speech Contributor",
+  "type": "BuiltInRole",
+  "description": "Full access to Speech projects, including read, write and delete all entities, for real-time speech recognition and batch transcription tasks, real-time speech synthesis and long audio tasks, custom speech and custom voice.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/SpeechServices/*",
+        "Microsoft.CognitiveServices/accounts/CustomVoice/*",
+        "Microsoft.CognitiveServices/accounts/AudioContentCreation/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-30T22:22:25.0501505Z",
+  "updatedOn": "2022-05-22T23:22:39.2172241Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

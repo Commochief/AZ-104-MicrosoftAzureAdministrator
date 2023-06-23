@@ -1,0 +1,27 @@
+{
+  "roleName": "Data Labeling - Labeler",
+  "type": "BuiltInRole",
+  "description": "Can label data in Labeling.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.MachineLearningServices/workspaces/read",
+        "Microsoft.MachineLearningServices/workspaces/experiments/runs/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/projects/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/projects/summary/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/labels/read",
+        "Microsoft.MachineLearningServices/workspaces/labeling/labels/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-05T23:41:27.2295629Z",
+  "updatedOn": "2022-09-11T23:43:09.0707064Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

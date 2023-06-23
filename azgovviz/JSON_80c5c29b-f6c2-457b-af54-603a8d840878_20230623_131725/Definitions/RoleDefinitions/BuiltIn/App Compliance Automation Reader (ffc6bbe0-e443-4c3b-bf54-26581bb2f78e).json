@@ -1,0 +1,24 @@
+{
+  "roleName": "App Compliance Automation Reader",
+  "type": "BuiltInRole",
+  "description": "Read, download the reports objects and related other resource objects.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/blobServices/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-04-21T00:21:26.7346718Z",
+  "updatedOn": "2023-06-04T00:28:27.4025029Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

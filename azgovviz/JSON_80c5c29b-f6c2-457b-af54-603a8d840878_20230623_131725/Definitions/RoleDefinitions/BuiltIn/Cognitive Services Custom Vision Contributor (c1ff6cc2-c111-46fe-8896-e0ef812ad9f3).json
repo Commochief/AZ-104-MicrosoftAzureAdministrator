@@ -1,0 +1,24 @@
+{
+  "roleName": "Cognitive Services Custom Vision Contributor",
+  "type": "BuiltInRole",
+  "description": "Full access to the project, including the ability to view, create, edit, or delete projects.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-05-09T00:31:03.7215283Z",
+  "updatedOn": "2020-05-09T00:31:03.7215283Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

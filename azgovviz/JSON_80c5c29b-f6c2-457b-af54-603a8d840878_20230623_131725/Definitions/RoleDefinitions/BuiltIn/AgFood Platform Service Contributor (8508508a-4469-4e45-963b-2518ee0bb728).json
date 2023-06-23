@@ -1,0 +1,20 @@
+{
+  "roleName": "AgFood Platform Service Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides contribute access to AgFood Platform Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-09-14T21:50:12.9089631Z",
+  "updatedOn": "2020-09-14T21:50:12.9089631Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

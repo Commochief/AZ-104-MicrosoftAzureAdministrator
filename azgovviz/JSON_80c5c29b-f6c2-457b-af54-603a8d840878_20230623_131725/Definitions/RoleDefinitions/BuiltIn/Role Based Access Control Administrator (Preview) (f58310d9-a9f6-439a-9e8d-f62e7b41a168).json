@@ -1,0 +1,25 @@
+{
+  "roleName": "Role Based Access Control Administrator (Preview)",
+  "type": "BuiltInRole",
+  "description": "Manage access to Azure resources by assigning roles using Azure RBAC. This role does not allow you to manage access using other ways, such as Azure Policy.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/write",
+        "Microsoft.Authorization/roleAssignments/delete",
+        "*/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-09T23:42:37.5090004Z",
+  "updatedOn": "2022-09-09T23:42:37.5090004Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

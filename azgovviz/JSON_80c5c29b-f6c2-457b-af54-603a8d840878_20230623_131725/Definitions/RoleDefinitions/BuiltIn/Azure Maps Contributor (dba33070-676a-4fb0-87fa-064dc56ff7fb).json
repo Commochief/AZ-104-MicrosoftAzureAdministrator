@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Maps Contributor",
+  "type": "BuiltInRole",
+  "description": "Grants access all Azure Maps resource management.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Maps/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-10-05T01:26:14.7312573Z",
+  "updatedOn": "2021-10-05T01:26:14.7312573Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

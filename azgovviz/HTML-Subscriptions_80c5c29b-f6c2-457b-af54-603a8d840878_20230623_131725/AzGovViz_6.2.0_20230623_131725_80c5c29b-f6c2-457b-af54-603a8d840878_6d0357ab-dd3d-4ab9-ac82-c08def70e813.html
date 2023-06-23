@@ -1,0 +1,1183 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>Azure Governance Visualizer aka AzGovViz</title>
+    <script type="text/javascript">
+        var link = document.createElement( "link" );
+        rand = Math.floor(Math.random() * 99999);
+        link.href = "https://www.azadvertizer.net/azgovvizv4/css/azgovvizversion.css?rnd=" + rand;
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.media = "screen,print";
+        document.getElementsByTagName( "head" )[0].appendChild( link );
+    </script>
+    <link rel="stylesheet" type="text/css" href="https://www.azadvertizer.net/azgovvizv4/css/azgovvizmain_004_052.css">
+    <script src="https://www.azadvertizer.net/azgovvizv4/js/jquery-3.6.0.min.js"></script>
+    <script src="https://www.azadvertizer.net/azgovvizv4/js/jquery-ui-1.13.0.min.js"></script>
+    <script type="text/javascript" src="https://www.azadvertizer.net/azgovvizv4/js/highlight_v004_002.js"></script>
+    <script src="https://www.azadvertizer.net/azgovvizv4/js/fontawesome-0c0b5cbde8.js"></script>
+    <script src="https://www.azadvertizer.net/azgovvizv4/tablefilter/tablefilter.js"></script>
+    <link rel="stylesheet" href="https://www.azadvertizer.net/azgovvizv4/css/highlight-10.5.0.min.css">
+    <script src="https://www.azadvertizer.net/azgovvizv4/js/highlight-10.5.0.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" type="text/css" href="https://www.azadvertizer.net/azgovvizv4/css/jsonviewer_v01.css">
+    <script type="text/javascript" src="https://www.azadvertizer.net/azgovvizv4/js/jsonviewer_v02.js"></script>
+    <script src="https://www.azadvertizer.net/azgovvizv4/js/dom-to-image.min.js"></script>
+    <script>
+        $(window).on('load', function () {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
+
+    <script>
+    // Quick and simple export target #table_id into a csv
+    function download_table_as_csv_semicolon(table_id) {
+        // Select rows from table_id
+        var rows = document.querySelectorAll('table#' + table_id + ' tr');
+        // Construct csv
+        var csv = [];
+        if (window.helpertfConfig4TenantSummary_roleAssignmentsAll !== 1){
+            for (var i = 0; i < rows.length; i++) {
+                var row = [], cols = rows[i].querySelectorAll('td, th');
+                for (var j = 0; j < cols.length; j++) {
+                    // Clean innertext to remove multiple spaces and jumpline (break csv)
+                    var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
+                    // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+                    data = data.replace(/"/g, '""');
+                    // Push escaped string
+                    row.push('"' + data + '"');
+                }
+                csv.push(row.join(';'));
+            }
+        }
+        else{
+            for (var i = 1; i < rows.length; i++) {
+                var row = [], cols = rows[i].querySelectorAll('td, th');
+                for (var j = 0; j < cols.length; j++) {
+                    // Clean innertext to remove multiple spaces and jumpline (break csv)
+                    var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
+                    // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+                    data = data.replace(/"/g, '""');
+                    // Push escaped string
+                    row.push('"' + data + '"');
+                }
+                csv.push(row.join(';'));
+            }
+        }
+        var csv_string = csv.join('\n');
+        // Download it
+        var filename = 'export_' + table_id + '_' + new Date().toLocaleDateString('en-CA') + '.csv';
+        var link = document.createElement('a');
+        link.style.display = 'none';
+        link.setAttribute('target', '_blank');
+        link.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv_string));
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    </script>
+
+    <script>
+    // Quick and simple export target #table_id into a csv
+    function download_table_as_csv_comma(table_id) {
+        // Select rows from table_id
+        var rows = document.querySelectorAll('table#' + table_id + ' tr');
+        // Construct csv
+        var csv = [];
+        if (window.helpertfConfig4TenantSummary_roleAssignmentsAll !== 1){
+            for (var i = 0; i < rows.length; i++) {
+                var row = [], cols = rows[i].querySelectorAll('td, th');
+                for (var j = 0; j < cols.length; j++) {
+                    // Clean innertext to remove multiple spaces and jumpline (break csv)
+                    var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
+                    // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+                    data = data.replace(/"/g, '""');
+                    // Push escaped string
+                    row.push('"' + data + '"');
+                }
+                csv.push(row.join(','));
+            }
+        }
+        else{
+            for (var i = 1; i < rows.length; i++) {
+                var row = [], cols = rows[i].querySelectorAll('td, th');
+                for (var j = 0; j < cols.length; j++) {
+                    // Clean innertext to remove multiple spaces and jumpline (break csv)
+                    var data = cols[j].innerText.replace(/(\r\n|\n|\r)/gm, '').replace(/(\s\s)/gm, ' ')
+                    // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+                    data = data.replace(/"/g, '""');
+                    // Push escaped string
+                    row.push('"' + data + '"');
+                }
+                csv.push(row.join(','));
+            }
+        }
+        var csv_string = csv.join('\n');
+        // Download it
+        var filename = 'export_' + table_id + '_' + new Date().toLocaleDateString('en-CA') + '.csv';
+        var link = document.createElement('a');
+        link.style.display = 'none';
+        link.setAttribute('target', '_blank');
+        link.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv_string));
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+    </script>
+</head>    <body>
+        <div class="se-pre-con"></div>
+
+        <div class="hierprnt" id="hierprnt">
+            <div class="hierarchyTables" id="hierarchyTables">
+                <p class="pbordered">ScopeInsights</p>
+                <table class="subTable"><tr><td class="detailstd">Subscription Name: <b>SMX-SOUTHCOM-SRH-Sandbox</b></td></tr>
+<tr><td class="detailstd">Subscription Id: <b>6d0357ab-dd3d-4ab9-ac82-c08def70e813</b></td></tr>
+<tr><td class="detailstd">Subscription Path: 80c5c29b-f6c2-457b-af54-603a8d840878/6d0357ab-dd3d-4ab9-ac82-c08def70e813</td></tr>
+<tr><td class="detailstd">State: Enabled</td></tr>
+<tr><td class="detailstd">QuotaId: Internal_2014-09-01</td></tr>
+<tr><td class="detailstd"><i class="fa fa-shield" aria-hidden="true"></i> Microsoft Defender for Cloud Secure Score: 52.17% (12 of 23 points) <a class="externallink" href="https://www.youtube.com/watch?v=2EMnzxdqDhA" target="_blank" rel="noopener" rel="noopener">Video <i class="fa fa-external-link" aria-hidden="true"></i></a>, <a class="externallink" href="https://techcommunity.microsoft.com/t5/azure-security-center/security-controls-in-azure-security-center-enable-endpoint/ba-p/1624653" target="_blank" rel="noopener" rel="noopener">Blog <i class="fa fa-external-link" aria-hidden="true"></i></a>, <a class="externallink" href="https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls#how-your-secure-score-is-calculated" target="_blank" rel="noopener" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a></td></tr>
+<tr><td class="detailstd"><i class="fa fa-shield" aria-hidden="true"></i> Microsoft Defender for Cloud 'Email notifications' state: n/a</td></tr>
+<tr><td class="detailstd"><i class="fa fa-shield" aria-hidden="true"></i> Microsoft Defender for Cloud 'Email notifications' severity: n/a</td></tr>
+<tr><td class="detailstd"><i class="fa fa-shield" aria-hidden="true"></i> Microsoft Defender for Cloud 'Email notifications' roles: n/a</td></tr>
+<tr><td class="detailstd"><i class="fa fa-shield" aria-hidden="true"></i> Microsoft Defender for Cloud 'Email notifications' emails: n/a</td></tr>
+<tr><td class="detailstd">
+<button onclick="loadtffunc_ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813()" type="button" class="collapsible"><i class="fa fa-shield" aria-hidden="true" style="color: #0078df"></i> <span class="valignMiddle">Microsoft Defender for Cloud plans</span> <a class="externallink" href="https://docs.microsoft.com/en-us/azure/defender-for-cloud/enhanced-security-features-overview" target="_blank" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a></button>
+<div class="content contentSISub">
+&nbsp;&nbsp;<i class="fa fa-table" aria-hidden="true"></i> Download CSV <a class="externallink" href="#" onclick="download_table_as_csv_semicolon('ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">semicolon</a> | <a class="externallink" href="#" onclick="download_table_as_csv_comma('ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">comma</a>
+<table id="ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813" class="subDetailsTable">
+<thead>
+<tr>
+<th>Plan</th>
+<th>Tier</th>
+</tr>
+</thead>
+<tbody>
+
+                    <tr>
+                    <td>Arm</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>ContainerRegistry</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>Containers</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>Dns</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>KubernetesService</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>OpenSourceRelationalDatabases</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>SqlServers</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>SqlServerVirtualMachines</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>StorageAccounts</td>
+                    <td>Free</td>
+                    </tr>
+                    <tr>
+                    <td>VirtualMachines</td>
+                    <td>Free</td>
+                    </tr>
+
+</tbody>
+</table>
+<script>
+function loadtffunc_ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813() { if (window.helpertfConfig4ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813 !== 1) {
+window.helpertfConfig4ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813 =1;
+var tfConfig4ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813 = {
+base_path: 'https://www.azadvertizer.net/azgovvizv4/tablefilter/', rows_counter: true,
+btn_reset: true, highlight_keywords: true, alternate_rows: true, auto_filter: { delay: 1100 }, no_results_message: true,
+col_1: 'select',
+col_types: [
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring',
+    'caseinsensitivestring'
+],
+extensions: [{ name: 'sort' }]
+};
+var tf = new TableFilter('ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813', tfConfig4ScopeInsights_DefenderPlans_6d0357ab_dd3d_4ab9_ac82_c08def70e813);
+tf.init();}}
+</script>
+</div>
+</td></tr>
+<tr><!--y--><td class="detailstd"><!--y-->
+<i class="fa fa-ban" aria-hidden="true"></i> No Subscription Diagnostic settings <a class="externallink" href="https://docs.microsoft.com/en-us/azure/azure-monitor/essentials/quick-collect-activity-log-portal#create-diagnostic-setting" target="_blank" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+</td></tr>
+<tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-ban" aria-hidden="true"></i> 0 Subscription Tags
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-ban" aria-hidden="true"></i> Tag Name Usage (0 Tags) <a class="externallink" href="https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/resource-tagging" target="_blank" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+<i class="fa fa-credit-card" aria-hidden="true"></i> No Consumption data available as switch parameter -DoAzureConsumption was not applied
+        </td></tr>
+        <tr><td class="detailstd">
+    <i class="fa fa-ban" aria-hidden="true"></i> 0 Resource Groups
+</td></tr>
+<tr><td class="detailstd">
+<button onclick="loadtffunc_ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813()" type="button" class="collapsible"><i class="fa fa-check-circle blue" aria-hidden="true"></i> <span class="valignMiddle">Resource Providers Detailed</span></button>
+<div class="content contentSISub">
+&nbsp;&nbsp;<i class="fa fa-table" aria-hidden="true"></i> Download CSV <a class="externallink" href="#" onclick="download_table_as_csv_semicolon('ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">semicolon</a> | <a class="externallink" href="#" onclick="download_table_as_csv_comma('ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">comma</a>
+<table id="ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813" class="subDetailsTable">
+<thead>
+<tr>
+<th>Provider</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft.GuestConfiguration</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.PolicyInsights</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Automation</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Security</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Web</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Storage</td>
+<td>Registered</td>
+</tr> <tr>
+<td>microsoft.insights</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.OperationalInsights</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Advisor</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.DevTestLab</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Compute</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Network</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ResourceHealth</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Notebooks</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Logic</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.DesktopVirtualization</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.DocumentDB</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.AlertsManagement</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ManagedIdentity</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Databricks</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ApiManagement</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ContainerRegistry</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.KeyVault</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.MachineLearningServices</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Synapse</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Sql</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.AAD</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AadCustomSecurityAttributesDiagnosticSettings</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>microsoft.aadiam</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ADHybridHealthService</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.AnalysisServices</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AppConfiguration</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Attestation</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Authorization</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.AVS</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureActiveDirectory</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureCIS</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureData</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureDataTransfer</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureStack</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.AzureStackHCI</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.BackupSolutions</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Batch</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Billing</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.BillingBenefits</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Blueprint</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.BotService</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Cache</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Capacity</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Cdn</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ClassicCompute</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ClassicInfrastructureMigrate</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ClassicNetwork</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ClassicStorage</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ClassicSubscription</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.CloudShell</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.CloudTest</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.CognitiveServices</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Commerce</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Communication</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Consumption</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ContainerInstance</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ContainerService</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.CostManagement</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.CostManagementExports</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.CustomerLockbox</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Dashboard</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataBox</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataBoxEdge</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataFactory</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataMigration</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataProtection</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DataShare</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DBforMariaDB</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DBforMySQL</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.DBforPostgreSQL</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Devices</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.EdgeOrder</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.EdgeOrderPartner</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.EventGrid</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.EventHub</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ExtendedLocation</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Features</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.HardwareSecurityModules</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HDInsight</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HealthcareApis</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HpcWorkbench</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HybridCompute</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HybridConnectivity</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.HybridNetwork</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.IoTSecurity</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Kubernetes</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.KubernetesConfiguration</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Kusto</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Maintenance</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ManagedServices</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Management</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Maps</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Marketplace</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.MarketplaceOrdering</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Media</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Migrate</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.MobileNetwork</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ModSimWorkbench</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Monitor</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.NetApp</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.NotificationHubs</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.OffAzure</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.OperationsManagement</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Orbital</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Portal</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.PowerBI</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.PowerBIDedicated</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.PowerPlatform</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ProviderHub</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Purview</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.RecoveryServices</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.RedHatOpenShift</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Relay</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ResourceGraph</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Resources</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.Search</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SecurityDetonation</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SecurityInsights</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SerialConsole</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.ServiceBus</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ServiceFabric</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.ServiceFabricMesh</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SignalRService</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SoftwarePlan</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Solutions</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.SqlVirtualMachine</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.StorageCache</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.StorageSync</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.StreamAnalytics</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.Subscription</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>microsoft.support</td>
+<td>Registered</td>
+</tr> <tr>
+<td>Microsoft.UsageBilling</td>
+<td>NotRegistered</td>
+</tr> <tr>
+<td>Microsoft.VideoIndexer</td>
+<td>NotRegistered</td>
+</tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function loadtffunc_ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813() { if (window.helpertfConfig4ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813 !== 1) {
+            window.helpertfConfig4ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813=1;
+            var tfConfig4ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813 = {
+            base_path: 'https://www.azadvertizer.net/azgovvizv4/tablefilter/', rows_counter: true,
+paging: {results_per_page: ['Records: ', [10, 30, 50, 100, 139]]},/*state: {types: ['local_storage'], filters: true, page_number: true, page_length: true, sort: true},*/
+btn_reset: true, highlight_keywords: true, alternate_rows: true, auto_filter: { delay: 1100 }, no_results_message: true,
+            col_1: 'select',
+            col_types: [
+                'caseinsensitivestring',
+                'caseinsensitivestring'
+            ],
+extensions: [{ name: 'sort' }]
+        };
+        var tf = new TableFilter('ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813', tfConfig4ScopeInsights_ResourceProvider_6d0357ab_dd3d_4ab9_ac82_c08def70e813);
+        tf.init();}}
+    </script>
+</td></tr>
+<tr><td class="detailstd">
+            <i class="fa fa-ban" aria-hidden="true"></i> 0 enabled Subscription Features <a class="externallink" href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/preview-features" target="_blank" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-ban" aria-hidden="true"></i> 0 Resource Locks <a class="externallink" href="https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/lock-resources#considerations-before-applying-locks" target="_blank" rel="noopener">docs <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-ban" aria-hidden="true"></i> 0 ResourceTypes
+</td></tr>
+<tr><td class="detailstd">
+                <i class="fa fa-ban" aria-hidden="true"></i> No CAF Naming Recommendation Compliance data available
+</td></tr>
+<tr><td class="detailstd">
+                <i class="fa fa-ban" aria-hidden="true"></i> No cost optimization & cleanup
+</td></tr>
+<tr><td class="detailstd">
+            <i class="fa fa-ban" aria-hidden="true"></i> 0 ResourceTypes (1st party) Diagnostics capable
+</td></tr>
+<tr><td class="detailstd">
+            <i class="fa fa-ban" aria-hidden="true"></i> No UserAssigned Managed Identities assigned to Resources / vice versa - at all
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-check-square-o" aria-hidden="true"></i> PSRule for Azure - <span class="info">integration paused - <a class="externallink" href="https://azure.github.io/PSRule.Rules.Azure/integrations" target="_blank" rel="noopener">PSRule for Azure <i class="fa fa-external-link" aria-hidden="true"></i></a>
+    <i class="fa fa-ban" aria-hidden="true"></i> 0 Policy assignments
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+<button onclick="loadtffunc_ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813()" type="button" class="collapsible"><i class="fa fa-check-circle blue" aria-hidden="true"></i> <span class="valignMiddle">1 PolicySet assignments (1 at scope, 0 inherited) (Builtin: 1 | Custom: 0)</span></button>
+<div class="content contentSISub">
+&nbsp;&nbsp;<i class="fa fa-table" aria-hidden="true"></i> Download CSV <a class="externallink" href="#" onclick="download_table_as_csv_semicolon('ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">semicolon</a> | <a class="externallink" href="#" onclick="download_table_as_csv_comma('ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">comma</a>
+<table id="ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813" class="subDetailsTable">
+<thead>
+<tr>
+<th>Inheritance</th>
+<th>ScopeExcluded</th>
+<th>PolicySet DisplayName</th>
+<th>PolicySetId</th>
+<th>Type</th>
+<th>Category</th>
+<th>ALZ</th>
+<th>Parameters</th>
+<th>Enforcement</th>
+<th>NonCompliance Message</th>
+<th>Policies NonCmplnt</th>
+<th>Policies Compliant</th>
+<th>Resources NonCmplnt</th>
+<th>Resources Compliant</th>
+<th>Resources Conflicting</th>
+<th>Role/Assignment </th>
+<th>Managed Identity</th>
+<th>Assignment DisplayName</th>
+<th>AssignmentId</th>
+<th>AssignedBy</th>
+<th>CreatedOn</th>
+<th>CreatedBy</th>
+<th>UpdatedOn</th>
+<th>UpdatedBy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>thisScope Sub</td>
+<td>false</td>
+<td class="breakwordall"><a class="externallink" href="https://www.azadvertizer.net/azpolicyinitiativesadvertizer/1f3afdf9-d0c9-4c3d-847f-89da613e70a8.html" target="_blank" rel="noopener">Microsoft cloud security benchmark</a></td>
+<td class="breakwordall">/providers/microsoft.authorization/policysetdefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8</td>
+<td>BuiltIn</td>
+<td>Security Center</td>
+<td>False</td>
+<td></td>
+<td>Default</td>
+<td></td> <td>19</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td> <td class="breakwordall">none</td>
+<td></td>
+<td class="breakwordall">ASC Default (subscription: 6d0357ab-dd3d-4ab9-ac82-c08def70e813)</td>
+<td class="breakwordall">/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/policyassignments/securitycenterbuiltin</td>
+<td>Security Center</td>
+<td>01/14/2023 01:59:23</td>
+<td>ObjectType: SP App EXT, ObjectDisplayName: Windows Azure Security Resource Provider, ObjectSignInName: n/a, ObjectId: e36cdba1-8d32-40a3-85e9-b549ac682554 (rp)</td>
+<td></td>
+<td></td>
+</tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function loadtffunc_ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813() { if (window.helpertfConfig4ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 !== 1) {
+            window.helpertfConfig4ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 =1;
+            var tfConfig4ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 = {
+            base_path: 'https://www.azadvertizer.net/azgovvizv4/tablefilter/', rows_counter: true,
+btn_reset: true, highlight_keywords: true, alternate_rows: true, auto_filter: { delay: 1100 }, no_results_message: true,
+            linked_filters: true,
+            col_1: 'select',
+            col_4: 'select',
+            col_7: 'select',
+            col_8: 'select',
+            locale: 'en-US',
+            col_types: [
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'number',
+                'number',
+                'number',
+                'number',
+                'number',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'date',
+                'caseinsensitivestring',
+                'date',
+                'caseinsensitivestring'
+            ],
+            watermark: ['try: thisScope'],
+            extensions: [{ name: 'colsVisibility', text: 'Columns: ', enable_tick_all: true },{ name: 'sort' }]
+        };
+        var tf = new TableFilter('ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813', tfConfig4ScopeInsights_PolicySetAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813);
+        tf.init();}}
+    </script>
+        </td></tr>
+        <tr><!--y--><td class="detailstd"><!--y-->
+            <i class="fa fa-check-circle" aria-hidden="true"></i> Policy Assignment Limit: 1/200
+</td></tr>
+<tr><td class="detailstd">
+                    <i class="fa fa-ban" aria-hidden="true"></i> 0 Custom Policy definitions scoped
+</td></tr>
+<tr><td class="detailstd">
+                    <i class="fa fa-ban" aria-hidden="true"></i> 0 Custom PolicySet definitions scoped
+</td></tr>
+<tr><td class="detailstd">
+                    <i class="fa fa-ban" aria-hidden="true"></i> 0 Blueprints assigned
+</td></tr>
+<tr><td class="detailstd">
+                    <i class="fa fa-ban" aria-hidden="true"></i> 0 Blueprints scoped
+</td></tr>
+<tr><td class="detailstd">
+<button onclick="loadtffunc_ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813()" type="button" class="collapsible"><i class="fa fa-check-circle blue" aria-hidden="true"></i> <span class="valignMiddle">2 Classic Administrators</span></button>
+<div class="content contentSISub">
+&nbsp;&nbsp;<i class="fa fa-table" aria-hidden="true"></i> Download CSV <a class="externallink" href="#" onclick="download_table_as_csv_semicolon('ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">semicolon</a> | <a class="externallink" href="#" onclick="download_table_as_csv_comma('ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">comma</a>
+<table id="ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813" class="subDetailsTable">
+<thead>
+<tr>
+<th>Role</th>
+<th>Identity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AccountAdministrator</td>
+<td>rob@austinx.onmicrosoft.us</td>
+</tr> <tr>
+<td>ServiceAdministrator</td>
+<td>rob@austinx.onmicrosoft.us</td>
+</tr>
+                </tbody>
+            </table>
+        </div>
+        <script>
+            function loadtffunc_ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813() { if (window.helpertfConfig4ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813 !== 1) {
+                window.helpertfConfig4ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813 =1;
+                var tfConfig4ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813 = {
+                base_path: 'https://www.azadvertizer.net/azgovvizv4/tablefilter/', rows_counter: true,
+                btn_reset: true, highlight_keywords: true, alternate_rows: true, auto_filter: { delay: 1100 }, no_results_message: true,
+                col_types: [
+                    'caseinsensitivestring',
+                    'caseinsensitivestring'
+                ],
+                extensions: [{ name: 'sort' }]
+            };
+            var tf = new TableFilter('ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813', tfConfig4ScopeInsights_ClassicAdministrators_6d0357ab_dd3d_4ab9_ac82_c08def70e813);
+            tf.init();}}
+        </script>
+</td></tr>
+<tr><td class="detailstd">
+<button onclick="loadtffunc_ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813()" type="button" class="collapsible"><i class="fa fa-check-circle blue" aria-hidden="true"></i> <span class="valignMiddle">10 Role assignments (6 inherited) (User: 10 | Group: 0 | ServicePrincipal: 0 | Orphaned: 0) (CustomRoleOwner: 0, OwnerAssignmentSP: 0) (Policy related: 0) | Limit: (4/4000)</span></button>
+<div class="content contentSISub">
+&nbsp;&nbsp;<i class="fa fa-table" aria-hidden="true"></i> Download CSV <a class="externallink" href="#" onclick="download_table_as_csv_semicolon('ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">semicolon</a> | <a class="externallink" href="#" onclick="download_table_as_csv_comma('ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813');">comma</a><br>
+&nbsp;&nbsp;<span class="hintTableSize">*Depending on the number of rows and your computer´s performance the table may respond with delay, download the csv for better filtering experience</span>
+<table id="ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813" class="subDetailsTable">
+<thead>
+<tr>
+<th>Scope</th>
+<th>Role</th>
+<th>RoleId</th>
+<th>Role Type</th>
+<th>Data</th>
+<th>Can do Role assignment</th>
+<th>Identity Displayname</th>
+<th>Identity SignInName</th>
+<th>Identity ObjectId</th>
+<th>Identity Type</th>
+<th>Applicability</th>
+<th>Applies through membership <abbr title="Note: the identity might not be a direct member of the group it could also be member of a nested group"><i class="fa fa-question-circle" aria-hidden="true"></i></abbr></th>
+<th>Group Details</th>
+<th>Role AssignmentId</th>
+<th>Related Policy Assignment </th>
+<th>CreatedOn</th>
+<th>CreatedBy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>inherited 80c5c29b-f6c2-457b-af54-603a8d840878</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/8e3af657-a8ff-443c-a75c-2fe8c4bcb635.html" target="_blank" rel="noopener">Owner</a></td>
+<td>8e3af657-a8ff-443c-a75c-2fe8c4bcb635</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Joshua Staley (SOCOM CSA)</td>
+<td class="breakwordall">josh@mtnnet.us</td>
+<td class="breakwordall">a7e43673-b87a-41da-b8ba-cb60b2e7293a</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.management/managementgroups/80c5c29b-f6c2-457b-af54-603a8d840878/providers/microsoft.authorization/roleassignments/511baf10-f2bb-4046-8949-e472a6064d39</td>
+<td class="breakwordall">none</td>
+<td>11/28/2022 16:39:17</td>
+<td>ObjectType: User Member, ObjectDisplayName: Joshua Staley (SOCOM CSA), ObjectSignInName: josh@mtnnet.us, ObjectId: a7e43673-b87a-41da-b8ba-cb60b2e7293a</td>
+</tr> <tr>
+<td>inherited 80c5c29b-f6c2-457b-af54-603a8d840878</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/8e3af657-a8ff-443c-a75c-2fe8c4bcb635.html" target="_blank" rel="noopener">Owner</a></td>
+<td>8e3af657-a8ff-443c-a75c-2fe8c4bcb635</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Joe Scanlan (CSA)</td>
+<td class="breakwordall">joe@mtnnet.us</td>
+<td class="breakwordall">b38f032b-acba-4d66-be8d-17e83ddf8ab7</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.management/managementgroups/80c5c29b-f6c2-457b-af54-603a8d840878/providers/microsoft.authorization/roleassignments/6d83b69d-ac54-44f9-b4df-792bfcec305e</td>
+<td class="breakwordall">none</td>
+<td>01/11/2023 18:45:36</td>
+<td>ObjectType: User Member, ObjectDisplayName: Joshua Staley (SOCOM CSA), ObjectSignInName: josh@mtnnet.us, ObjectId: a7e43673-b87a-41da-b8ba-cb60b2e7293a</td>
+</tr> <tr>
+<td>inherited Tenant</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9.html" target="_blank" rel="noopener">User Access Administrator</a></td>
+<td>18d7d88d-d35e-4fb5-a5c3-7773c20a72d9</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Evan Mills (ATS)</td>
+<td class="breakwordall">evan@mtnnet.us</td>
+<td class="breakwordall">174a65c6-a3b9-413b-8138-994c973cba2d</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.authorization/roleassignments/ac017b4f-3c4e-4c6e-827f-08319c852913</td>
+<td class="breakwordall">none</td>
+<td>08/08/2022 23:30:40</td>
+<td>ObjectType: User Member, ObjectDisplayName: Evan Mills (ATS), ObjectSignInName: evan@mtnnet.us, ObjectId: 174a65c6-a3b9-413b-8138-994c973cba2d</td>
+</tr> <tr>
+<td>inherited Tenant</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9.html" target="_blank" rel="noopener">User Access Administrator</a></td>
+<td>18d7d88d-d35e-4fb5-a5c3-7773c20a72d9</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">John Spinella (SOCOM CSA)</td>
+<td class="breakwordall">spinella@mtnnet.us</td>
+<td class="breakwordall">7bc6bc45-b256-407c-9d79-bde13dfb5639</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.authorization/roleassignments/784fb6c6-e0dd-4715-a6dc-d2fda58d1e3e</td>
+<td class="breakwordall">none</td>
+<td>01/04/2023 22:20:05</td>
+<td>ObjectType: User Member, ObjectDisplayName: John Spinella (SOCOM CSA), ObjectSignInName: spinella@mtnnet.us, ObjectId: 7bc6bc45-b256-407c-9d79-bde13dfb5639</td>
+</tr> <tr>
+<td>inherited Tenant</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9.html" target="_blank" rel="noopener">User Access Administrator</a></td>
+<td>18d7d88d-d35e-4fb5-a5c3-7773c20a72d9</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Joshua Staley (SOCOM CSA)</td>
+<td class="breakwordall">josh@mtnnet.us</td>
+<td class="breakwordall">a7e43673-b87a-41da-b8ba-cb60b2e7293a</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.authorization/roleassignments/90cb2a1b-a501-4d56-a268-171e49b4ffe9</td>
+<td class="breakwordall">none</td>
+<td>09/15/2022 21:59:44</td>
+<td>ObjectType: User Member, ObjectDisplayName: Joshua Staley (SOCOM CSA), ObjectSignInName: josh@mtnnet.us, ObjectId: a7e43673-b87a-41da-b8ba-cb60b2e7293a</td>
+</tr> <tr>
+<td>inherited Tenant</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9.html" target="_blank" rel="noopener">User Access Administrator</a></td>
+<td>18d7d88d-d35e-4fb5-a5c3-7773c20a72d9</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Rob "B" Bolbotowski</td>
+<td class="breakwordall">rob@austinx.onmicrosoft.us</td>
+<td class="breakwordall">c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/providers/microsoft.authorization/roleassignments/e7f1a3d4-1ebb-49b7-bdab-d282dfe5dd05</td>
+<td class="breakwordall">none</td>
+<td>11/20/2020 03:04:58</td>
+<td>ObjectType: User Member, ObjectDisplayName: Rob "B" Bolbotowski, ObjectSignInName: rob@austinx.onmicrosoft.us, ObjectId: c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+</tr> <tr>
+<td>thisScope Sub</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/8e3af657-a8ff-443c-a75c-2fe8c4bcb635.html" target="_blank" rel="noopener">Owner</a></td>
+<td>8e3af657-a8ff-443c-a75c-2fe8c4bcb635</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Jorge Vazquez (SMX)</td>
+<td class="breakwordall">jorgev@austinx.onmicrosoft.us</td>
+<td class="breakwordall">4ad37919-d81b-4a17-94e2-227690291f5a</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/ecc40ff7-2571-4e61-b876-906699d25bdf</td>
+<td class="breakwordall">none</td>
+<td>01/14/2023 01:23:42</td>
+<td>ObjectType: User Member, ObjectDisplayName: Rob "B" Bolbotowski, ObjectSignInName: rob@austinx.onmicrosoft.us, ObjectId: c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+</tr> <tr>
+<td>thisScope Sub</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/8e3af657-a8ff-443c-a75c-2fe8c4bcb635.html" target="_blank" rel="noopener">Owner</a></td>
+<td>8e3af657-a8ff-443c-a75c-2fe8c4bcb635</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Rich Posada (CSA)</td>
+<td class="breakwordall">richp@austinx.onmicrosoft.us</td>
+<td class="breakwordall">a2ace337-7e48-4958-955b-a8a7384a2f38</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/efded354-4199-4b4f-9348-f1a0cdcc8212</td>
+<td class="breakwordall">none</td>
+<td>01/23/2023 20:47:13</td>
+<td>ObjectType: User Member, ObjectDisplayName: Rob "B" Bolbotowski, ObjectSignInName: rob@austinx.onmicrosoft.us, ObjectId: c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+</tr> <tr>
+<td>thisScope Sub</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/8e3af657-a8ff-443c-a75c-2fe8c4bcb635.html" target="_blank" rel="noopener">Owner</a></td>
+<td>8e3af657-a8ff-443c-a75c-2fe8c4bcb635</td>
+<td>Builtin</td>
+<td>false</td>
+<td>True</td>
+<td class="breakwordall">Rob "B" Bolbotowski</td>
+<td class="breakwordall">rob@austinx.onmicrosoft.us</td>
+<td class="breakwordall">c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/c6ba3e66-f17c-4d83-941c-efa771646780</td>
+<td class="breakwordall">none</td>
+<td>01/14/2023 01:50:02</td>
+<td>ObjectType: User Member, ObjectDisplayName: Rob "B" Bolbotowski, ObjectSignInName: rob@austinx.onmicrosoft.us, ObjectId: c5482269-cbaa-4182-a8dc-ee3515cbed00</td>
+</tr> <tr>
+<td>thisScope Sub</td>
+<td><a class="externallink" href="https://www.azadvertizer.net/azrolesadvertizer/b24988ac-6180-42a0-ab88-20f7382dd24c.html" target="_blank" rel="noopener">Contributor</a></td>
+<td>b24988ac-6180-42a0-ab88-20f7382dd24c</td>
+<td>Builtin</td>
+<td>false</td>
+<td>False</td>
+<td class="breakwordall">Rich Posada (CSA)</td>
+<td class="breakwordall">richp@austinx.onmicrosoft.us</td>
+<td class="breakwordall">a2ace337-7e48-4958-955b-a8a7384a2f38</td>
+<td style="width:76px" class="breakwordnone">User Member</td>
+<td>direct</td>
+<td></td>
+<td></td>
+<td class="breakwordall">/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/8199d874-a31c-41a5-beea-f2d70dee1f66</td>
+<td class="breakwordall">none</td>
+<td>01/23/2023 16:10:24</td>
+<td>ObjectType: User Member, ObjectDisplayName: Jorge Vazquez (SMX), ObjectSignInName: jorgev@austinx.onmicrosoft.us, ObjectId: 4ad37919-d81b-4a17-94e2-227690291f5a</td>
+</tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        function loadtffunc_ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813() { if (window.helpertfConfig4ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 !== 1) {
+            window.helpertfConfig4ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 =1;
+            var tfConfig4ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813 = {
+            base_path: 'https://www.azadvertizer.net/azgovvizv4/tablefilter/', rows_counter: true,
+btn_reset: true, highlight_keywords: true, alternate_rows: true, auto_filter: { delay: 1100 }, no_results_message: true,
+            linked_filters: true,
+            col_3: 'select',
+            col_4: 'select',
+            col_5: 'select',
+            col_9: 'multiple',
+            col_10: 'select',
+            locale: 'en-US',
+            col_types: [
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'caseinsensitivestring',
+                'date',
+                'caseinsensitivestring'
+            ],
+            watermark: ['', 'try owner||reader', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+            extensions: [{ name: 'colsVisibility', text: 'Columns: ', enable_tick_all: true },{ name: 'sort' }]
+        };
+        var tf = new TableFilter('ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813', tfConfig4ScopeInsights_RoleAssignments_6d0357ab_dd3d_4ab9_ac82_c08def70e813);
+        tf.init();}}
+    </script>
+    </td></tr><!--rsi-->
+            </table>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="VersionDiv VersionLatest"></div>
+            <div class="VersionDiv VersionThis"></div>
+            <div class="VersionAlert"></div>
+        </div>
+        <script src="https://www.azadvertizer.net/azgovvizv4/js/toggle_v004_004.js"></script>
+        <script src="https://www.azadvertizer.net/azgovvizv4/js/collapsetable_v004_001.js"></script>
+        <script src="https://www.azadvertizer.net/azgovvizv4/js/fitty_v004_001.min.js"></script>
+        <script src="https://www.azadvertizer.net/azgovvizv4/js/version_v004_004.js"></script>
+        <script src="https://www.azadvertizer.net/azgovvizv4/js/autocorrectOff_v004_001.js"></script>
+        <script>
+            fitty('#fitme', {
+                minSize: 7,
+                maxSize: 10
+            });
+        </script>
+        <script>
+            $("#getImage").on('click', function () {
+
+            element = document.getElementById('saveAsImageArea')
+            var images = element.getElementsByTagName('img');
+            var l = images.length;
+            for (var i = 0; i < l; i++) {
+                images[0].parentNode.removeChild(images[0]);
+            }
+
+            var scale = 3;
+            domtoimage.toPng(element, { quality: 0.95 , width: element.clientWidth * scale,
+                height: element.clientHeight * scale,
+                style: {
+                    transform: 'scale('+scale+')',
+                    transformOrigin: 'top left'
+            }})
+                .then(function (dataUrl) {
+                var link = document.createElement('a');
+                link.download = 'AzGovViz_6.2.0_20230623_131725_80c5c29b-f6c2-457b-af54-603a8d840878.png';
+                link.href = dataUrl;
+                link.click();
+            });
+
+            })
+        </script>
+    </body>
+</html>

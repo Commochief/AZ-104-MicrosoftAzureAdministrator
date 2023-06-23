@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/fdf9fc9b-156b-4ec3-ac8a-7cd9fbf5f99a",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "ar-eastus-k8s-anoa-01",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "9178976a-5af1-40e0-8dd6-3ca52ec5b26c",
+  "ObjectType": "ServicePrincipal"
+}

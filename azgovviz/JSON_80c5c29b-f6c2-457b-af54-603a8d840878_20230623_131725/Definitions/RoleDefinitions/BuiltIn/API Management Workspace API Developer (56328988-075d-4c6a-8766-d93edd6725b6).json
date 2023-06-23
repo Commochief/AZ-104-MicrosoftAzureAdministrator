@@ -1,0 +1,31 @@
+{
+  "roleName": "API Management Workspace API Developer",
+  "type": "BuiltInRole",
+  "description": "Has read access to entities in the workspace and read and write access to entities for editing APIs. This role should be assigned on the workspace scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiManagement/service/workspaces/*/read",
+        "Microsoft.ApiManagement/service/workspaces/apis/*",
+        "Microsoft.ApiManagement/service/workspaces/apiVersionSets/*",
+        "Microsoft.ApiManagement/service/workspaces/policies/*",
+        "Microsoft.ApiManagement/service/workspaces/schemas/*",
+        "Microsoft.ApiManagement/service/workspaces/products/*",
+        "Microsoft.ApiManagement/service/workspaces/policyFragments/*",
+        "Microsoft.ApiManagement/service/workspaces/namedValues/*",
+        "Microsoft.ApiManagement/service/workspaces/tags/*",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-27T00:17:53.7706285Z",
+  "updatedOn": "2023-03-27T00:17:53.7706285Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

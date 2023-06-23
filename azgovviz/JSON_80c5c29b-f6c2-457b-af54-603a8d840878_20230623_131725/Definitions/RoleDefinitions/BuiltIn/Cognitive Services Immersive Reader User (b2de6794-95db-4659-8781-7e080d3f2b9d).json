@@ -1,0 +1,22 @@
+{
+  "roleName": "Cognitive Services Immersive Reader User",
+  "type": "BuiltInRole",
+  "description": "Provides access to create Immersive Reader sessions and call APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/ImmersiveReader/getcontentmodelforreader/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.7306963Z",
+  "updatedOn": "2021-11-18T22:51:31.7306963Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/b4f3992d-34fe-479e-ac12-8dc95f03e1cb",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "Azure Virtual Desktop",
+  "SignInName": null,
+  "RoleDefinitionName": "Desktop Virtualization Power On Off Contributor",
+  "RoleDefinitionId": "40c5ff49-9181-41f8-ae61-143b0e78555e",
+  "ObjectId": "ed1a8246-a410-4b02-b524-961928b58e2c",
+  "ObjectType": "ServicePrincipal"
+}

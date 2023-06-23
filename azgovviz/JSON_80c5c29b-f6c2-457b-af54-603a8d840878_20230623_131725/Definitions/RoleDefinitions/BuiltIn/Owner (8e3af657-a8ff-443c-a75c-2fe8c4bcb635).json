@@ -1,0 +1,22 @@
+{
+  "roleName": "Owner",
+  "type": "BuiltInRole",
+  "description": "Grants full access to manage all resources, including the ability to assign roles in Azure RBAC.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-08-14T21:44:08.7185846Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

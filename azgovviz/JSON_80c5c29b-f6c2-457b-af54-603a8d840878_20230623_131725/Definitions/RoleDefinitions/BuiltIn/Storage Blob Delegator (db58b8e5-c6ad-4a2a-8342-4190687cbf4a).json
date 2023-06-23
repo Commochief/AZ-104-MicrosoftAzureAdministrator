@@ -1,0 +1,22 @@
+{
+  "roleName": "Storage Blob Delegator",
+  "type": "BuiltInRole",
+  "description": "Allows for generation of a user delegation key which can be used to sign SAS tokens",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Storage/storageAccounts/blobServices/generateUserDelegationKey/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-07-23T06:36:00.6164988Z",
+  "updatedOn": "2020-06-22T20:23:30.8307703Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

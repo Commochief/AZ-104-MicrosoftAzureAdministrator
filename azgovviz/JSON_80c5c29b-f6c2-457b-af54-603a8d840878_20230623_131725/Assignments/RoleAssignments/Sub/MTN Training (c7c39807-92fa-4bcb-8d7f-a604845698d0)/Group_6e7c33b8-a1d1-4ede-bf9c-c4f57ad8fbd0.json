@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/6e7c33b8-a1d1-4ede-bf9c-c4f57ad8fbd0",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "RAMPTestUsers",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "9c504dc5-39b7-453e-86a3-700a88308fb6",
+  "ObjectType": "Group"
+}

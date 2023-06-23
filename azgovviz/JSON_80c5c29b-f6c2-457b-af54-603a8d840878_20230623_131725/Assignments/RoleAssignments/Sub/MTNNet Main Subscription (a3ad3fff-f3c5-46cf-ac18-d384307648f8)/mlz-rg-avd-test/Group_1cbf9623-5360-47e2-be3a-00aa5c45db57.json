@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-avd-test/providers/microsoft.authorization/roleassignments/1cbf9623-5360-47e2-be3a-00aa5c45db57",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-AVD-test",
+  "DisplayName": "MLZ-AVD-users",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine User Login",
+  "RoleDefinitionId": "fb879df8-f326-4884-b1cf-06f3ad86be52",
+  "ObjectId": "955f0439-205e-42af-9f0d-11eb31965bb9",
+  "ObjectType": "Group"
+}

@@ -1,0 +1,55 @@
+{
+  "displayName": "Audit Log Analytics Workspace Retention",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Audit Log Analytics Workspace Retention",
+  "metadata": {
+    "category": "Monitoring",
+    "createdBy": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+    "createdOn": "2023-01-11T15:11:17.8519237Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable or disable the execution of the policy",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "AuditIfNotExists",
+        "Disabled"
+      ],
+      "defaultValue": "AuditIfNotExists"
+    },
+    "workspaceRetentionDays": {
+      "type": "Integer",
+      "metadata": {
+        "description": "Log Analytics Workspace should be retained for the specified amount of days. Defaults to 15 months",
+        "displayName": "Log Analytics Workspace Retention Days"
+      },
+      "defaultValue": 456
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.OperationalInsights/workspaces",
+          "field": "type"
+        }
+      ]
+    },
+    "then": {
+      "details": {
+        "existenceCondition": {
+          "field": "Microsoft.OperationalInsights/workspaces/retentionInDays",
+          "greaterOrEquals": "[parameters('workspaceRetentionDays')]"
+        },
+        "type": "Microsoft.OperationalInsights/workspaces"
+      },
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

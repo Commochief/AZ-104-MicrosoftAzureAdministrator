@@ -1,0 +1,20 @@
+{
+  "roleName": "Azure Spring Cloud Config Server Reader",
+  "type": "BuiltInRole",
+  "description": "Allow read access to Azure Spring Cloud Config Server",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-30T01:19:50.0695211Z",
+  "updatedOn": "2021-08-30T01:19:50.0695211Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

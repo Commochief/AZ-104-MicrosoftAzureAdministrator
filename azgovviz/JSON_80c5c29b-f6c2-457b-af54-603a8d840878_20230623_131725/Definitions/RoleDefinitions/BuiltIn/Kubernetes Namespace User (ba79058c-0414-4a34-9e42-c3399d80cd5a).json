@@ -1,0 +1,23 @@
+{
+  "roleName": "Kubernetes Namespace User",
+  "type": "BuiltInRole",
+  "description": "Allows a user to read namespace resources and retrieve kubeconfig for the cluster",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.KubernetesConfiguration/namespaces/read",
+        "Microsoft.KubernetesConfiguration/namespaces/listUserCredential/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-08-27T23:39:46.2783786Z",
+  "updatedOn": "2022-08-27T23:39:46.2783786Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

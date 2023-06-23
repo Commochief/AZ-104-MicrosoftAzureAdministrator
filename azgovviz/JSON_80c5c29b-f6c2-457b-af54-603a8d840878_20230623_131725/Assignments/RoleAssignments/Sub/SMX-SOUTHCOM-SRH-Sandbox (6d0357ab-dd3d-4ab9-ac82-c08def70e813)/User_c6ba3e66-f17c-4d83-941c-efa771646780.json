@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/c6ba3e66-f17c-4d83-941c-efa771646780",
+  "Scope": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813",
+  "DisplayName": "Rob \"B\" Bolbotowski",
+  "SignInName": "rob@austinx.onmicrosoft.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "c5482269-cbaa-4182-a8dc-ee3515cbed00",
+  "ObjectType": "User"
+}

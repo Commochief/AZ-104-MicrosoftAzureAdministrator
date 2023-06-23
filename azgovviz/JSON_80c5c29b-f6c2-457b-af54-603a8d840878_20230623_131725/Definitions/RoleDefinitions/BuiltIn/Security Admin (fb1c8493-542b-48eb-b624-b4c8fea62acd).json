@@ -1,0 +1,45 @@
+{
+  "roleName": "Security Admin",
+  "type": "BuiltInRole",
+  "description": "Security Admin Role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Authorization/policyAssignments/*",
+        "Microsoft.Authorization/policyDefinitions/*",
+        "Microsoft.Authorization/policySetDefinitions/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.operationalInsights/workspaces/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Security/*/read",
+        "Microsoft.Security/locations/alerts/activate/action",
+        "Microsoft.Security/locations/alerts/dismiss/action",
+        "Microsoft.Security/locations/tasks/activate/action",
+        "Microsoft.Security/locations/tasks/dismiss/action",
+        "Microsoft.Security/policies/write",
+        "Microsoft.Security/pricings/write",
+        "Microsoft.Security/pricings/delete",
+        "Microsoft.Security/securityContacts/delete",
+        "Microsoft.Security/securityContacts/write",
+        "Microsoft.Security/InformationProtectionPolicies/write",
+        "Microsoft.Support/*",
+        "Microsoft.Security/*",
+        "Microsoft.Authorization/policyExemptions/*",
+        "Microsoft.IoTSecurity/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-07-11T16:42:10.9062524Z",
+  "updatedOn": "2021-11-11T01:31:51.0160784Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

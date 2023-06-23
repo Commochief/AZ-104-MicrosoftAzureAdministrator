@@ -1,0 +1,30 @@
+{
+  "roleName": "EventGrid EventSubscription Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage EventGrid event subscription operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.EventGrid/eventSubscriptions/*",
+        "Microsoft.EventGrid/topicTypes/eventSubscriptions/read",
+        "Microsoft.EventGrid/locations/eventSubscriptions/read",
+        "Microsoft.EventGrid/locations/topicTypes/eventSubscriptions/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:17.0942237Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

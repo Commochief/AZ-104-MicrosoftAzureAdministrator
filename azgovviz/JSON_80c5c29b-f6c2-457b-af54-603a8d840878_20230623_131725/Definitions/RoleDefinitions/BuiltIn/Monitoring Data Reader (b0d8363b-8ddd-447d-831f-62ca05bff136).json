@@ -1,0 +1,22 @@
+{
+  "roleName": "Monitoring Data Reader",
+  "type": "BuiltInRole",
+  "description": "Can access the data in an Azure Monitor Workspace.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Monitor/accounts/data/metrics/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-08-22T23:38:48.5617218Z",
+  "updatedOn": "2023-02-02T00:08:41.1404501Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

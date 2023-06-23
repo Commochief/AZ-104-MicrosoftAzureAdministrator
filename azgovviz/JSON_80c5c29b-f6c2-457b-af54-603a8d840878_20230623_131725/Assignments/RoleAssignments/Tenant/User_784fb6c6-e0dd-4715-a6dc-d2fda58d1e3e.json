@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/784fb6c6-e0dd-4715-a6dc-d2fda58d1e3e",
+  "Scope": "/",
+  "DisplayName": "John Spinella (SOCOM CSA)",
+  "SignInName": "spinella@mtnnet.us",
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+  "ObjectType": "User"
+}

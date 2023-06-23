@@ -1,0 +1,22 @@
+{
+  "roleName": "SaaS Hub Contributor",
+  "type": "BuiltInRole",
+  "description": "SaaS Hub contributor can manage SaaS Hub resource",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-08T00:25:02.9769349Z",
+  "updatedOn": "2023-05-19T00:26:41.2535634Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "Device Provisioning Service Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows for full access to Device Provisioning Service data-plane operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Devices/provisioningServices/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-13T01:17:32.1666265Z",
+  "updatedOn": "2021-08-28T01:19:36.5922344Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

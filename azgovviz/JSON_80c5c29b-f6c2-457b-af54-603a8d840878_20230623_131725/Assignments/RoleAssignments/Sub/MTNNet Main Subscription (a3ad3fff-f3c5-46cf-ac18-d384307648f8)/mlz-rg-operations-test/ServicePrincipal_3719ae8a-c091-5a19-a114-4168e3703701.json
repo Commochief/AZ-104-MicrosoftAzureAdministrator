@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-operations-test/providers/microsoft.authorization/roleassignments/3719ae8a-c091-5a19-a114-4168e3703701",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-operations-test",
+  "DisplayName": "Deploy VM Agents mlz-rg-operations-test",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "0d67fb03-dfe4-45d6-a134-98def3f9f692",
+  "ObjectType": "ServicePrincipal"
+}

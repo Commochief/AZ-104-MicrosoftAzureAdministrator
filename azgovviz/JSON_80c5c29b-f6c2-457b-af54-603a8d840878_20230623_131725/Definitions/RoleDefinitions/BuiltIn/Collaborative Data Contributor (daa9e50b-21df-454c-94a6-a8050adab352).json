@@ -1,0 +1,26 @@
+{
+  "roleName": "Collaborative Data Contributor",
+  "type": "BuiltInRole",
+  "description": "Can manage data packages of a collaborative.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-08-14T21:44:08.9217206Z",
+  "updatedOn": "2020-08-14T21:44:08.9217206Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

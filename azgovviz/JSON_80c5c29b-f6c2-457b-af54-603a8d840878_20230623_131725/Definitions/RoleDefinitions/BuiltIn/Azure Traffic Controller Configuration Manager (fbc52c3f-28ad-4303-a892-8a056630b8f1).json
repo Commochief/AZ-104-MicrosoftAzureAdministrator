@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Traffic Controller Configuration Manager",
+  "type": "BuiltInRole",
+  "description": "Allows access to traffic controller resource. Also allows all confiuration Updates on traffic controller",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/write",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/operations/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/operationstatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-09T23:50:03.246807Z",
+  "updatedOn": "2022-10-31T23:53:11.3803503Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

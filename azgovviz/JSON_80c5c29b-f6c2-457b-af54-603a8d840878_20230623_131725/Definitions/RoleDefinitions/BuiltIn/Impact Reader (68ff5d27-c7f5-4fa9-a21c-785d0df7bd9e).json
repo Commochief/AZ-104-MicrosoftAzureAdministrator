@@ -1,0 +1,20 @@
+{
+  "roleName": "Impact Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read-only access to reported impacts and impact categories",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-30T23:52:59.0855323Z",
+  "updatedOn": "2022-11-17T23:55:37.4450136Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

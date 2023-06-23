@@ -1,0 +1,20 @@
+{
+  "roleName": "WorkloadBuilder Migration Agent Role",
+  "type": "BuiltInRole",
+  "description": "WorkloadBuilder Migration Agent Role.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-11T22:19:16.3526049Z",
+  "updatedOn": "2021-03-11T22:19:16.3526049Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

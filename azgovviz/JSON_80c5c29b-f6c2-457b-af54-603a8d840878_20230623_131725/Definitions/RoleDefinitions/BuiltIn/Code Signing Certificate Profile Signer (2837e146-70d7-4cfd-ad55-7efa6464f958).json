@@ -1,0 +1,24 @@
+{
+  "roleName": "Code Signing Certificate Profile Signer",
+  "type": "BuiltInRole",
+  "description": "Sign files with a certificate profile. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-20T01:18:42.5295174Z",
+  "updatedOn": "2022-12-18T00:01:35.5470686Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

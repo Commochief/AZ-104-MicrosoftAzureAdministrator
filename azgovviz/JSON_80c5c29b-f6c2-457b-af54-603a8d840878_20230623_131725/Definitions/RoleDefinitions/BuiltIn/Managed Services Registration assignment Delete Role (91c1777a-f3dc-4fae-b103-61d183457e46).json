@@ -1,0 +1,24 @@
+{
+  "roleName": "Managed Services Registration assignment Delete Role",
+  "type": "BuiltInRole",
+  "description": "Managed Services Registration Assignment Delete Role allows the managing tenant users to delete the registration assignment assigned to their tenant.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ManagedServices/registrationAssignments/read",
+        "Microsoft.ManagedServices/registrationAssignments/delete",
+        "Microsoft.ManagedServices/operationStatuses/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-10-24T01:17:03.4634941Z",
+  "updatedOn": "2019-10-25T14:03:35.0991861Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

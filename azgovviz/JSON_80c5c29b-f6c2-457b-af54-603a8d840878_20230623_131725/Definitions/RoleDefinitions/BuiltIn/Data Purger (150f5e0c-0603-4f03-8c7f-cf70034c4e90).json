@@ -1,0 +1,25 @@
+{
+  "roleName": "Data Purger",
+  "type": "BuiltInRole",
+  "description": "Can purge analytics data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Insights/components/*/read",
+        "Microsoft.Insights/components/purge/action",
+        "Microsoft.OperationalInsights/workspaces/*/read",
+        "Microsoft.OperationalInsights/workspaces/purge/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:15.9535106Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,41 @@
+{
+  "roleName": "StudentLocks",
+  "type": "CustomRole",
+  "description": "",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/locks/read",
+        "Microsoft.Authorization/locks/write",
+        "Microsoft.Authorization/locks/delete",
+        "Microsoft.Authorization/policyAssignments/write",
+        "Microsoft.Authorization/policyAssignments/delete",
+        "Microsoft.Authorization/policyAssignments/exempt/action",
+        "Microsoft.Authorization/policyAssignments/read",
+        "Microsoft.Authorization/policyDefinitions/read",
+        "Microsoft.Authorization/policyDefinitions/write",
+        "Microsoft.Authorization/policyDefinitions/delete",
+        "Microsoft.Authorization/policies/audit/action",
+        "Microsoft.Authorization/policies/auditIfNotExists/action",
+        "Microsoft.Authorization/policies/deny/action",
+        "Microsoft.Authorization/policies/deployIfNotExists/action",
+        "Microsoft.Authorization/policyExemptions/read",
+        "Microsoft.Authorization/policyExemptions/write",
+        "Microsoft.Authorization/policyExemptions/delete",
+        "Microsoft.Authorization/policySetDefinitions/read",
+        "Microsoft.Authorization/policySetDefinitions/write",
+        "Microsoft.Authorization/policySetDefinitions/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-26T15:24:58.7645078Z",
+  "updatedOn": "2022-09-26T19:43:04.6960783Z",
+  "createdBy": "a7e43673-b87a-41da-b8ba-cb60b2e7293a",
+  "updatedBy": "a7e43673-b87a-41da-b8ba-cb60b2e7293a"
+}

@@ -1,0 +1,23 @@
+{
+  "roleName": "AzureML Metrics Writer (preview)",
+  "type": "BuiltInRole",
+  "description": "Lets you write metrics to AzureML workspace",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.MachineLearningServices/workspaces/metrics/resource/write",
+        "Microsoft.MachineLearningServices/workspaces/metrics/*/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-10-27T21:57:12.1041133Z",
+  "updatedOn": "2020-10-28T21:57:11.2508486Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

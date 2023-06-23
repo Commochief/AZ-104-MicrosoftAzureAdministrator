@@ -1,0 +1,22 @@
+{
+  "roleName": "AcrPull",
+  "type": "BuiltInRole",
+  "description": "acr pull",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/pull/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:01.8276913Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

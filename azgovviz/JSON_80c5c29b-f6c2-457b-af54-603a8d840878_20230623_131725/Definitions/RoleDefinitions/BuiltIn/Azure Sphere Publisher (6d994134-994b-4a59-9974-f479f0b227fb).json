@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Sphere Publisher",
+  "type": "BuiltInRole",
+  "description": "Allows user to read and download Azure Sphere resources and upload images.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/DiagnosticSettings/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-13T00:25:51.0894165Z",
+  "updatedOn": "2023-05-19T00:26:41.278568Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

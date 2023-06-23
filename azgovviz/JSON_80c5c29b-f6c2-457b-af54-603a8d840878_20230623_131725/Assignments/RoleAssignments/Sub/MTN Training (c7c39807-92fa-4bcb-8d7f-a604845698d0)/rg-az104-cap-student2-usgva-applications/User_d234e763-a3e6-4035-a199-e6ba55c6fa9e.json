@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourcegroups/rg-az104-cap-student2-usgva-applications/providers/microsoft.authorization/roleassignments/d234e763-a3e6-4035-a199-e6ba55c6fa9e",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg-az104-cap-student2-usgva-applications",
+  "DisplayName": "JSOC Student 2",
+  "SignInName": "jsoc.student2@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "19037f38-d5b8-4039-9905-8f59db675f65",
+  "ObjectType": "User"
+}

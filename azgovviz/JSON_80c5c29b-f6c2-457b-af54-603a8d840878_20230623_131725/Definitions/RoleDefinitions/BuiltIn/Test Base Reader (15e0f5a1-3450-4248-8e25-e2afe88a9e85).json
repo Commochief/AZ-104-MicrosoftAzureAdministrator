@@ -1,0 +1,20 @@
+{
+  "roleName": "Test Base Reader",
+  "type": "BuiltInRole",
+  "description": "Let you view and download packages and test results.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-05-15T01:00:43.6309975Z",
+  "updatedOn": "2021-05-15T01:00:43.6309975Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

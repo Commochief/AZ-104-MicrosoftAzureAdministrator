@@ -1,0 +1,45 @@
+{
+  "roleName": "LocalNGFirewallAdministrator role",
+  "type": "BuiltInRole",
+  "description": "Allows user to create, modify, describe, or delete NGFirewalls.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Support/*",
+        "Microsoft.OperationalInsights/workspaces/write",
+        "Microsoft.OperationalInsights/workspaces/sharedKeys/read",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/publicIPAddresses/write",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Network/networkVirtualAppliances/read",
+        "Microsoft.Network/networkVirtualAppliances/write",
+        "Microsoft.Network/networkVirtualAppliances/delete",
+        "Microsoft.Network/virtualHubs/read",
+        "Microsoft.Network/virtualWans/read",
+        "Microsoft.Network/virtualWans/virtualHubs/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/join/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-02-11T00:10:10.8084011Z",
+  "updatedOn": "2023-03-19T00:16:59.9565455Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

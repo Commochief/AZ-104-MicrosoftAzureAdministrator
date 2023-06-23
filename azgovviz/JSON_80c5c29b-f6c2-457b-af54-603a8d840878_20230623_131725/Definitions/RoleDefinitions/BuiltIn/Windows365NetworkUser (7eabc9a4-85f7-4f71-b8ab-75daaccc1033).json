@@ -1,0 +1,25 @@
+{
+  "roleName": "Windows365NetworkUser",
+  "type": "BuiltInRole",
+  "description": "Read the virtual network informations, and join the virtual network to virtual machine in another tenant. This role is used in Windows365 scenarios.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/usages/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-04-23T00:21:56.2322448Z",
+  "updatedOn": "2023-04-23T00:21:56.2322448Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

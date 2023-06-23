@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourcegroups/resourcemoverrg-usdodeast-usgovvirginia-ugv/providers/microsoft.authorization/roleassignments/1198ae53-8ee3-4615-9b4c-c97f8702fe23",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/ResourceMoverRG-usdodeast-usgovvirginia-ugv",
+  "DisplayName": "Joe Scanlan (CSA)",
+  "SignInName": "joe@mtnnet.us",
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "ObjectType": "User"
+}

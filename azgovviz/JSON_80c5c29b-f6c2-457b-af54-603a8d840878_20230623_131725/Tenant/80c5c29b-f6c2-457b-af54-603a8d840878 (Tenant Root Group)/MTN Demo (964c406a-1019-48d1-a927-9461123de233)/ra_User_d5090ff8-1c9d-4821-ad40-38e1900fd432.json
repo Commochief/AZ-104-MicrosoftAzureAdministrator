@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/964c406a-1019-48d1-a927-9461123de233/providers/microsoft.authorization/roleassignments/d5090ff8-1c9d-4821-ad40-38e1900fd432",
+  "Scope": "/subscriptions/964c406a-1019-48d1-a927-9461123de233",
+  "DisplayName": "Evan Mills (ATS)",
+  "SignInName": "evan@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "174a65c6-a3b9-413b-8138-994c973cba2d",
+  "ObjectType": "User"
+}

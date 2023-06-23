@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/6568748e-5cb8-4646-95f7-f7b5a96edddf",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "MoveCollection-ude-ugv-ugv",
+  "SignInName": null,
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "15822fb2-49da-4cab-b0d9-7c79155af39f",
+  "ObjectType": "ServicePrincipal"
+}

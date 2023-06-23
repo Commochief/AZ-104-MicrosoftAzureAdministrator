@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/5ca98ac1-bfc5-4a02-9849-1fe1f11015cc",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "MoveCollection-ude-ugv-ugv",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "15822fb2-49da-4cab-b0d9-7c79155af39f",
+  "ObjectType": "ServicePrincipal"
+}

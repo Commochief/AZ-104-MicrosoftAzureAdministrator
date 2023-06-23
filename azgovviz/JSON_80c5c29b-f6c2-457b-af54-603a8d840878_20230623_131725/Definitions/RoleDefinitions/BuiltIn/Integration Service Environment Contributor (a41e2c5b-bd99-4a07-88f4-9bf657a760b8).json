@@ -1,0 +1,24 @@
+{
+  "roleName": "Integration Service Environment Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage integration service environments, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Support/*",
+        "Microsoft.Logic/integrationServiceEnvironments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-02-21T07:03:07.3196744Z",
+  "updatedOn": "2020-02-21T07:03:07.3196744Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

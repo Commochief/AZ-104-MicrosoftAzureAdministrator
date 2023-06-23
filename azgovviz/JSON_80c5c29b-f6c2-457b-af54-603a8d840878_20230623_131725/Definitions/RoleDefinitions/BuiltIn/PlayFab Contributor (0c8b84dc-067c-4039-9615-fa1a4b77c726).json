@@ -1,0 +1,24 @@
+{
+  "roleName": "PlayFab Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides contributor access to PlayFab resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.6806956Z",
+  "updatedOn": "2021-11-18T22:51:31.6806956Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

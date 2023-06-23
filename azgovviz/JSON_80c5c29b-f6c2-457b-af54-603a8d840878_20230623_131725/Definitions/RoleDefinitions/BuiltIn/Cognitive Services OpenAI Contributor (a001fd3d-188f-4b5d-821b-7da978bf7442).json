@@ -1,0 +1,26 @@
+{
+  "roleName": "Cognitive Services OpenAI Contributor",
+  "type": "BuiltInRole",
+  "description": "Full access including the ability to fine-tune, deploy and generate text",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/OpenAI/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-29T23:52:52.2458825Z",
+  "updatedOn": "2022-10-29T23:52:52.2458825Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

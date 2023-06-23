@@ -1,0 +1,22 @@
+{
+  "roleName": "Attestation Reader",
+  "type": "BuiltInRole",
+  "description": "Can read the attestation provider properties",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Attestation/attestationProviders/attestation/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-04-12T21:24:42.9779929Z",
+  "updatedOn": "2021-04-14T20:31:33.2821354Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": ""
+}

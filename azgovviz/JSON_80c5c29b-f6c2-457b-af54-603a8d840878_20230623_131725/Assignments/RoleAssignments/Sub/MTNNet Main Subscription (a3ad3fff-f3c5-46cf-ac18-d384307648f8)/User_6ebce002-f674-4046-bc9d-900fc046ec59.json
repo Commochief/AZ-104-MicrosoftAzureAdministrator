@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/6ebce002-f674-4046-bc9d-900fc046ec59",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "Arie Richards",
+  "SignInName": "arie@mtnnet.us",
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "c9e65f1d-3143-4403-a859-01cdf7fa1788",
+  "ObjectType": "User"
+}

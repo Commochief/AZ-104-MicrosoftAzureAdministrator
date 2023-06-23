@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-sharedservices-test/providers/microsoft.authorization/roleassignments/8b6b78d4-346c-53a5-bd01-26cf08888ae6",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-sharedServices-test",
+  "DisplayName": "Deploy VMSS Agents mlz-rg-sharedServices-test",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "697ba800-9417-41c7-aaa3-3c87ac60e890",
+  "ObjectType": "ServicePrincipal"
+}

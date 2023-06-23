@@ -1,0 +1,27 @@
+{
+  "roleName": "Azure Kubernetes Service Policy Add-on Deployment",
+  "type": "BuiltInRole",
+  "description": "Deploy the Azure Policy add-on on Azure Kubernetes Service clusters",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/publicIPPrefixes/join/action",
+        "Microsoft.Network/publicIPAddresses/join/action",
+        "Microsoft.Compute/diskEncryptionSets/read",
+        "Microsoft.Compute/proximityPlacementGroups/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-02-10T04:00:07.4935059Z",
+  "updatedOn": "2022-03-18T23:11:35.0409707Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,24 @@
+{
+  "roleName": "Support Request Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you create and manage Support requests",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-07-10T23:34:34.7598087Z",
+  "updatedOn": "2020-06-22T20:23:31.9293302Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

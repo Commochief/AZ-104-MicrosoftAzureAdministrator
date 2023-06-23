@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/f5b490b4-4ce4-469b-9f14-32b600fd3959/providers/microsoft.authorization/roleassignments/34cd01d3-dc90-4f1f-8b6f-eb06645fddf6",
+  "Scope": "/subscriptions/f5b490b4-4ce4-469b-9f14-32b600fd3959",
+  "DisplayName": "Josh Binder",
+  "SignInName": "binder@mtnnet.us",
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "eca2108f-008a-4c38-bd13-5322f632954b",
+  "ObjectType": "User"
+}

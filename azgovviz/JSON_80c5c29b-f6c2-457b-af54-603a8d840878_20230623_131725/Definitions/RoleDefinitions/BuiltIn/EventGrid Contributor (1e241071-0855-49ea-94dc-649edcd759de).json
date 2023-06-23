@@ -1,0 +1,33 @@
+{
+  "roleName": "EventGrid Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage EventGrid operations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.EventGrid/*/write",
+        "Microsoft.EventGrid/*/delete",
+        "Microsoft.EventGrid/*/read",
+        "Microsoft.EventGrid/*/listkeys/action",
+        "Microsoft.EventGrid/*/regenerateKey/action",
+        "Microsoft.EventGrid/*/getFullUrl/action",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.EventGrid/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-02-08T22:13:02.8347007Z",
+  "updatedOn": "2021-02-11T22:13:24.7862898Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

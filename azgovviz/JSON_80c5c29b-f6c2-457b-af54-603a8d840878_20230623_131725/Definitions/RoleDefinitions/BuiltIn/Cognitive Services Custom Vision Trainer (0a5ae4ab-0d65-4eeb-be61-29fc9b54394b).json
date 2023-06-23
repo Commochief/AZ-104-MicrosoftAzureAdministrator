@@ -1,0 +1,27 @@
+{
+  "roleName": "Cognitive Services Custom Vision Trainer",
+  "type": "BuiltInRole",
+  "description": "View, edit projects and train the models, including the ability to publish, unpublish, export the models. Trainers can’t create or delete the project.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/*"
+      ],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/action",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/delete"
+      ]
+    }
+  ],
+  "createdOn": "2020-05-10T00:31:03.4119359Z",
+  "updatedOn": "2023-03-19T00:16:56.7009355Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

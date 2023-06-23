@@ -1,0 +1,29 @@
+{
+  "roleName": "DocumentDB Account Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage DocumentDB accounts, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.DocumentDb/databaseAccounts/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-06-22T20:23:16.672282Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

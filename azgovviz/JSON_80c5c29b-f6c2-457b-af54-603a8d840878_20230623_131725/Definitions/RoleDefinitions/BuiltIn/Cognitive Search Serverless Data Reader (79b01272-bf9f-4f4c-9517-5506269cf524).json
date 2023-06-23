@@ -1,0 +1,20 @@
+{
+  "roleName": "Cognitive Search Serverless Data Reader",
+  "type": "BuiltInRole",
+  "description": "Read Cognitive Search serverless index schema and documents. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-21T00:26:49.9583711Z",
+  "updatedOn": "2023-05-21T00:26:49.9583711Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,28 @@
+{
+  "roleName": "EventGrid Data Sender",
+  "type": "BuiltInRole",
+  "description": "Allows send access to event grid events.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.EventGrid/topics/read",
+        "Microsoft.EventGrid/domains/read",
+        "Microsoft.EventGrid/partnerNamespaces/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.EventGrid/events/send/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-06T01:10:16.7951874Z",
+  "updatedOn": "2021-07-22T01:13:38.1014288Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

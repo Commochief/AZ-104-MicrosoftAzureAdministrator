@@ -1,0 +1,32 @@
+{
+  "roleName": "Azure Connected Machine Resource Administrator",
+  "type": "BuiltInRole",
+  "description": "Can read, write, delete and re-onboard Azure Connected Machines.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridCompute/machines/read",
+        "Microsoft.HybridCompute/machines/write",
+        "Microsoft.HybridCompute/machines/delete",
+        "Microsoft.HybridCompute/machines/reconnect/action",
+        "Microsoft.HybridCompute/*/read",
+        "Microsoft.HybridCompute/machines/extensions/write",
+        "Microsoft.HybridCompute/privateLinkScopes/*",
+        "Microsoft.HybridCompute/machines/extensions/read",
+        "Microsoft.HybridCompute/machines/extensions/delete",
+        "Microsoft.HybridCompute/machines/UpgradeExtensions/action",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-10-24T01:17:02.958012Z",
+  "updatedOn": "2021-12-18T22:56:14.4452804Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

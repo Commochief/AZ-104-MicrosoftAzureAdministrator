@@ -1,0 +1,23 @@
+{
+  "roleName": "Storage File Data Privileged Reader",
+  "type": "BuiltInRole",
+  "description": "Customer has read access on Azure Storage file shares.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/fileServices/fileshares/files/read",
+        "Microsoft.Storage/storageAccounts/fileServices/readFileBackupSemantics/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-04-14T00:20:10.8523185Z",
+  "updatedOn": "2023-04-14T00:20:10.8523185Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

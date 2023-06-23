@@ -1,0 +1,25 @@
+{
+  "roleName": "Template Spec Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows full access to Template Spec operations at the assigned scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/templateSpecs/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-09-10T23:42:56.6061361Z",
+  "updatedOn": "2022-09-10T23:42:56.6061361Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,27 @@
+{
+  "roleName": "LocalRulestacksAdministrator role",
+  "type": "BuiltInRole",
+  "description": "Allows users to create, modify, describe, or delete Rulestacks.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-02-11T00:10:10.7763818Z",
+  "updatedOn": "2023-02-26T00:12:30.4565366Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

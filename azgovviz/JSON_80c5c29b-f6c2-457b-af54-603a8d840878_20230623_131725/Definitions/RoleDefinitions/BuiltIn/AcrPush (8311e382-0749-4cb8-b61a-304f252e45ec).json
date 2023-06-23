@@ -1,0 +1,23 @@
+{
+  "roleName": "AcrPush",
+  "type": "BuiltInRole",
+  "description": "acr push",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/pull/read",
+        "Microsoft.ContainerRegistry/registries/push/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:01.4058077Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

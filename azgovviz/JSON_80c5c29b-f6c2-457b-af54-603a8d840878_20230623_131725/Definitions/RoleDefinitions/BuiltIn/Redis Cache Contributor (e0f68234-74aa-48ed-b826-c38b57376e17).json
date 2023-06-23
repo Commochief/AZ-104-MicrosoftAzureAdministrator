@@ -1,0 +1,29 @@
+{
+  "roleName": "Redis Cache Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage Redis caches, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Cache/redis/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Cache/register/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-07-16T23:55:23.5248128Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

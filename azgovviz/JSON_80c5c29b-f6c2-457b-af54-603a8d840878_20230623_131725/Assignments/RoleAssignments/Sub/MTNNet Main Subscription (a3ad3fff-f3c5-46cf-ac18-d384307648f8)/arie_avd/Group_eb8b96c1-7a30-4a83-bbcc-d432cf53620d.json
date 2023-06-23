@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/arie_avd/providers/microsoft.authorization/roleassignments/eb8b96c1-7a30-4a83-bbcc-d432cf53620d",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/Arie_AVD",
+  "DisplayName": "sg-Arieavd-avd",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine User Login",
+  "RoleDefinitionId": "fb879df8-f326-4884-b1cf-06f3ad86be52",
+  "ObjectId": "34bc6cd5-e9fc-45c5-a575-06c2ee5c47c0",
+  "ObjectType": "Group"
+}

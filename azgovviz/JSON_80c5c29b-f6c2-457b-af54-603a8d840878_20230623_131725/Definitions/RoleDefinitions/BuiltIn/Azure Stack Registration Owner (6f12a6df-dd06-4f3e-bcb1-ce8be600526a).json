@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Stack Registration Owner",
+  "type": "BuiltInRole",
+  "description": "Lets you manage Azure Stack registrations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.AzureStack/registrations/products/*/action",
+        "Microsoft.AzureStack/registrations/products/read",
+        "Microsoft.AzureStack/registrations/read",
+        "Microsoft.AzureStack/edgeSubscriptions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-03-26T22:38:25.2891065Z",
+  "updatedOn": "2020-07-02T09:00:50.1750807Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

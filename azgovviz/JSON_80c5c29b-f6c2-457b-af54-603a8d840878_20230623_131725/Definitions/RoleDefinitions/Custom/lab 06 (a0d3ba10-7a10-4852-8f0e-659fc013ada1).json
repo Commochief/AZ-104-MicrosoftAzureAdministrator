@@ -1,0 +1,23 @@
+{
+  "roleName": "lab 06",
+  "type": "CustomRole",
+  "description": "Custom role needed to run commands on VM remotely during lab 06 in AZ-104 training",
+  "assignableScopes": [
+    "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/locations/runCommands/read",
+        "Microsoft.Compute/virtualMachines/runCommand/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-18T21:07:52.7198561Z",
+  "updatedOn": "2023-06-15T16:17:07.2634463Z",
+  "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "updatedBy": "a7e43673-b87a-41da-b8ba-cb60b2e7293a"
+}

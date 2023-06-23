@@ -1,0 +1,29 @@
+{
+  "roleName": "Desktop Virtualization User Session Operator",
+  "type": "BuiltInRole",
+  "description": "Operator of the Desktop Virtualization Uesr Session.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DesktopVirtualization/hostpools/read",
+        "Microsoft.DesktopVirtualization/hostpools/sessionhosts/read",
+        "Microsoft.DesktopVirtualization/hostpools/sessionhosts/usersessions/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-11T22:04:21.5860716Z",
+  "updatedOn": "2020-12-11T22:04:21.5860716Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

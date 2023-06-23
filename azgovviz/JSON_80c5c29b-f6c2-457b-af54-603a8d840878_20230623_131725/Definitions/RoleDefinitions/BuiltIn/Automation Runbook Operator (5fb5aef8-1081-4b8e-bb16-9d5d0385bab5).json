@@ -1,0 +1,27 @@
+{
+  "roleName": "Automation Runbook Operator",
+  "type": "BuiltInRole",
+  "description": "Read Runbook properties - to be able to create Jobs of the runbook.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Automation/automationAccounts/runbooks/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-06-30T01:30:41.4729996Z",
+  "updatedOn": "2020-06-22T20:23:05.0309966Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

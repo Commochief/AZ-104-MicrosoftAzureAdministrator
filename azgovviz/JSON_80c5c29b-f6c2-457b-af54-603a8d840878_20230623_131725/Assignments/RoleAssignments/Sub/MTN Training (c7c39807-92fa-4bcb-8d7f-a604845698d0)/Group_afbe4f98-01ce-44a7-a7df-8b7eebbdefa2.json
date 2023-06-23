@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/afbe4f98-01ce-44a7-a7df-8b7eebbdefa2",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "MTNNET-CSA-GA",
+  "SignInName": null,
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "993bf8b0-e346-4590-a908-280185d32f70",
+  "ObjectType": "Group"
+}

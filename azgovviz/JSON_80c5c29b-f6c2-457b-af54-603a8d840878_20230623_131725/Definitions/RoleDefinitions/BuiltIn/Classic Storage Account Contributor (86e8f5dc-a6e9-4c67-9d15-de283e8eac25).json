@@ -1,0 +1,28 @@
+{
+  "roleName": "Classic Storage Account Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage classic storage accounts, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ClassicStorage/storageAccounts/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2016-10-18T01:45:07.3647647Z",
+  "createdBy": null,
+  "updatedBy": null
+}

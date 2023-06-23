@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/90cb2a1b-a501-4d56-a268-171e49b4ffe9",
+  "Scope": "/",
+  "DisplayName": "Joshua Staley (SOCOM CSA)",
+  "SignInName": "josh@mtnnet.us",
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "a7e43673-b87a-41da-b8ba-cb60b2e7293a",
+  "ObjectType": "User"
+}

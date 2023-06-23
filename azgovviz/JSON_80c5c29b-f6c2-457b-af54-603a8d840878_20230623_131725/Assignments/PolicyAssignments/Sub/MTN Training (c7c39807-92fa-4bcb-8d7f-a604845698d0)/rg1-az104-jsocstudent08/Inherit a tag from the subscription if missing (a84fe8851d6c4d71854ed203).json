@@ -1,0 +1,41 @@
+{
+  "identity": {
+    "principalId": "353dd9e5-48da-43dd-8ca2-3c2814af0a14",
+    "tenantId": "80c5c29b-f6c2-457b-af54-603a8d840878",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Inherit a tag from the subscription if missing",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/40df99da-1232-49b1-a39a-6da8d878f469",
+    "scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent08",
+    "notScopes": [],
+    "parameters": {
+      "tagName": {
+        "value": "Role"
+      }
+    },
+    "description": "Inherit the Role tag and its Infra value from the resource group containing the Cloud Shell storage account if missing",
+    "metadata": {
+      "assignedBy": "JSOC Student8",
+      "parameterScopes": {},
+      "createdBy": "2c56448d-b9ea-4f0a-8d8d-2b556db98730",
+      "createdOn": "2023-04-17T17:48:48.7090723Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": []
+  },
+  "id": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent08/providers/Microsoft.Authorization/policyAssignments/a84fe8851d6c4d71854ed203",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "a84fe8851d6c4d71854ed203",
+  "location": "usgovvirginia",
+  "systemData": {
+    "createdBy": "jsoc.student8@mtnnet.us",
+    "createdByType": "User",
+    "createdAt": "2023-04-17T17:48:47.9305379Z",
+    "lastModifiedBy": "jsoc.student8@mtnnet.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2023-04-17T17:48:47.9305379Z"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure VM Managed identities restore Contributor",
+  "type": "BuiltInRole",
+  "description": "Azure VM Managed identities restore Contributors are allowed to perform Azure VM Restores with managed identities both user and system",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-09-17T01:22:50.4991065Z",
+  "updatedOn": "2021-09-17T01:22:50.4991065Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

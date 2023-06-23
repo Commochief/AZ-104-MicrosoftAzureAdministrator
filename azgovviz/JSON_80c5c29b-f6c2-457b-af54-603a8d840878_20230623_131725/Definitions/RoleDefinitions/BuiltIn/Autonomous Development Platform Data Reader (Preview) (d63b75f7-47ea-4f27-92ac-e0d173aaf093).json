@@ -1,0 +1,23 @@
+{
+  "roleName": "Autonomous Development Platform Data Reader (Preview)",
+  "type": "BuiltInRole",
+  "description": "Grants read access to Autonomous Development Platform data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-15T22:05:01.2540526Z",
+  "updatedOn": "2020-12-15T22:05:01.2540526Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

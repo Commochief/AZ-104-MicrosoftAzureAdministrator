@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure Kubernetes Fleet Manager Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Grants access to read and write Azure Kubernetes Fleet Manager clusters",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.ContainerService/fleets/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-08-25T23:39:14.9384926Z",
+  "updatedOn": "2023-04-08T00:19:21.9486966Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

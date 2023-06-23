@@ -1,0 +1,31 @@
+{
+  "roleName": "API Management Service Workspace API Product Manager",
+  "type": "BuiltInRole",
+  "description": "Has the same access as API Management Service Workspace API Developer as well as read access to users and write access to allow assigning users to groups. This role should be assigned on the service scope.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiManagement/service/users/read",
+        "Microsoft.ApiManagement/service/tags/read",
+        "Microsoft.ApiManagement/service/tags/apiLinks/*",
+        "Microsoft.ApiManagement/service/tags/operationLinks/*",
+        "Microsoft.ApiManagement/service/tags/productLinks/*",
+        "Microsoft.ApiManagement/service/products/read",
+        "Microsoft.ApiManagement/service/products/apiLinks/*",
+        "Microsoft.ApiManagement/service/groups/users/*",
+        "Microsoft.ApiManagement/service/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-27T00:17:53.9556349Z",
+  "updatedOn": "2023-03-27T00:17:53.9556349Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

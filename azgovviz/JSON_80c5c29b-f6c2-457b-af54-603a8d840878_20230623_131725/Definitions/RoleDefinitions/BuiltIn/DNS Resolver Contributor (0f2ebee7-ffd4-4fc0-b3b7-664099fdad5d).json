@@ -1,0 +1,36 @@
+{
+  "roleName": "DNS Resolver Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage DNS resolver resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/joinLoadBalancer/action",
+        "Microsoft.Network/virtualNetworks/subnets/joinLoadBalancer/action",
+        "Microsoft.Network/natGateways/join/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/routeTables/join/action",
+        "Microsoft.Network/serviceEndpointPolicies/join/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-02-20T23:07:16.8060874Z",
+  "updatedOn": "2022-03-14T23:10:54.467851Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

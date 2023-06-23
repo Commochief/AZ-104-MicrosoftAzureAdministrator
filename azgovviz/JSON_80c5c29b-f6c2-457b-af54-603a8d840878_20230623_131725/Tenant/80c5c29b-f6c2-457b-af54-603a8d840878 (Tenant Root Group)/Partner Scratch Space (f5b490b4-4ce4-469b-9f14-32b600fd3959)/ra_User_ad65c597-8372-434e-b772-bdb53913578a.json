@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/f5b490b4-4ce4-469b-9f14-32b600fd3959/providers/microsoft.authorization/roleassignments/ad65c597-8372-434e-b772-bdb53913578a",
+  "Scope": "/subscriptions/f5b490b4-4ce4-469b-9f14-32b600fd3959",
+  "DisplayName": "Steve St. Jean (SOCOM CSA)",
+  "SignInName": "ssj@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "23044ded-ba7b-48da-a339-29993dd6f759",
+  "ObjectType": "User"
+}

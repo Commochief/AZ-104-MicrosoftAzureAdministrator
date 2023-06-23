@@ -1,0 +1,20 @@
+{
+  "roleName": "Bayer Ag Powered Services Imagery Solution",
+  "type": "BuiltInRole",
+  "description": "Provide access to Imagery Solution by Bayer Ag Powered Services",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-23T00:07:14.2788075Z",
+  "updatedOn": "2023-01-30T00:08:19.3590066Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

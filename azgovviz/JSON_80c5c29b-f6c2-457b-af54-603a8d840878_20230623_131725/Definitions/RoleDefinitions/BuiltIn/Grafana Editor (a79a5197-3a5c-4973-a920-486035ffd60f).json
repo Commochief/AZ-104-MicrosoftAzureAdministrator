@@ -1,0 +1,22 @@
+{
+  "roleName": "Grafana Editor",
+  "type": "BuiltInRole",
+  "description": "Built-in Grafana Editor role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Dashboard/grafana/ActAsGrafanaEditor/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-09T01:16:59.4803256Z",
+  "updatedOn": "2022-11-03T23:53:34.3337145Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "lab 8 - custom",
+  "type": "CustomRole",
+  "description": "",
+  "assignableScopes": [
+    "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/locations/runCommands/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-12-06T19:16:01.54147Z",
+  "updatedOn": "2022-12-06T19:16:01.54147Z",
+  "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "updatedBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7"
+}

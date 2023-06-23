@@ -1,0 +1,27 @@
+{
+  "roleName": "Experimentation Administrator",
+  "type": "BuiltInRole",
+  "description": "Experimentation Administrator",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Experimentation/experimentWorkspaces/managementGroups/read",
+        "Microsoft.Experimentation/experimentWorkspaces/managementGroups/write",
+        "Microsoft.Experimentation/experimentWorkspaces/managementGroups/delete",
+        "Microsoft.Experimentation/experimentWorkspaces/managementGroups/admin/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-12-19T07:25:27.3764021Z",
+  "updatedOn": "2020-06-22T20:23:17.2191815Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

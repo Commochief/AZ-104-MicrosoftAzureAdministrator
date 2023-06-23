@@ -1,0 +1,23 @@
+{
+  "roleName": "FHIR Data Reader",
+  "type": "BuiltInRole",
+  "description": "Role allows user or principal to read FHIR Data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/services/fhir/resources/read",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-18T12:08:19.3368043Z",
+  "updatedOn": "2021-07-12T01:11:40.1879071Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

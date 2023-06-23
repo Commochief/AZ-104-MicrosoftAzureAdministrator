@@ -1,0 +1,26 @@
+{
+  "roleName": "Blueprint Operator",
+  "type": "BuiltInRole",
+  "description": "Can assign existing published blueprints, but cannot create new blueprints. NOTE: this only works if the assignment is done with a user-assigned managed identity.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Blueprint/blueprintAssignments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-15T06:07:09.3478317Z",
+  "updatedOn": "2019-08-17T21:27:48.2895773Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

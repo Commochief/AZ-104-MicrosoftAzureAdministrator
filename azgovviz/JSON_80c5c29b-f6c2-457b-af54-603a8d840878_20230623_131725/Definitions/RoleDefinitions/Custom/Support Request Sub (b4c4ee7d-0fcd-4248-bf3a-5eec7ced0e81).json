@@ -1,0 +1,23 @@
+{
+  "roleName": "Support Request Sub",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-11-28T16:09:24.8827815Z",
+  "updatedOn": "2023-06-15T16:18:57.7745895Z",
+  "createdBy": "9b8c94a0-454c-460c-8dea-1a35d948a1f8",
+  "updatedBy": "a7e43673-b87a-41da-b8ba-cb60b2e7293a"
+}

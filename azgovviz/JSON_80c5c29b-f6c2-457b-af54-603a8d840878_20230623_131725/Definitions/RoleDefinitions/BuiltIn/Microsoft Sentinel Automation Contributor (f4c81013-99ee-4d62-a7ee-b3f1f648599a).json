@@ -1,0 +1,28 @@
+{
+  "roleName": "Microsoft Sentinel Automation Contributor",
+  "type": "BuiltInRole",
+  "description": "Microsoft Sentinel Automation Contributor",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Logic/workflows/triggers/read",
+        "Microsoft.Logic/workflows/triggers/listCallbackUrl/action",
+        "Microsoft.Logic/workflows/runs/read",
+        "Microsoft.Web/sites/hostruntime/webhooks/api/workflows/triggers/read",
+        "Microsoft.Web/sites/hostruntime/webhooks/api/workflows/triggers/listCallbackUrl/action",
+        "Microsoft.Web/sites/hostruntime/webhooks/api/workflows/runs/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-01-24T22:11:18.3361267Z",
+  "updatedOn": "2022-01-29T23:03:35.7347126Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

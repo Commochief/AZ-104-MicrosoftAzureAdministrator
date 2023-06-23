@@ -1,0 +1,232 @@
+{
+  "displayName": "Deploy Diagnostic Settings for Public IPs to a Log Analytics workspace",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Deploys the diagnostic settings for Public IPs to stream to a regional Log Analytics workspace when any Public IP which is missing this diagnostic settings is created or updated.",
+  "metadata": {
+    "category": "Monitoring",
+    "createdBy": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+    "createdOn": "2023-01-11T15:11:17.7776136Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable or disable the execution of the policy",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "AuditIfNotExists",
+        "DeployIfNotExists",
+        "Disabled"
+      ],
+      "defaultValue": "DeployIfNotExists"
+    },
+    "eventHubAuthorizationRuleId": {
+      "type": "String",
+      "metadata": {
+        "assignPermissions": true,
+        "description": "The Event Hub authorization rule Id for Azure Diagnostics. The authorization rule needs to be at Event Hub namespace level. e.g. /subscriptions/{subscription Id}/resourceGroups/{resource group}/providers/Microsoft.EventHub/namespaces/{Event Hub namespace}/authorizationrules/{authorization rule}",
+        "displayName": "Event Hub Authorization Rule Id"
+      }
+    },
+    "eventHubName": {
+      "type": "String",
+      "metadata": {
+        "assignPermissions": true,
+        "description": "The EventHub name to stream activity logs to",
+        "displayName": "EventHub name"
+      }
+    },
+    "logsEnabled": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable Logs - True or False",
+        "displayName": "Enable Logs"
+      },
+      "allowedValues": [
+        "True",
+        "False"
+      ],
+      "defaultValue": "True"
+    },
+    "metricsEnabled": {
+      "type": "String",
+      "metadata": {
+        "description": "Enable Metrics - True or False",
+        "displayName": "Enable Metrics"
+      },
+      "allowedValues": [
+        "True",
+        "False"
+      ],
+      "defaultValue": "True"
+    },
+    "profileName": {
+      "type": "String",
+      "metadata": {
+        "description": "The diagnostic settings profile name",
+        "displayName": "Profile name"
+      },
+      "defaultValue": "setbypolicy_Diagnostics"
+    },
+    "storageAccountId": {
+      "type": "String",
+      "metadata": {
+        "assignPermissions": true,
+        "description": "The Storage Account Resource Id to send activity logs",
+        "displayName": "Storage Account Id"
+      }
+    },
+    "workspaceId": {
+      "type": "String",
+      "metadata": {
+        "assignPermissions": true,
+        "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant 'Log Analytics Contributor' permissions (or similar) to the policy assignment's principal ID.",
+        "displayName": "Log Analytics workspace Id"
+      }
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.Network/publicIPAddresses",
+          "field": "type"
+        }
+      ]
+    },
+    "then": {
+      "details": {
+        "deployment": {
+          "properties": {
+            "mode": "incremental",
+            "parameters": {
+              "eventHubAuthorizationRuleId": {
+                "Value": "[parameters('eventHubAuthorizationRuleId')]"
+              },
+              "eventHubName": {
+                "Value": "[parameters('eventHubName')]"
+              },
+              "logsEnabled": {
+                "value": "[parameters('logsEnabled')]"
+              },
+              "metricsEnabled": {
+                "value": "[parameters('metricsEnabled')]"
+              },
+              "profileName": {
+                "value": "[parameters('profileName')]"
+              },
+              "resourceName": {
+                "value": "[field('name')]"
+              },
+              "storageAccountId": {
+                "Value": "[parameters('storageAccountId')]"
+              },
+              "workspaceId": {
+                "value": "[parameters('workspaceId')]"
+              }
+            },
+            "template": {
+              "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+              "contentVersion": "1.0.0.0",
+              "outputs": {
+                "policy": {
+                  "type": "String",
+                  "value": "[concat(parameters('eventHubName'), 'configured for diagnostic logs for ', ': ', parameters('resourceName'))]"
+                }
+              },
+              "parameters": {
+                "eventHubAuthorizationRuleId": {
+                  "type": "String"
+                },
+                "eventHubName": {
+                  "type": "String"
+                },
+                "logsEnabled": {
+                  "type": "String"
+                },
+                "metricsEnabled": {
+                  "type": "String"
+                },
+                "profileName": {
+                  "type": "String"
+                },
+                "resourceName": {
+                  "type": "String"
+                },
+                "storageAccountId": {
+                  "type": "String"
+                },
+                "workspaceId": {
+                  "type": "String"
+                }
+              },
+              "resources": [
+                {
+                  "apiVersion": "2017-05-01-preview",
+                  "dependsOn": [],
+                  "location": "uksouth",
+                  "name": "[concat(parameters('resourceName'), '/', 'Microsoft.Insights/', parameters('profileName'))]",
+                  "properties": {
+                    "eventHubAuthorizationRuleId": "[parameters('eventHubAuthorizationRuleId')]",
+                    "eventHubName": "[parameters('eventHubName')]",
+                    "logs": [
+                      {
+                        "category": "DDoSProtectionNotifications",
+                        "enabled": "[parameters('logsEnabled')]"
+                      },
+                      {
+                        "category": "DDoSMitigationFlowLogs",
+                        "enabled": "[parameters('logsEnabled')]"
+                      },
+                      {
+                        "category": "DDoSMitigationReports",
+                        "enabled": "[parameters('logsEnabled')]"
+                      }
+                    ],
+                    "metrics": [
+                      {
+                        "category": "AllMetrics",
+                        "enabled": "[parameters('metricsEnabled')]",
+                        "timeGrain": null
+                      }
+                    ],
+                    "storageAccountId": "[parameters('storageAccountId')]",
+                    "workspaceId": "[parameters('workspaceId')]"
+                  },
+                  "type": "Microsoft.Network/publicIPAddresses/providers/diagnosticSettings"
+                }
+              ],
+              "variables": {}
+            }
+          }
+        },
+        "existenceCondition": {
+          "allOf": [
+            {
+              "equals": "[parameters('logsEnabled')]",
+              "field": "Microsoft.Insights/diagnosticSettings/logs.enabled"
+            },
+            {
+              "equals": "[parameters('metricsEnabled')]",
+              "field": "Microsoft.Insights/diagnosticSettings/metrics.enabled"
+            },
+            {
+              "field": "Microsoft.Insights/diagnosticSettings/eventHubName",
+              "matchInsensitively": "[parameters('eventHubName')]"
+            }
+          ]
+        },
+        "name": "[parameters('profileName')]",
+        "roleDefinitionIds": [
+          "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+        ],
+        "type": "Microsoft.Insights/diagnosticSettings"
+      },
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

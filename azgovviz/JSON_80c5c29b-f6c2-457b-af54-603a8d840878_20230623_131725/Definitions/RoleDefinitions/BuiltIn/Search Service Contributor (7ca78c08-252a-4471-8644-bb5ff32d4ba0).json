@@ -1,0 +1,28 @@
+{
+  "roleName": "Search Service Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage Search services, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Search/searchServices/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-06-22T20:23:28.0274635Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

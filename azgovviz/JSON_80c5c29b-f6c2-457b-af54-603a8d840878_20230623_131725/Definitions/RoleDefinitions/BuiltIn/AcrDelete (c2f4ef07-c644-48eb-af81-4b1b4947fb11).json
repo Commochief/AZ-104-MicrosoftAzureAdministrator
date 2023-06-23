@@ -1,0 +1,22 @@
+{
+  "roleName": "AcrDelete",
+  "type": "BuiltInRole",
+  "description": "acr delete",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerRegistry/registries/artifacts/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:01.6871083Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

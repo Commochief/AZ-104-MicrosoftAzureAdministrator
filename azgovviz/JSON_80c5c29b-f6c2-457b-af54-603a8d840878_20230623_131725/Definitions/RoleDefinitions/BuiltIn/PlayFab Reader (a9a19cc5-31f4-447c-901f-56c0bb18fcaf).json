@@ -1,0 +1,23 @@
+{
+  "roleName": "PlayFab Reader",
+  "type": "BuiltInRole",
+  "description": "Provides read access to PlayFab resources",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.500692Z",
+  "updatedOn": "2021-11-18T22:51:31.500692Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

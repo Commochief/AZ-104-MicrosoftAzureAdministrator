@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Relay Sender",
+  "type": "BuiltInRole",
+  "description": "Allows for send access to Azure Relay resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Relay/*/wcfRelays/read",
+        "Microsoft.Relay/*/hybridConnections/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Relay/*/send/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-24T01:13:51.1971265Z",
+  "updatedOn": "2021-08-04T01:16:09.213647Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

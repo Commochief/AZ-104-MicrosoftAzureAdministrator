@@ -1,0 +1,29 @@
+{
+  "roleName": "Data Lake Analytics Developer",
+  "type": "BuiltInRole",
+  "description": "Lets you submit, monitor, and manage your own jobs but not create or delete Data Lake Analytics accounts.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.BigAnalytics/accounts/*",
+        "Microsoft.DataLakeAnalytics/accounts/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2015-10-20T00:33:29.3115234Z",
+  "updatedOn": "2023-03-17T00:16:26.7345526Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

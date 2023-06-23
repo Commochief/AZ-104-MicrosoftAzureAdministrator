@@ -1,0 +1,20 @@
+{
+  "roleName": "Azure Digital Twins Data Owner",
+  "type": "BuiltInRole",
+  "description": "Full access role for Digital Twins data-plane",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-11T01:11:28.1131691Z",
+  "updatedOn": "2020-10-22T21:56:17.6717587Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

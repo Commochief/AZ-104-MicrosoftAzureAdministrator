@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/964c406a-1019-48d1-a927-9461123de233/providers/microsoft.authorization/roleassignments/b0a91d8c-1a78-4fe7-8a43-ad29722e9e2e",
+  "Scope": "/subscriptions/964c406a-1019-48d1-a927-9461123de233",
+  "DisplayName": "Joshua Staley (SOCOM CSA)",
+  "SignInName": "josh@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "a7e43673-b87a-41da-b8ba-cb60b2e7293a",
+  "ObjectType": "User"
+}

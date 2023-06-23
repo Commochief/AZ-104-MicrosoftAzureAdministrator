@@ -1,0 +1,24 @@
+{
+  "roleName": "Workbook Reader",
+  "type": "BuiltInRole",
+  "description": "Can read workbooks.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "microsoft.insights/workbooks/read",
+        "microsoft.insights/workbooktemplates/read",
+        "microsoft.insights/workbooks/revisions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-29T05:04:05.6658364Z",
+  "updatedOn": "2022-12-16T00:00:54.267967Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

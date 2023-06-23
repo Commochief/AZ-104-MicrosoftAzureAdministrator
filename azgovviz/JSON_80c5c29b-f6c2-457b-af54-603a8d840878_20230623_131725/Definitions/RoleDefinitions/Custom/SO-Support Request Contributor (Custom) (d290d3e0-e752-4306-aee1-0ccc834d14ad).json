@@ -1,0 +1,23 @@
+{
+  "roleName": "SO-Support Request Contributor (Custom)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:41:07.1072697Z",
+  "updatedOn": "2022-10-03T15:41:07.1072697Z",
+  "createdBy": "85b25195-2e09-42b9-99fe-00d8ef3cc254",
+  "updatedBy": "85b25195-2e09-42b9-99fe-00d8ef3cc254"
+}

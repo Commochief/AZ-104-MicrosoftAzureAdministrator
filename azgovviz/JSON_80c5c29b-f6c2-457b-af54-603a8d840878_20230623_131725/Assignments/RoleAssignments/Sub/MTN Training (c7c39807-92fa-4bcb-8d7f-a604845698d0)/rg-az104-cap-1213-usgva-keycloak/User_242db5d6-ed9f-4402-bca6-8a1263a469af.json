@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourcegroups/rg-az104-cap-1213-usgva-keycloak/providers/microsoft.authorization/roleassignments/242db5d6-ed9f-4402-bca6-8a1263a469af",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg-az104-cap-1213-usgva-keycloak",
+  "DisplayName": "JSOC Student 12",
+  "SignInName": "jsoc.student12@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "bd86e604-66e1-4d58-b0a6-2050261aadc9",
+  "ObjectType": "User"
+}

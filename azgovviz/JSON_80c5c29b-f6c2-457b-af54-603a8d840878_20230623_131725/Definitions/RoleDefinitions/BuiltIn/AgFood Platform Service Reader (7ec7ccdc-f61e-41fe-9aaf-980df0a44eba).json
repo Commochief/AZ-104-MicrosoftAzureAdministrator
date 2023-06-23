@@ -1,0 +1,20 @@
+{
+  "roleName": "AgFood Platform Service Reader",
+  "type": "BuiltInRole",
+  "description": "Provides read access to AgFood Platform Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-09-14T21:50:12.7818221Z",
+  "updatedOn": "2020-09-14T21:50:12.7818221Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

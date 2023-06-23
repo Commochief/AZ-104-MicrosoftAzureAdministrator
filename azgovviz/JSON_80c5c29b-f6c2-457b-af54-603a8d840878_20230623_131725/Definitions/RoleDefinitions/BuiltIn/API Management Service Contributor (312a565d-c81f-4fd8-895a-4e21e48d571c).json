@@ -1,0 +1,28 @@
+{
+  "roleName": "API Management Service Contributor",
+  "type": "BuiltInRole",
+  "description": "Can manage service and the APIs",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ApiManagement/service/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-06-22T20:23:02.3902631Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

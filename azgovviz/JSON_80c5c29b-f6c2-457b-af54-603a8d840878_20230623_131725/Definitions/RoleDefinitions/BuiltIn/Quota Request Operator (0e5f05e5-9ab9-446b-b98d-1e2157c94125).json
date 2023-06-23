@@ -1,0 +1,30 @@
+{
+  "roleName": "Quota Request Operator",
+  "type": "BuiltInRole",
+  "description": "Read and create quota requests, get quota request status, and create support tickets.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimits/read",
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimits/write",
+        "Microsoft.Capacity/resourceProviders/locations/serviceLimitsRequests/read",
+        "Microsoft.Capacity/register/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-02-03T22:12:25.6912017Z",
+  "updatedOn": "2021-03-22T22:21:15.3479341Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

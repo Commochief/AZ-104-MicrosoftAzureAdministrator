@@ -1,0 +1,23 @@
+{
+  "roleName": "ZL-Support Request Contributor (Custom)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:39:32.0642488Z",
+  "updatedOn": "2022-10-03T15:39:32.0642488Z",
+  "createdBy": "19037f38-d5b8-4039-9905-8f59db675f65",
+  "updatedBy": "19037f38-d5b8-4039-9905-8f59db675f65"
+}

@@ -1,0 +1,45 @@
+{
+  "roleName": "Microsoft Sentinel Reader",
+  "type": "BuiltInRole",
+  "description": "Microsoft Sentinel Reader",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SecurityInsights/*/read",
+        "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.OperationalInsights/workspaces/savedSearches/read",
+        "Microsoft.OperationsManagement/solutions/read",
+        "Microsoft.OperationalInsights/workspaces/query/read",
+        "Microsoft.OperationalInsights/workspaces/query/*/read",
+        "Microsoft.OperationalInsights/workspaces/dataSources/read",
+        "Microsoft.Insights/workbooks/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.OperationalInsights/workspaces/*/read",
+        "Microsoft.OperationalInsights/workspaces/LinkedServices/read",
+        "Microsoft.SecurityInsights/dataConnectorsCheckRequirements/action",
+        "Microsoft.SecurityInsights/threatIntelligence/indicators/query/action",
+        "Microsoft.SecurityInsights/threatIntelligence/queryIndicators/action",
+        "Microsoft.Insights/myworkbooks/read",
+        "Microsoft.OperationalInsights/querypacks/*/read",
+        "Microsoft.Resources/templateSpecs/*/read"
+      ],
+      "notActions": [
+        "Microsoft.SecurityInsights/ConfidentialWatchlists/*"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-29T05:04:05.5564588Z",
+  "updatedOn": "2023-03-19T00:16:51.9463036Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/964c406a-1019-48d1-a927-9461123de233/providers/microsoft.authorization/roleassignments/b1fcc450-3e97-480d-a22b-36418e8167f2",
+  "Scope": "/subscriptions/964c406a-1019-48d1-a927-9461123de233",
+  "DisplayName": "MTNNet-Demo-Contributor",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "fb63774a-228b-4696-bce1-a4b90e3bbc8d",
+  "ObjectType": "Group"
+}

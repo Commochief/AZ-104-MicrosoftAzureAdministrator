@@ -1,0 +1,35 @@
+{
+  "identity": {
+    "principalId": "fef4fe17-e181-45fb-98b7-f8c8ef2dc74c",
+    "tenantId": "80c5c29b-f6c2-457b-af54-603a8d840878",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
+    "scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-hub-test",
+    "parameters": {
+      "logAnalytics_1": {
+        "value": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-operations-test/providers/Microsoft.OperationalInsights/workspaces/mlz-log-operations-test"
+      }
+    },
+    "metadata": {
+      "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+      "createdOn": "2022-08-12T15:47:52.3378501Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default"
+  },
+  "id": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-hub-test/providers/Microsoft.Authorization/policyAssignments/Deploy VMSS Agents mlz-rg-hub-test",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "Deploy VMSS Agents mlz-rg-hub-test",
+  "location": "usgovvirginia",
+  "systemData": {
+    "createdBy": "joe@austinx.onmicrosoft.us",
+    "createdByType": "User",
+    "createdAt": "2022-08-12T15:47:51.445482Z",
+    "lastModifiedBy": "joe@austinx.onmicrosoft.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2022-08-12T15:47:51.445482Z"
+  }
+}

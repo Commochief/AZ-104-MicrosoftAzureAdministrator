@@ -1,0 +1,47 @@
+{
+  "displayName": "Network interfaces should not have public IPs",
+  "policyType": "Custom",
+  "mode": "All",
+  "description": "Deny Nic Public Ip",
+  "metadata": {
+    "category": "Network",
+    "createdBy": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+    "createdOn": "2023-01-11T15:09:46.8804455Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "The effect determines what happens when the policy rule is evaluated to match",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.Network/networkInterfaces",
+          "field": "type"
+        },
+        {
+          "not": {
+            "field": "Microsoft.Network/networkInterfaces/ipconfigurations[*].publicIpAddress.id",
+            "notLike": "*"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

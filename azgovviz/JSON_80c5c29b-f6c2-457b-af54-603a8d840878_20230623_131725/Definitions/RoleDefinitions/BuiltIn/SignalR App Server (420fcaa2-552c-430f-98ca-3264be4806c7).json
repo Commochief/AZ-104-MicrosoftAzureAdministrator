@@ -1,0 +1,26 @@
+{
+  "roleName": "SignalR App Server",
+  "type": "BuiltInRole",
+  "description": "Lets your app server access SignalR Service with AAD auth options.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.SignalRService/SignalR/service/accessKey/action",
+        "Microsoft.SignalRService/SignalR/serverConnection/action",
+        "Microsoft.SignalRService/SignalR/auth/accessKey/action",
+        "Microsoft.SignalRService/SignalR/serverConnection/write",
+        "Microsoft.SignalRService/SignalR/clientConnection/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-07-29T10:09:24.0985504Z",
+  "updatedOn": "2021-11-19T22:51:40.9411334Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

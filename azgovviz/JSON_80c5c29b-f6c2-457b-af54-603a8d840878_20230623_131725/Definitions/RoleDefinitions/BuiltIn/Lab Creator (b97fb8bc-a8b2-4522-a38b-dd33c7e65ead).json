@@ -1,0 +1,29 @@
+{
+  "roleName": "Lab Creator",
+  "type": "BuiltInRole",
+  "description": "Lets you create new labs under your Azure Lab Accounts.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.LabServices/labAccounts/*/read",
+        "Microsoft.LabServices/labAccounts/createLab/action",
+        "Microsoft.LabServices/labAccounts/sizes/getRegionalAvailability/action",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2021-11-18T22:51:31.1506867Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

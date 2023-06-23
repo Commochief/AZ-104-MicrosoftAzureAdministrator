@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/80c5c29b-f6c2-457b-af54-603a8d840878/providers/microsoft.authorization/roleassignments/6d83b69d-ac54-44f9-b4df-792bfcec305e",
+  "Scope": "/providers/Microsoft.Management/managementGroups/80c5c29b-f6c2-457b-af54-603a8d840878",
+  "DisplayName": "Joe Scanlan (CSA)",
+  "SignInName": "joe@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "ObjectType": "User"
+}

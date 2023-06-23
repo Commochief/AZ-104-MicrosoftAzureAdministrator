@@ -1,0 +1,45 @@
+{
+  "roleName": "Avere Contributor",
+  "type": "BuiltInRole",
+  "description": "Can create and manage an Avere vFXT cluster.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Compute/*/read",
+        "Microsoft.Compute/availabilitySets/*",
+        "Microsoft.Compute/virtualMachines/*",
+        "Microsoft.Compute/disks/*",
+        "Microsoft.Network/*/read",
+        "Microsoft.Network/networkInterfaces/*",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/join/action",
+        "Microsoft.Network/virtualNetworks/subnets/joinViaServiceEndpoint/action",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Storage/*/read",
+        "Microsoft.Storage/storageAccounts/*",
+        "Microsoft.Support/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/resources/read",
+        "Microsoft.Compute/proximityPlacementGroups/*"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/delete",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/write"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:05.1872981Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

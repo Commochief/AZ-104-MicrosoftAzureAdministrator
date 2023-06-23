@@ -1,0 +1,40 @@
+{
+  "roleName": "Microsoft Sentinel Contributor",
+  "type": "BuiltInRole",
+  "description": "Microsoft Sentinel Contributor",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SecurityInsights/*",
+        "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+        "Microsoft.OperationalInsights/workspaces/read",
+        "Microsoft.OperationalInsights/workspaces/savedSearches/*",
+        "Microsoft.OperationsManagement/solutions/read",
+        "Microsoft.OperationalInsights/workspaces/query/read",
+        "Microsoft.OperationalInsights/workspaces/query/*/read",
+        "Microsoft.OperationalInsights/workspaces/dataSources/read",
+        "Microsoft.Insights/workbooks/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.OperationalInsights/workspaces/*/read",
+        "Microsoft.Insights/myworkbooks/read",
+        "Microsoft.OperationalInsights/querypacks/*/read"
+      ],
+      "notActions": [
+        "Microsoft.SecurityInsights/ConfidentialWatchlists/*"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-29T05:04:05.2127289Z",
+  "updatedOn": "2023-03-19T00:16:52.8156716Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

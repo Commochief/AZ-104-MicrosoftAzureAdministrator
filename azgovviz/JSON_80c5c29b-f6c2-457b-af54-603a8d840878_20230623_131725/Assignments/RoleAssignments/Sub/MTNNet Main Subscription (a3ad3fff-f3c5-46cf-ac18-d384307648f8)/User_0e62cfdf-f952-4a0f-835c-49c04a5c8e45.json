@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/0e62cfdf-f952-4a0f-835c-49c04a5c8e45",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "Bobby Kasrai (DATA)",
+  "SignInName": "bobby@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "78329037-5fd1-4670-8a64-3dc662b3534e",
+  "ObjectType": "User"
+}

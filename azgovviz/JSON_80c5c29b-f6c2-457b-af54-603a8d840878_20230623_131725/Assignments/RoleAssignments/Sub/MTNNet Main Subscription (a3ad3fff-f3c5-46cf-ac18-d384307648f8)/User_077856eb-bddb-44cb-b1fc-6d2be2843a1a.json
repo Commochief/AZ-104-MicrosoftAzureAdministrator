@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/077856eb-bddb-44cb-b1fc-6d2be2843a1a",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "Pakorn Srikeow (SOCOM CSA)",
+  "SignInName": "pakorn@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "a1d0ebca-9f3c-46bf-b3f6-7d9aba750698",
+  "ObjectType": "User"
+}

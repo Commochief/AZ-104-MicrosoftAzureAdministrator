@@ -1,0 +1,30 @@
+{
+  "roleName": "Application Group Contributor",
+  "type": "BuiltInRole",
+  "description": "Contributor of the Application Group.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DesktopVirtualization/applicationgroups/*",
+        "Microsoft.DesktopVirtualization/hostpools/read",
+        "Microsoft.DesktopVirtualization/workspaces/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Support/*",
+        "Microsoft.DesktopVirtualization/hostpools/sessionhosts/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-04T22:03:09.8458263Z",
+  "updatedOn": "2020-12-05T22:03:11.8612078Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

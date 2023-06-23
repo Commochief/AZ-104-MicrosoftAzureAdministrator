@@ -1,0 +1,27 @@
+{
+  "roleName": "Azure Sphere Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows user read and write access to Azure Sphere resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/DiagnosticSettings/*",
+        "Microsoft.Insights/DiagnosticSettingsCategories/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-07T00:24:48.1432133Z",
+  "updatedOn": "2023-05-13T00:25:50.7514106Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,28 @@
+{
+  "roleName": "Billing Reader",
+  "type": "BuiltInRole",
+  "description": "Allows read access to billing data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Billing/*/read",
+        "Microsoft.Commerce/*/read",
+        "Microsoft.Consumption/*/read",
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.CostManagement/*/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:11.6095494Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

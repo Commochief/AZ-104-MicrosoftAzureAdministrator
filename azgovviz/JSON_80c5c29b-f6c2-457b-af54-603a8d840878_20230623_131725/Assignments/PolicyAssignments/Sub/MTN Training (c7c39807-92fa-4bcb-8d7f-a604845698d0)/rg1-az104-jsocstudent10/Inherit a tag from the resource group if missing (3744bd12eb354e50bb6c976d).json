@@ -1,0 +1,40 @@
+{
+  "identity": {
+    "principalId": "b55959ba-4272-482c-bf97-28b01346dbb1",
+    "tenantId": "80c5c29b-f6c2-457b-af54-603a8d840878",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Inherit a tag from the resource group if missing",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/ea3f2387-9b95-492a-a190-fcdc54f7b070",
+    "scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent10",
+    "notScopes": [],
+    "parameters": {
+      "tagName": {
+        "value": "Role"
+      }
+    },
+    "metadata": {
+      "assignedBy": "JSOC Student10",
+      "parameterScopes": {},
+      "createdBy": "ad00616b-c687-45b3-9043-45423f76a292",
+      "createdOn": "2023-04-17T17:44:28.0620629Z",
+      "updatedBy": null,
+      "updatedOn": null
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": []
+  },
+  "id": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent10/providers/Microsoft.Authorization/policyAssignments/3744bd12eb354e50bb6c976d",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "3744bd12eb354e50bb6c976d",
+  "location": "usgovvirginia",
+  "systemData": {
+    "createdBy": "jsoc.student10@mtnnet.us",
+    "createdByType": "User",
+    "createdAt": "2023-04-17T17:44:27.3894651Z",
+    "lastModifiedBy": "jsoc.student10@mtnnet.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2023-04-17T17:44:27.3894651Z"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/networkwatcherrg/providers/microsoft.authorization/roleassignments/7ab934c1-3b4f-4cc6-b460-cd02fc7a324e",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/NetworkWatcherRG",
+  "DisplayName": "az104dummy",
+  "SignInName": "az104dummy@mtnnet.us",
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "f735d030-fd54-4317-bf51-1c0764253ed1",
+  "ObjectType": "User"
+}

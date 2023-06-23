@@ -1,0 +1,28 @@
+{
+  "roleName": "Desktop Virtualization Workspace Reader",
+  "type": "BuiltInRole",
+  "description": "Reader of the Desktop Virtualization Workspace.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DesktopVirtualization/workspaces/read",
+        "Microsoft.DesktopVirtualization/applicationgroups/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/read",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-11T22:04:22.4764978Z",
+  "updatedOn": "2020-12-11T22:04:22.4764978Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

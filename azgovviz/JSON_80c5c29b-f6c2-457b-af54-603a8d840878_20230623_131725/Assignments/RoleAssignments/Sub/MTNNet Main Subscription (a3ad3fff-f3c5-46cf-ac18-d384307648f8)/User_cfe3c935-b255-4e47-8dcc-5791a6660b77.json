@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/cfe3c935-b255-4e47-8dcc-5791a6660b77",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "az104testuser",
+  "SignInName": "az104testuser@mtnnet.us",
+  "RoleDefinitionName": "lab 8 - custom",
+  "RoleDefinitionId": "efd915f9-43c7-4286-acab-f5e96f2605a5",
+  "ObjectId": "efabe199-e2c3-44a6-aef7-5b64af30365b",
+  "ObjectType": "User"
+}

@@ -1,0 +1,24 @@
+{
+  "roleName": "Services Hub Operator",
+  "type": "BuiltInRole",
+  "description": "Services Hub Operator allows you to perform all read, write, and deletion operations related to Services Hub Connectors.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-07-20T20:50:02.5800009Z",
+  "updatedOn": "2020-10-06T21:53:59.533135Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

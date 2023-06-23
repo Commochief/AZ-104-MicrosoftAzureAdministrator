@@ -1,0 +1,28 @@
+{
+  "roleName": "Workbook Contributor",
+  "type": "BuiltInRole",
+  "description": "Can save shared workbooks.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Insights/workbooks/write",
+        "Microsoft.Insights/workbooks/delete",
+        "Microsoft.Insights/workbooks/read",
+        "Microsoft.Insights/workbooktemplates/write",
+        "Microsoft.Insights/workbooktemplates/delete",
+        "Microsoft.Insights/workbooktemplates/read",
+        "Microsoft.Insights/workbooks/revisions/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-29T05:04:05.7908652Z",
+  "updatedOn": "2022-12-16T00:00:54.2367112Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

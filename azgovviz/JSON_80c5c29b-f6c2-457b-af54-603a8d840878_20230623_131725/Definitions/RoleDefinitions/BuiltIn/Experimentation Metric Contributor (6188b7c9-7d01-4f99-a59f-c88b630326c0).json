@@ -1,0 +1,20 @@
+{
+  "roleName": "Experimentation Metric Contributor",
+  "type": "BuiltInRole",
+  "description": "Allows for creation, writes and reads to the metric set via the metrics service APIs.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-11-10T21:59:15.837138Z",
+  "updatedOn": "2021-03-05T22:17:10.1728993Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

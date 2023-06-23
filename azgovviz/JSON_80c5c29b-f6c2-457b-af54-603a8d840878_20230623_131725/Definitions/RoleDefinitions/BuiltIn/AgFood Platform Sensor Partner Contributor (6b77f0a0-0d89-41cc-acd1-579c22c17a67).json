@@ -1,0 +1,20 @@
+{
+  "roleName": "AgFood Platform Sensor Partner Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides contribute access to manage sensor related entities in AgFood Platform Service",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-03-12T23:10:17.8724937Z",
+  "updatedOn": "2022-03-12T23:10:17.8724937Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

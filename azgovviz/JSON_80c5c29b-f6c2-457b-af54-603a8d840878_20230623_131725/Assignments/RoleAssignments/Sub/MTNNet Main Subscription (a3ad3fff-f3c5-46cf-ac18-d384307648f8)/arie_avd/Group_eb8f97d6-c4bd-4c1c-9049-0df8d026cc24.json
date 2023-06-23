@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/arie_avd/providers/microsoft.authorization/roleassignments/eb8f97d6-c4bd-4c1c-9049-0df8d026cc24",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/Arie_AVD",
+  "DisplayName": "sg-Arieavd-avd",
+  "SignInName": null,
+  "RoleDefinitionName": "Storage File Data SMB Share Contributor",
+  "RoleDefinitionId": "0c867c2a-1d8c-454a-a3db-ab2ea1bdc8bb",
+  "ObjectId": "34bc6cd5-e9fc-45c5-a575-06c2ee5c47c0",
+  "ObjectType": "Group"
+}

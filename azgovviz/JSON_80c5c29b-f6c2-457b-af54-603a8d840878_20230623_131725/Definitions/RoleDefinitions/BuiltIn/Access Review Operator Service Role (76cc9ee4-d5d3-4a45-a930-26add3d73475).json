@@ -1,0 +1,24 @@
+{
+  "roleName": "Access Review Operator Service Role",
+  "type": "BuiltInRole",
+  "description": "Lets you grant Access Review System app permissions to discover and revoke access as needed by the access review process.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleAssignments/delete",
+        "Microsoft.Management/getEntities/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-07-07T23:31:03.4424721Z",
+  "updatedOn": "2022-07-07T23:31:03.4424721Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,41 @@
+{
+  "roleName": "Cognitive Services Language Reader",
+  "type": "BuiltInRole",
+  "description": "Has access to Read and Test functions under Language portal",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*/read",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/*/read",
+        "Microsoft.CognitiveServices/accounts/Language/*/projects/export/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/query-knowledgebases/action",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*",
+        "Microsoft.CognitiveServices/accounts/Language/query-dataverse/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-text/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobscancel/action",
+        "Microsoft.CognitiveServices/accounts/Language/analyze-conversations/jobs/action",
+        "Microsoft.CognitiveServices/accounts/Language/generate/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-08T01:31:27.5001878Z",
+  "updatedOn": "2023-03-19T00:16:58.6817979Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

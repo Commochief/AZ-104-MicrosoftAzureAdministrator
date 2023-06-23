@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-operations-test/providers/microsoft.authorization/roleassignments/a26c5981-3b4b-4e8d-88d9-8091a36cd0db",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-operations-test",
+  "DisplayName": "db2c8542f02b435bbd320870",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Contributor",
+  "RoleDefinitionId": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+  "ObjectId": "ef373b1d-dea9-48b6-bae5-a9d4eabbe696",
+  "ObjectType": "ServicePrincipal"
+}

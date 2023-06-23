@@ -1,0 +1,20 @@
+{
+  "roleName": "Community Owner Role",
+  "type": "BuiltInRole",
+  "description": "Community Owner Role to access the resources of Microsoft.Mission stored with RPSAAS.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-06-02T00:28:14.4882544Z",
+  "updatedOn": "2023-06-02T00:28:14.4882544Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

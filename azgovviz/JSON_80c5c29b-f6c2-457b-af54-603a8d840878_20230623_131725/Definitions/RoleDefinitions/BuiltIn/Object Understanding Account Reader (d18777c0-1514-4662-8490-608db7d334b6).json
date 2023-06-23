@@ -1,0 +1,20 @@
+{
+  "roleName": "Object Understanding Account Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you read ingestion jobs for an object understanding account.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-07-23T20:50:28.4604122Z",
+  "updatedOn": "2020-07-23T20:50:28.4604122Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,31 @@
+{
+  "roleName": "Azure Kubernetes Service RBAC Cluster Admin",
+  "type": "BuiltInRole",
+  "description": "Lets you manage all resources in the cluster.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.ContainerService/managedClusters/listClusterUserCredential/action"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.ContainerService/managedClusters/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-07-03T07:47:09.7936464Z",
+  "updatedOn": "2021-06-25T01:08:12.1309072Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

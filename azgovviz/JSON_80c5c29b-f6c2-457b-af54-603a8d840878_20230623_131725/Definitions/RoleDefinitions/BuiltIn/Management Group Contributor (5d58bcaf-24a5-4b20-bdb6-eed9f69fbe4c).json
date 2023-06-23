@@ -1,0 +1,28 @@
+{
+  "roleName": "Management Group Contributor",
+  "type": "BuiltInRole",
+  "description": "Management Group Contributor Role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Management/managementGroups/delete",
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.Management/managementGroups/subscriptions/delete",
+        "Microsoft.Management/managementGroups/subscriptions/write",
+        "Microsoft.Management/managementGroups/write",
+        "Microsoft.Management/managementGroups/subscriptions/read",
+        "Microsoft.Authorization/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2022-09-19T23:46:36.7526446Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

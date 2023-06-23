@@ -1,0 +1,31 @@
+{
+  "roleName": "Kubernetes Agentless Operator",
+  "type": "BuiltInRole",
+  "description": "Grants Microsoft Defender for Cloud access to Azure Kubernetes Services",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/write",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/read",
+        "Microsoft.ContainerService/managedClusters/trustedAccessRoleBindings/delete",
+        "Microsoft.ContainerService/managedClusters/read",
+        "Microsoft.Features/register/action",
+        "Microsoft.Features/featureProviders/subscriptionFeatureRegistrations/write",
+        "Microsoft.Features/featureProviders/subscriptionFeatureRegistrations/read",
+        "Microsoft.Features/features/read",
+        "Microsoft.Features/providers/features/read",
+        "Microsoft.Features/providers/features/register/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-02-27T00:12:56.1699616Z",
+  "updatedOn": "2023-04-21T00:21:26.7076726Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

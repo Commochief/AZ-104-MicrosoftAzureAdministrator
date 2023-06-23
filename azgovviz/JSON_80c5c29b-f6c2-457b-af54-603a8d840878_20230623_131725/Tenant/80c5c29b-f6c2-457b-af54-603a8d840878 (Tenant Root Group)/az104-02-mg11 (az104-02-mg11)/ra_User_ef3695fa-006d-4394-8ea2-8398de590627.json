@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.management/managementgroups/az104-02-mg11/providers/microsoft.authorization/roleassignments/ef3695fa-006d-4394-8ea2-8398de590627",
+  "Scope": "/providers/Microsoft.Management/managementGroups/az104-02-mg11",
+  "DisplayName": "JSOC Student 1",
+  "SignInName": "jsoc.student1@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "5d863c4a-ba68-4045-8821-476800e4c7e6",
+  "ObjectType": "User"
+}

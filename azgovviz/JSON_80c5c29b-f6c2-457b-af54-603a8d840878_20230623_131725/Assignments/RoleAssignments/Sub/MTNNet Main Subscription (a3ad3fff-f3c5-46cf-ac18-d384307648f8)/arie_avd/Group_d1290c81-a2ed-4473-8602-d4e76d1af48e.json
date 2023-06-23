@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/arie_avd/providers/microsoft.authorization/roleassignments/d1290c81-a2ed-4473-8602-d4e76d1af48e",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/Arie_AVD",
+  "DisplayName": "sg-Arieavd-avdadmin",
+  "SignInName": null,
+  "RoleDefinitionName": "Virtual Machine Administrator Login",
+  "RoleDefinitionId": "1c0163c0-47e6-4577-8991-ea5c82e286e4",
+  "ObjectId": "6f42c42f-da0b-497c-9648-4fc419f01238",
+  "ObjectType": "Group"
+}

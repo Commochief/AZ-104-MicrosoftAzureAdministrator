@@ -1,0 +1,26 @@
+{
+  "roleName": "Blueprint Contributor",
+  "type": "BuiltInRole",
+  "description": "Can manage blueprint definitions, but not assign them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Blueprint/blueprints/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-08-15T06:07:08.8396931Z",
+  "updatedOn": "2019-08-17T21:27:47.676832Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

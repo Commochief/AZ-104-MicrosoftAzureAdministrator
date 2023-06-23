@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-identity-test/providers/microsoft.authorization/roleassignments/2fc2a251-b05e-4cd1-a0a3-3d571c5e4dac",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-identity-test",
+  "DisplayName": "MLZ Readers",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "ca4cf117-8754-46f7-b327-7ac6edc10085",
+  "ObjectType": "Group"
+}

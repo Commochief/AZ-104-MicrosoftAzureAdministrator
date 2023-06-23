@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/964c406a-1019-48d1-a927-9461123de233/providers/microsoft.authorization/roleassignments/215d9eb7-ebbf-433a-accc-483cd4c3a733",
+  "Scope": "/subscriptions/964c406a-1019-48d1-a927-9461123de233",
+  "DisplayName": "MTNNet-Demo-Reader",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "07d1628e-2ae6-43e6-a3b3-d04cf6fabc57",
+  "ObjectType": "Group"
+}

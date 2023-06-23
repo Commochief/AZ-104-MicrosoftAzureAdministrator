@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-sandbox/providers/microsoft.authorization/roleassignments/70861424-140e-4d96-a51c-ea6a4bb8b12e",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-sandbox",
+  "DisplayName": "d651b576c8b64e6e971445c3",
+  "SignInName": null,
+  "RoleDefinitionName": "Log Analytics Contributor",
+  "RoleDefinitionId": "92aaf0da-9dab-42b6-94a3-d43ce8d16293",
+  "ObjectId": "3052272c-5c52-41e7-bdd0-038e39dd3dd1",
+  "ObjectType": "ServicePrincipal"
+}

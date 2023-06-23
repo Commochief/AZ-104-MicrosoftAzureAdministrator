@@ -1,0 +1,56 @@
+{
+  "roleName": "Windows Admin Center Administrator Login",
+  "type": "BuiltInRole",
+  "description": "Let's you manage the OS of your resource via Windows Admin Center as an administrator.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridCompute/machines/*/read",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/loadBalancers/read",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/networkSecurityGroups/read",
+        "Microsoft.Network/networkSecurityGroups/defaultSecurityRules/read",
+        "Microsoft.Network/networkWatchers/securityGroupView/action",
+        "Microsoft.Network/networkSecurityGroups/securityRules/read",
+        "Microsoft.Network/networkSecurityGroups/securityRules/write",
+        "Microsoft.HybridCompute/machines/extensions/*",
+        "Microsoft.HybridCompute/machines/upgradeExtensions/action",
+        "Microsoft.HybridCompute/operations/read",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/virtualMachines/patchAssessmentResults/latest/read",
+        "Microsoft.Compute/virtualMachines/patchAssessmentResults/latest/softwarePatches/read",
+        "Microsoft.Compute/virtualMachines/patchInstallationResults/read",
+        "Microsoft.Compute/virtualMachines/patchInstallationResults/softwarePatches/read",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Compute/virtualMachines/instanceView/read",
+        "Microsoft.Compute/virtualMachines/runCommands/read",
+        "Microsoft.Compute/virtualMachines/vmSizes/read",
+        "Microsoft.Compute/locations/publishers/artifacttypes/types/read",
+        "Microsoft.Compute/locations/publishers/artifacttypes/types/versions/read",
+        "Microsoft.Compute/diskAccesses/read",
+        "Microsoft.Compute/galleries/images/read",
+        "Microsoft.Compute/images/read",
+        "Microsoft.HybridConnectivity/endpoints/write",
+        "Microsoft.HybridConnectivity/endpoints/read",
+        "Microsoft.HybridConnectivity/endpoints/listManagedProxyDetails/action",
+        "Microsoft.AzureStackHCI/Clusters/Read",
+        "Microsoft.AzureStackHCI/Operations/Read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HybridCompute/machines/WACLoginAsAdmin/action",
+        "Microsoft.Compute/virtualMachines/WACloginAsAdmin/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-01-15T23:00:55.6846801Z",
+  "updatedOn": "2022-07-15T23:32:08.2158432Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,30 @@
+{
+  "roleName": "HDInsight Cluster Operator",
+  "type": "BuiltInRole",
+  "description": "Lets you read and modify HDInsight cluster configurations.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HDInsight/*/read",
+        "Microsoft.HDInsight/clusters/getGatewaySettings/action",
+        "Microsoft.HDInsight/clusters/updateGatewaySettings/action",
+        "Microsoft.HDInsight/clusters/configurations/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/operations/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-04-23T20:51:24.7187187Z",
+  "updatedOn": "2019-04-29T17:54:26.0511386Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

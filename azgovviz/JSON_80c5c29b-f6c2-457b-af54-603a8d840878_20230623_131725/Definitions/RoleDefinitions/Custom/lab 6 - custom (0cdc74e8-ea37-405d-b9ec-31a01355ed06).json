@@ -1,0 +1,22 @@
+{
+  "roleName": "lab 6 - custom",
+  "type": "CustomRole",
+  "description": "",
+  "assignableScopes": [
+    "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Network/networkWatchers/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-12-06T21:38:06.7522693Z",
+  "updatedOn": "2022-12-06T21:43:47.3885342Z",
+  "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "updatedBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7"
+}

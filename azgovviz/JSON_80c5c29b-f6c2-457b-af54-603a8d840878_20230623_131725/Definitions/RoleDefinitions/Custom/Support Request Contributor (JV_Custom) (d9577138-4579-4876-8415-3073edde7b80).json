@@ -1,0 +1,23 @@
+{
+  "roleName": "Support Request Contributor (JV_Custom)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:40:52.5677296Z",
+  "updatedOn": "2022-10-03T15:40:52.5677296Z",
+  "createdBy": "24bcd483-e8c5-4ada-95df-b63bf16e533c",
+  "updatedBy": "24bcd483-e8c5-4ada-95df-b63bf16e533c"
+}

@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/722b67c0-5e76-40fa-811c-791e385a08b8/providers/microsoft.authorization/roleassignments/c6c39baa-745b-4c16-9bfb-3df400361c83",
+  "Scope": "/subscriptions/722b67c0-5e76-40fa-811c-791e385a08b8",
+  "DisplayName": "John Spinella (SOCOM CSA)",
+  "SignInName": "spinella@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+  "ObjectType": "User"
+}

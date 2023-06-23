@@ -1,0 +1,42 @@
+{
+  "roleName": "Logic App Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage logic app, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ClassicStorage/storageAccounts/listKeys/action",
+        "Microsoft.ClassicStorage/storageAccounts/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Insights/metricAlerts/*",
+        "Microsoft.Insights/diagnosticSettings/*",
+        "Microsoft.Insights/logdefinitions/*",
+        "Microsoft.Insights/metricDefinitions/*",
+        "Microsoft.Logic/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/operationresults/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Storage/storageAccounts/listkeys/action",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Support/*",
+        "Microsoft.Web/connectionGateways/*",
+        "Microsoft.Web/connections/*",
+        "Microsoft.Web/customApis/*",
+        "Microsoft.Web/serverFarms/read",
+        "Microsoft.Web/sites/functions/listSecrets/action",
+        "Microsoft.Web/serverFarms/join/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-07-02T20:46:07.752681Z",
+  "updatedOn": "2020-06-22T20:23:20.5686412Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

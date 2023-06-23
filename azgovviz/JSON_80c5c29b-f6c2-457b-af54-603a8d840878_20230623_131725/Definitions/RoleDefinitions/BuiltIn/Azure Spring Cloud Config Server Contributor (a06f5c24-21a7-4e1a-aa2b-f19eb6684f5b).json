@@ -1,0 +1,20 @@
+{
+  "roleName": "Azure Spring Cloud Config Server Contributor",
+  "type": "BuiltInRole",
+  "description": "Allow read, write and delete access to Azure Spring Cloud Config Server",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-09-10T01:21:31.2124673Z",
+  "updatedOn": "2021-09-10T01:21:31.2124673Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

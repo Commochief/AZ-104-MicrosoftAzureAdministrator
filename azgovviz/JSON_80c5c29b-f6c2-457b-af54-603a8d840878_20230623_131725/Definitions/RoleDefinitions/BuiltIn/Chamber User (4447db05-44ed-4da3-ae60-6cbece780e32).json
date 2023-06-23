@@ -1,0 +1,33 @@
+{
+  "roleName": "Chamber User",
+  "type": "BuiltInRole",
+  "description": "Lets you view everything under your Modeling and Simulation Workbench chamber, but not make any changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.HpcWorkbench/instances/chambers/*/read",
+        "Microsoft.HpcWorkbench/instances/chambers/workloads/*",
+        "Microsoft.HpcWorkbench/instances/chambers/getUploadUri/action",
+        "Microsoft.HpcWorkbench/instances/consortiums/*/read",
+        "Microsoft.HpcWorkbench/instances/chambers/fileRequests/getDownloadUri/action",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/*/read",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/workloads/*",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/getUploadUri/action",
+        "Microsoft.ModSimWorkbench/workbenches/chambers/fileRequests/getDownloadUri/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-12-18T22:56:16.8903178Z",
+  "updatedOn": "2023-02-28T00:13:09.4102738Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

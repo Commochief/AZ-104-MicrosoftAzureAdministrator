@@ -1,0 +1,23 @@
+{
+  "roleName": " LS Support Request Contributor (Custom)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:49:40.737897Z",
+  "updatedOn": "2022-10-03T15:49:40.737897Z",
+  "createdBy": "6e2efdfe-3b30-4033-bd4c-02ee8efde6f3",
+  "updatedBy": "6e2efdfe-3b30-4033-bd4c-02ee8efde6f3"
+}

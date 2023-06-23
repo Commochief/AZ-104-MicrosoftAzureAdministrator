@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/ac017b4f-3c4e-4c6e-827f-08319c852913",
+  "Scope": "/",
+  "DisplayName": "Evan Mills (ATS)",
+  "SignInName": "evan@mtnnet.us",
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "174a65c6-a3b9-413b-8138-994c973cba2d",
+  "ObjectType": "User"
+}

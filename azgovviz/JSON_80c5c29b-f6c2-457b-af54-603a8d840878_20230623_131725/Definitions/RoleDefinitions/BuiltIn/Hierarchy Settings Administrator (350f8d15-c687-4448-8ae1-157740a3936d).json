@@ -1,0 +1,23 @@
+{
+  "roleName": "Hierarchy Settings Administrator",
+  "type": "BuiltInRole",
+  "description": "Allows users to edit and delete Hierarchy Settings",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Management/managementGroups/settings/write",
+        "Microsoft.Management/managementGroups/settings/delete"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-14T01:12:02.2071335Z",
+  "updatedOn": "2020-03-14T01:12:02.2071335Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

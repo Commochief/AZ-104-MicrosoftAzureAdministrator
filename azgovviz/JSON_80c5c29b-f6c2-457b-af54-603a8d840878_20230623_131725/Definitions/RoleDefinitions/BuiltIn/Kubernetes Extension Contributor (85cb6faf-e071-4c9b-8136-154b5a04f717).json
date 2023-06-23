@@ -1,0 +1,29 @@
+{
+  "roleName": "Kubernetes Extension Contributor",
+  "type": "BuiltInRole",
+  "description": "Can create, update, get, list and delete Kubernetes Extensions, and get extension async operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.KubernetesConfiguration/extensions/write",
+        "Microsoft.KubernetesConfiguration/extensions/read",
+        "Microsoft.KubernetesConfiguration/extensions/delete",
+        "Microsoft.KubernetesConfiguration/extensions/operations/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-08-14T01:17:41.4014713Z",
+  "updatedOn": "2021-08-14T01:17:41.4014713Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

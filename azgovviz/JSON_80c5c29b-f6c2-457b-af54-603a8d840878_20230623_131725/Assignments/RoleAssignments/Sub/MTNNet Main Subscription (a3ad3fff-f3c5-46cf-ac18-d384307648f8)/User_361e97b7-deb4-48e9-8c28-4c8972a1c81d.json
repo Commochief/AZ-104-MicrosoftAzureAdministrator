@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/361e97b7-deb4-48e9-8c28-4c8972a1c81d",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "scanlan1",
+  "SignInName": "scanlan1@mtnnet.us",
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "3d8a5973-7e0f-45ce-bed9-549f6d8a1e3a",
+  "ObjectType": "User"
+}

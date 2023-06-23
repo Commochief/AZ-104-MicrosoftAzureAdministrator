@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/providers/microsoft.authorization/roleassignments/d4983e62-8c36-46c3-8137-46507b21117e",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0",
+  "DisplayName": "AZ-104 students",
+  "SignInName": null,
+  "RoleDefinitionName": "lab 11",
+  "RoleDefinitionId": "f38dc358-168b-47c9-83a3-cdb62f15c146",
+  "ObjectId": "f1b19a6c-bd09-476e-a413-063fcee625c8",
+  "ObjectType": "Group"
+}

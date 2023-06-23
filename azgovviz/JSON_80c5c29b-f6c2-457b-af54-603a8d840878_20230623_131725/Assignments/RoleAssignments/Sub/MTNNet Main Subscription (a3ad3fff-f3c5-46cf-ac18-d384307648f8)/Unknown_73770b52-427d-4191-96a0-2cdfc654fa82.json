@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/73770b52-427d-4191-96a0-2cdfc654fa82",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": null,
+  "SignInName": null,
+  "RoleDefinitionName": "Key Vault Crypto Service Encryption User",
+  "RoleDefinitionId": "e147488a-f6f5-4113-8e2d-b22465e65bf6",
+  "ObjectId": "ee178b57-6a03-4fc3-8f89-b2897c94ba61",
+  "ObjectType": "Unknown"
+}

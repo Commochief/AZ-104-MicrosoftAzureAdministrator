@@ -1,0 +1,20 @@
+{
+  "roleName": "Project Babylon Data Reader",
+  "type": "BuiltInRole",
+  "description": "The Microsoft.ProjectBabylon data reader can read catalog data objects. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-11-14T22:00:04.6635793Z",
+  "updatedOn": "2020-11-20T22:00:56.9337359Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

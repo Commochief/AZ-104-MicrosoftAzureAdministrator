@@ -1,0 +1,26 @@
+{
+  "roleName": "SignalR AccessKey Reader",
+  "type": "BuiltInRole",
+  "description": "Read SignalR Service Access Keys",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.SignalRService/*/read",
+        "Microsoft.SignalRService/SignalR/listkeys/action",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2019-09-20T16:41:15.6212098Z",
+  "updatedOn": "2019-09-20T16:41:15.6212098Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

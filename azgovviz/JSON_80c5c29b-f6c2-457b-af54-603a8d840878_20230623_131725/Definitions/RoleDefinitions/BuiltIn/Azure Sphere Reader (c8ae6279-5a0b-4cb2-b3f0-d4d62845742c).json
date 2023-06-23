@@ -1,0 +1,24 @@
+{
+  "roleName": "Azure Sphere Reader",
+  "type": "BuiltInRole",
+  "description": "Allows user to read Azure Sphere resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/DiagnosticSettings/Read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-05-13T00:25:51.3274719Z",
+  "updatedOn": "2023-05-19T00:26:41.3165639Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

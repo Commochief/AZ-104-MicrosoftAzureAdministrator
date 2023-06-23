@@ -1,0 +1,28 @@
+{
+  "roleName": "PowerApps Administrator Test",
+  "type": "BuiltInRole",
+  "description": "Lets you manage DNS zones and record sets in Azure DNS, but does not let you control who has access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Network/dnsZones/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "0001-01-01T00:00:00Z",
+  "createdBy": "",
+  "updatedBy": ""
+}

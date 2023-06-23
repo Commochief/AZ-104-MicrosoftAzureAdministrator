@@ -1,0 +1,23 @@
+{
+  "roleName": "Storage Queue Data Message Processor",
+  "type": "BuiltInRole",
+  "description": "Allows for peek, receive, and delete access to Azure Storage queue messages",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/queueServices/queues/messages/read",
+        "Microsoft.Storage/storageAccounts/queueServices/queues/messages/process/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:31.2839139Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

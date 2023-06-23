@@ -1,0 +1,23 @@
+{
+  "roleName": "Limiting access to VM Run Command",
+  "type": "CustomRole",
+  "description": "",
+  "assignableScopes": [
+    "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Compute/virtualMachines/runCommand/action",
+        "Microsoft.Compute/locations/runCommands/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-12-15T22:22:02.9519325Z",
+  "updatedOn": "2022-12-15T22:26:06.0143471Z",
+  "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+  "updatedBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7"
+}

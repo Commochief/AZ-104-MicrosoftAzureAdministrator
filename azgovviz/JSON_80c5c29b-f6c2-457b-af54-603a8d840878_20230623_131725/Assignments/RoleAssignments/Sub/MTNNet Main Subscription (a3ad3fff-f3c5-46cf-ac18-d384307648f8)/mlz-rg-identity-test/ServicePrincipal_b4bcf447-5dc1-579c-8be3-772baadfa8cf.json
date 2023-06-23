@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-identity-test/providers/microsoft.authorization/roleassignments/b4bcf447-5dc1-579c-8be3-772baadfa8cf",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-identity-test",
+  "DisplayName": "Deploy VM Agents mlz-rg-identity-test",
+  "SignInName": null,
+  "RoleDefinitionName": "Contributor",
+  "RoleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+  "ObjectId": "73c2f077-5cda-4c9b-be55-4249925b8247",
+  "ObjectType": "ServicePrincipal"
+}

@@ -1,0 +1,23 @@
+{
+  "roleName": "Azure Extension for SQL Server Deployment",
+  "type": "BuiltInRole",
+  "description": "Microsoft.AzureArcData service role to enable deployment of Azure Extension for SQL Server",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/deployments/write",
+        "Microsoft.HybridCompute/machines/extensions/write"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-03-17T00:16:27.0225583Z",
+  "updatedOn": "2023-03-21T00:16:57.2265266Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

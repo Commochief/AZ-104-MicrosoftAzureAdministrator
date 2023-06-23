@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/c80fa67a-0e6a-4c66-a7d4-07ce3a147564",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "Kris Olin (SOCOM Specialist)",
+  "SignInName": "olin@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "fdc03fbe-a8eb-4d35-bf1e-aa12b4a1a313",
+  "ObjectType": "User"
+}

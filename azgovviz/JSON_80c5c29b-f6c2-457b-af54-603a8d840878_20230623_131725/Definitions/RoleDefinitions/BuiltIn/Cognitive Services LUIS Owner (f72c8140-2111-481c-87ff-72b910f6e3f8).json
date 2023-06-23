@@ -1,0 +1,27 @@
+{
+  "roleName": "Cognitive Services LUIS Owner",
+  "type": "BuiltInRole",
+  "description": " Has access to all Read, Test, Write, Deploy and Delete functions under LUIS",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.CognitiveServices/accounts/listkeys/action",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LUIS/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-08T01:31:27.4701872Z",
+  "updatedOn": "2021-11-08T01:31:27.4701872Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

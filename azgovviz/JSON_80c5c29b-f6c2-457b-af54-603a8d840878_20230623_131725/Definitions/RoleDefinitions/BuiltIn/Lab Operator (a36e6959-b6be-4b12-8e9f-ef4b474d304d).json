@@ -1,0 +1,25 @@
+{
+  "roleName": "Lab Operator",
+  "type": "BuiltInRole",
+  "description": "The lab operator role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.8557006Z",
+  "updatedOn": "2021-11-18T22:51:31.8557006Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

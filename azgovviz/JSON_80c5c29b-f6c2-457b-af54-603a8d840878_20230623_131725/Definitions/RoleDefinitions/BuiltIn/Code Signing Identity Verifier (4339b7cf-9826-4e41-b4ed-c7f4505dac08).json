@@ -1,0 +1,20 @@
+{
+  "roleName": "Code Signing Identity Verifier",
+  "type": "BuiltInRole",
+  "description": "Manage identity or business verification requests. This role is in preview and subject to change.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-08-01T23:35:06.3901733Z",
+  "updatedOn": "2022-08-01T23:35:06.3901733Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

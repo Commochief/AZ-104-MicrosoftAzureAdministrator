@@ -1,0 +1,24 @@
+{
+  "roleName": "Firmware Analysis Admin",
+  "type": "BuiltInRole",
+  "description": "Upload and analyze firmware images in Defender for IoT",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-06-18T00:30:56.7815588Z",
+  "updatedOn": "2023-06-18T00:30:56.7815588Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

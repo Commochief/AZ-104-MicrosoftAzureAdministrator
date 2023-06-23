@@ -1,0 +1,31 @@
+{
+  "roleName": "Cost Management Reader",
+  "type": "BuiltInRole",
+  "description": "Can view cost data and configuration (e.g. budgets, exports)",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Consumption/*/read",
+        "Microsoft.CostManagement/*/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Advisor/configurations/read",
+        "Microsoft.Advisor/recommendations/read",
+        "Microsoft.Management/managementGroups/read",
+        "Microsoft.Billing/billingProperty/read",
+        "Microsoft.Billing/billingPeriods/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2021-07-16T01:12:26.7027559Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,23 @@
+{
+  "roleName": "JWHSupport Request Contributor (Custom)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:40:20.3235165Z",
+  "updatedOn": "2022-10-03T15:40:20.3235165Z",
+  "createdBy": "5d863c4a-ba68-4045-8821-476800e4c7e6",
+  "updatedBy": "5d863c4a-ba68-4045-8821-476800e4c7e6"
+}

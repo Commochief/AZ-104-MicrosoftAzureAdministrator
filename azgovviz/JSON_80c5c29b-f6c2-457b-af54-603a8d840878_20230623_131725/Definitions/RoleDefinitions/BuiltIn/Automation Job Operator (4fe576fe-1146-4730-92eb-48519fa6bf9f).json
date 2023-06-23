@@ -1,0 +1,34 @@
+{
+  "roleName": "Automation Job Operator",
+  "type": "BuiltInRole",
+  "description": "Create and Manage Jobs using Automation Runbooks.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Automation/automationAccounts/hybridRunbookWorkerGroups/read",
+        "Microsoft.Automation/automationAccounts/jobs/read",
+        "Microsoft.Automation/automationAccounts/jobs/resume/action",
+        "Microsoft.Automation/automationAccounts/jobs/stop/action",
+        "Microsoft.Automation/automationAccounts/jobs/streams/read",
+        "Microsoft.Automation/automationAccounts/jobs/suspend/action",
+        "Microsoft.Automation/automationAccounts/jobs/write",
+        "Microsoft.Automation/automationAccounts/jobs/output/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2018-06-30T01:32:41.3298657Z",
+  "updatedOn": "2020-06-22T20:23:04.6246926Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

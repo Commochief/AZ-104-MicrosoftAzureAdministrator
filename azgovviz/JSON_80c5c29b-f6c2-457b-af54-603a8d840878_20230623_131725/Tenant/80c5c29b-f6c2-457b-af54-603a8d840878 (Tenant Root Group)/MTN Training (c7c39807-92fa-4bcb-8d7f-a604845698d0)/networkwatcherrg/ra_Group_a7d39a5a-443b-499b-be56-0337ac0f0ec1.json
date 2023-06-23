@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourcegroups/networkwatcherrg/providers/microsoft.authorization/roleassignments/a7d39a5a-443b-499b-be56-0337ac0f0ec1",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/NetworkWatcherRG",
+  "DisplayName": "MTNNET-Students",
+  "SignInName": null,
+  "RoleDefinitionName": "Reader",
+  "RoleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7",
+  "ObjectId": "f8135a35-eafc-412d-b35d-7a67d73bc77e",
+  "ObjectType": "Group"
+}

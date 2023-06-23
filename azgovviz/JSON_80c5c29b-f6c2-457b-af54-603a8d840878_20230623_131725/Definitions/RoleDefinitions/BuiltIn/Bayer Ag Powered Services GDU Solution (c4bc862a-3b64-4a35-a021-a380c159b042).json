@@ -1,0 +1,20 @@
+{
+  "roleName": "Bayer Ag Powered Services GDU Solution",
+  "type": "BuiltInRole",
+  "description": "Provide access to GDU Solution by Bayer Ag Powered Services",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-23T00:07:14.1382286Z",
+  "updatedOn": "2023-01-30T00:08:19.2183795Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

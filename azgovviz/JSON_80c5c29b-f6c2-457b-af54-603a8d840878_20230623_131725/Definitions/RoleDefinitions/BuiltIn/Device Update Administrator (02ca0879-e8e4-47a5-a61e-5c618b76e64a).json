@@ -1,0 +1,26 @@
+{
+  "roleName": "Device Update Administrator",
+  "type": "BuiltInRole",
+  "description": "Gives you full access to management and content operations",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Insights/alertRules/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-08-22T21:45:32.3650551Z",
+  "updatedOn": "2020-08-22T21:45:32.3650551Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

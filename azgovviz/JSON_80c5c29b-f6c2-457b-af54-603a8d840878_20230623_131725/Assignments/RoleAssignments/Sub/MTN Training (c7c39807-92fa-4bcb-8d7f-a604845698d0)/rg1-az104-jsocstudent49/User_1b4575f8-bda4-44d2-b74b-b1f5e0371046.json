@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourcegroups/rg1-az104-jsocstudent49/providers/microsoft.authorization/roleassignments/1b4575f8-bda4-44d2-b74b-b1f5e0371046",
+  "Scope": "/subscriptions/c7c39807-92fa-4bcb-8d7f-a604845698d0/resourceGroups/rg1-az104-jsocstudent49",
+  "DisplayName": "JSOC Student 49",
+  "SignInName": "jsoc.student49@mtnnet.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "c220435b-55d0-446c-8004-2d5c4670d9f9",
+  "ObjectType": "User"
+}

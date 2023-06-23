@@ -1,0 +1,27 @@
+{
+  "roleName": "Data Box Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage everything under Data Box Service except giving access to others.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*",
+        "Microsoft.Databox/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:15.2972533Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

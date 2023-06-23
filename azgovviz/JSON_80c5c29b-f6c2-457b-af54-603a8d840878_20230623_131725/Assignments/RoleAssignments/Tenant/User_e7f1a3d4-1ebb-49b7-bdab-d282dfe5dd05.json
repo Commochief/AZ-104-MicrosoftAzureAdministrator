@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/providers/microsoft.authorization/roleassignments/e7f1a3d4-1ebb-49b7-bdab-d282dfe5dd05",
+  "Scope": "/",
+  "DisplayName": "Rob \"B\" Bolbotowski",
+  "SignInName": "rob@austinx.onmicrosoft.us",
+  "RoleDefinitionName": "User Access Administrator",
+  "RoleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+  "ObjectId": "c5482269-cbaa-4182-a8dc-ee3515cbed00",
+  "ObjectType": "User"
+}

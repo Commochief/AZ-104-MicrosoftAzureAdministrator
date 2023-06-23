@@ -1,0 +1,32 @@
+{
+  "roleName": "Cognitive Services Language Writer",
+  "type": "BuiltInRole",
+  "description": " Has access to all Read, Test, and Write functions under Language Portal",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read",
+        "Microsoft.Authorization/roleAssignments/read",
+        "Microsoft.Authorization/roleDefinitions/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/*",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/*",
+        "Microsoft.CognitiveServices/accounts/Language/*",
+        "Microsoft.CognitiveServices/accounts/TextAnalytics/*"
+      ],
+      "notDataActions": [
+        "Microsoft.CognitiveServices/accounts/LanguageAuthoring/projects/publish/action",
+        "Microsoft.CognitiveServices/accounts/ConversationalLanguageUnderstanding/projects/deployments/write"
+      ]
+    }
+  ],
+  "createdOn": "2021-11-08T01:31:27.5301867Z",
+  "updatedOn": "2023-03-19T00:16:59.0268405Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

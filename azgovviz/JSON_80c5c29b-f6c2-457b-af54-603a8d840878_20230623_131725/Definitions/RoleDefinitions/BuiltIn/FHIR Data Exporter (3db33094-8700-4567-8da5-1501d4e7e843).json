@@ -1,0 +1,25 @@
+{
+  "roleName": "FHIR Data Exporter",
+  "type": "BuiltInRole",
+  "description": "Role allows user or principal to read and export FHIR Data",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/services/fhir/resources/read",
+        "Microsoft.HealthcareApis/services/fhir/resources/export/action",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/read",
+        "Microsoft.HealthcareApis/workspaces/fhirservices/resources/export/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-18T12:08:18.7586436Z",
+  "updatedOn": "2021-07-20T01:13:27.6675712Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,25 @@
+{
+  "roleName": "Lab Contributor",
+  "type": "BuiltInRole",
+  "description": "The lab contributor role",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-11-18T22:51:31.8756991Z",
+  "updatedOn": "2021-11-18T22:51:31.8756991Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

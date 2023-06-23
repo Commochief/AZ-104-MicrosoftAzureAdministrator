@@ -1,0 +1,30 @@
+{
+  "roleName": "Cognitive Services Custom Vision Deployment",
+  "type": "BuiltInRole",
+  "description": "Publish, unpublish or export models. Deployment can view the project but can’t update.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.CognitiveServices/*/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.CognitiveServices/accounts/CustomVision/*/read",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/predictions/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/iterations/publish/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/iterations/export/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/projects/quicktest/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/classify/*",
+        "Microsoft.CognitiveServices/accounts/CustomVision/detect/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-05-10T00:31:02.2087734Z",
+  "updatedOn": "2023-03-19T00:16:55.8211518Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

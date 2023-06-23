@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/providers/microsoft.authorization/roleassignments/d76c9649-634d-484a-b671-56696030c603",
+  "Scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8",
+  "DisplayName": "az104dummy",
+  "SignInName": "az104dummy@mtnnet.us",
+  "RoleDefinitionName": "Limiting access to VM Run Command",
+  "RoleDefinitionId": "5bbf8f27-6481-4502-9f98-48439c855446",
+  "ObjectId": "f735d030-fd54-4317-bf51-1c0764253ed1",
+  "ObjectType": "User"
+}

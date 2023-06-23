@@ -1,0 +1,20 @@
+{
+  "roleName": "Scheduled Patching Contributor",
+  "type": "BuiltInRole",
+  "description": "Provides access to manage maintenance configurations with maintenance scope InGuestPatch and corresponding configuration assignments",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-03-24T23:12:36.8927087Z",
+  "updatedOn": "2022-04-11T23:15:46.5617637Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

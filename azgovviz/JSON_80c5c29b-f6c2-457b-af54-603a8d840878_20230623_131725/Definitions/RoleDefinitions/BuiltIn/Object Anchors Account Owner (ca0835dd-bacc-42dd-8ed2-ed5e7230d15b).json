@@ -1,0 +1,20 @@
+{
+  "roleName": "Object Anchors Account Owner",
+  "type": "BuiltInRole",
+  "description": "Provides user with ingestion capabilities for an object anchors account.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-02T22:16:25.6782246Z",
+  "updatedOn": "2021-03-02T22:16:25.6782246Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,22 @@
+{
+  "roleName": "Azure Usage Billing Data Sender",
+  "type": "BuiltInRole",
+  "description": "Azure Usage Billing shared BuiltIn role to be used for all Customer Account Authentication",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.UsageBilling/accounts/inputs/send/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2023-01-24T00:07:22.7518215Z",
+  "updatedOn": "2023-03-15T00:16:18.6849117Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

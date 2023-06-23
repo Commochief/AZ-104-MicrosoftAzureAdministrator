@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Relay Listener",
+  "type": "BuiltInRole",
+  "description": "Allows for listen access to Azure Relay resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Relay/*/wcfRelays/read",
+        "Microsoft.Relay/*/hybridConnections/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Relay/*/listen/action"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-07-24T01:13:51.4621296Z",
+  "updatedOn": "2021-08-04T01:16:09.3732029Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

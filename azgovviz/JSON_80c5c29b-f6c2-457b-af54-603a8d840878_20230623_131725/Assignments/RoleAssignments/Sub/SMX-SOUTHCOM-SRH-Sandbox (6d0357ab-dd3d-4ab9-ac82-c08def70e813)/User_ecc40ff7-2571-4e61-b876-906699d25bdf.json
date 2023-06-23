@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/ecc40ff7-2571-4e61-b876-906699d25bdf",
+  "Scope": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813",
+  "DisplayName": "Jorge Vazquez (SMX)",
+  "SignInName": "jorgev@austinx.onmicrosoft.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "4ad37919-d81b-4a17-94e2-227690291f5a",
+  "ObjectType": "User"
+}

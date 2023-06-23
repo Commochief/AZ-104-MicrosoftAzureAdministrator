@@ -1,0 +1,28 @@
+{
+  "roleName": "Intelligent Systems Account Contributor",
+  "type": "BuiltInRole",
+  "description": "Lets you manage Intelligent Systems accounts, but not access to them.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.IntelligentSystems/accounts/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-06-22T20:23:19.1099204Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

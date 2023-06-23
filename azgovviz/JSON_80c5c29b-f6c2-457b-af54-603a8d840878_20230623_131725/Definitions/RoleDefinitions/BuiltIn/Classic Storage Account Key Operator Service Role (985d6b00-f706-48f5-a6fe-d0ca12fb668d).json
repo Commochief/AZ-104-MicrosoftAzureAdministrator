@@ -1,0 +1,23 @@
+{
+  "roleName": "Classic Storage Account Key Operator Service Role",
+  "type": "BuiltInRole",
+  "description": "Classic Storage Account Key Operators are allowed to list and regenerate keys on Classic Storage Accounts",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ClassicStorage/storageAccounts/listkeys/action",
+        "Microsoft.ClassicStorage/storageAccounts/regeneratekey/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2017-09-29T01:18:50.6124108Z",
+  "updatedOn": "2020-06-22T20:23:13.1408904Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

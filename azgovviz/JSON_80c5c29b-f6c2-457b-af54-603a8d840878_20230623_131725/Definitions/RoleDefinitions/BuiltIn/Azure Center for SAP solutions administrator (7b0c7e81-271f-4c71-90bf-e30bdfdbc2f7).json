@@ -1,0 +1,69 @@
+{
+  "roleName": "Azure Center for SAP solutions administrator",
+  "type": "BuiltInRole",
+  "description": "This role provides read and write access to all capabilities of Azure Center for SAP solutions.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/read",
+        "Microsoft.Resources/subscriptions/resourcegroups/deployments/*",
+        "Microsoft.ResourceHealth/availabilityStatuses/read",
+        "Microsoft.Insights/metrics/read",
+        "Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/write",
+        "Microsoft.Network/virtualNetworks/read",
+        "Microsoft.Network/virtualNetworks/providers/Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Network/virtualNetworks/subnets/read",
+        "Microsoft.Network/virtualNetworks/subnets/write",
+        "Microsoft.Network/virtualNetworks/subnets/virtualMachines/read",
+        "Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Network/networkInterfaces/ipconfigurations/read",
+        "Microsoft.Network/networkInterfaces/loadBalancers/read",
+        "Microsoft.Network/networkInterfaces/providers/Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Network/loadBalancers/read",
+        "Microsoft.Network/loadBalancers/backendAddressPools/read",
+        "Microsoft.Network/loadBalancers/frontendIPConfigurations/read",
+        "Microsoft.Network/loadBalancers/loadBalancingRules/read",
+        "Microsoft.Network/loadBalancers/inboundNatRules/read",
+        "Microsoft.Network/loadBalancers/networkInterfaces/read",
+        "Microsoft.Network/loadBalancers/outboundRules/read",
+        "Microsoft.Network/loadBalancers/virtualMachines/read",
+        "Microsoft.Network/loadBalancers/providers/Microsoft.Insights/metricDefinitions/read",
+        "Microsoft.Network/privateEndpoints/read",
+        "Microsoft.Storage/storageAccounts/read",
+        "Microsoft.Storage/storageAccounts/blobServices/read",
+        "Microsoft.Storage/storageAccounts/blobServices/containers/read",
+        "Microsoft.Storage/storageAccounts/fileServices/read",
+        "Microsoft.Storage/storageAccounts/fileServices/shares/read",
+        "Microsoft.Network/networkSecurityGroups/join/action",
+        "Microsoft.Network/routeTables/join/action",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Compute/availabilitySets/read",
+        "Microsoft.Compute/sshPublicKeys/read",
+        "Microsoft.Compute/sshPublicKeys/write",
+        "Microsoft.Compute/sshPublicKeys/*/generateKeyPair/action",
+        "Microsoft.Compute/virtualMachines/extensions/read",
+        "Microsoft.Compute/virtualMachines/extensions/delete",
+        "Microsoft.Compute/disks/read",
+        "Microsoft.Advisor/configurations/read",
+        "Microsoft.Advisor/recommendations/read"
+      ],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-11-14T23:55:16.1064173Z",
+  "updatedOn": "2023-06-11T00:29:35.1446277Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

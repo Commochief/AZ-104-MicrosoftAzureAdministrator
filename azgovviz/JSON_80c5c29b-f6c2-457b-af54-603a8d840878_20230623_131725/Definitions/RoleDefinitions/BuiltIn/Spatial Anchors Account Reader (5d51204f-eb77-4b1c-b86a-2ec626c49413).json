@@ -1,0 +1,25 @@
+{
+  "roleName": "Spatial Anchors Account Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you locate and read properties of spatial anchors in your account",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.MixedReality/SpatialAnchorsAccounts/discovery/read",
+        "Microsoft.MixedReality/SpatialAnchorsAccounts/properties/read",
+        "Microsoft.MixedReality/SpatialAnchorsAccounts/query/read",
+        "Microsoft.MixedReality/SpatialAnchorsAccounts/submitdiag/read"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:29.6524572Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

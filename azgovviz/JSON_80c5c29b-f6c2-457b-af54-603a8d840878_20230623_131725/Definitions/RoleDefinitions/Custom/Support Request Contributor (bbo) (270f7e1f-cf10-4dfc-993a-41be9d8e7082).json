@@ -1,0 +1,23 @@
+{
+  "roleName": "Support Request Contributor (bbo)",
+  "type": "CustomRole",
+  "description": "Allows to create support requests",
+  "assignableScopes": [
+    "/subscriptions/964c406a-1019-48d1-a927-9461123de233"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-03T15:50:31.039576Z",
+  "updatedOn": "2022-10-03T15:50:31.039576Z",
+  "createdBy": "49020605-1df8-45cf-a513-46c8d4daf237",
+  "updatedBy": "49020605-1df8-45cf-a513-46c8d4daf237"
+}

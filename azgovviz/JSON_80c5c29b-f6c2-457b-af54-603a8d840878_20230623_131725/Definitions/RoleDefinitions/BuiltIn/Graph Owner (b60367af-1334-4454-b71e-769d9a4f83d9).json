@@ -1,0 +1,20 @@
+{
+  "roleName": "Graph Owner",
+  "type": "BuiltInRole",
+  "description": "Create and manage all aspects of the Enterprise Graph - Ontology, Schema mapping, Conflation and Conversational AI and Ingestions",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:17.7504827Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

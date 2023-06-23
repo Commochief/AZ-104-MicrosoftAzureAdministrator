@@ -1,0 +1,25 @@
+{
+  "roleName": "ContainerApp Reader",
+  "type": "BuiltInRole",
+  "description": "View all containerapp resources, but does not allow you to make any changes.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-11-17T23:55:37.4606402Z",
+  "updatedOn": "2023-01-06T00:04:18.2033323Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

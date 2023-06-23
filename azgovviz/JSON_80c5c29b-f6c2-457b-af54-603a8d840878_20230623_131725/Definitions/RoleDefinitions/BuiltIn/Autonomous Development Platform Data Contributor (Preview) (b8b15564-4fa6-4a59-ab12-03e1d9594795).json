@@ -1,0 +1,23 @@
+{
+  "roleName": "Autonomous Development Platform Data Contributor (Preview)",
+  "type": "BuiltInRole",
+  "description": "Grants permissions to upload and manage new Autonomous Development Platform measurements.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-15T22:05:01.1272061Z",
+  "updatedOn": "2021-01-05T22:08:31.5265019Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

@@ -1,0 +1,46 @@
+{
+  "identity": {
+    "principalId": "3052272c-5c52-41e7-bdd0-038e39dd3dd1",
+    "tenantId": "80c5c29b-f6c2-457b-af54-603a8d840878",
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "displayName": "Deploy VMSS Agents mlz-rg-sandbox",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
+    "scope": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-sandbox",
+    "notScopes": [],
+    "parameters": {
+      "logAnalytics_1": {
+        "value": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-operations-test/providers/microsoft.operationalinsights/workspaces/mlz-log-operations-test"
+      }
+    },
+    "description": "",
+    "metadata": {
+      "createdBy": "b38f032b-acba-4d66-be8d-17e83ddf8ab7",
+      "createdOn": "2022-12-08T15:42:55.770735Z",
+      "updatedBy": null,
+      "updatedOn": null,
+      "parameterScopes": {
+        "logAnalytics_1": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourcegroups/mlz-rg-operations-test"
+      }
+    },
+    "enforcementMode": "Default",
+    "nonComplianceMessages": [
+      {
+        "message": "non-compliant"
+      }
+    ]
+  },
+  "id": "/subscriptions/a3ad3fff-f3c5-46cf-ac18-d384307648f8/resourceGroups/mlz-rg-sandbox/providers/Microsoft.Authorization/policyAssignments/d651b576c8b64e6e971445c3",
+  "type": "Microsoft.Authorization/policyAssignments",
+  "name": "d651b576c8b64e6e971445c3",
+  "location": "usgovvirginia",
+  "systemData": {
+    "createdBy": "joe@mtnnet.us",
+    "createdByType": "User",
+    "createdAt": "2022-12-08T15:42:55.102408Z",
+    "lastModifiedBy": "joe@mtnnet.us",
+    "lastModifiedByType": "User",
+    "lastModifiedAt": "2022-12-08T15:42:55.102408Z"
+  }
+}

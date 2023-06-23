@@ -1,0 +1,26 @@
+{
+  "roleName": "Collaborative Runtime Operator",
+  "type": "BuiltInRole",
+  "description": "Can manage resources created by AICS at runtime",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-01-19T22:10:33.8919955Z",
+  "updatedOn": "2021-01-19T22:10:33.8919955Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

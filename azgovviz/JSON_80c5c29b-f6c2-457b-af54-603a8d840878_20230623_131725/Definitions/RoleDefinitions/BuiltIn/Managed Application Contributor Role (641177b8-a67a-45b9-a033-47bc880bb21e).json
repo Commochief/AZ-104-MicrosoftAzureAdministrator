@@ -1,0 +1,26 @@
+{
+  "roleName": "Managed Application Contributor Role",
+  "type": "BuiltInRole",
+  "description": "Allows for creating managed application resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.Solutions/applications/*",
+        "Microsoft.Solutions/register/action",
+        "Microsoft.Resources/subscriptions/resourceGroups/*",
+        "Microsoft.Resources/deployments/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-02-08T05:17:58.4857969Z",
+  "updatedOn": "2020-06-22T20:23:20.8037823Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

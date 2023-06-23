@@ -1,0 +1,22 @@
+{
+  "roleName": "Impact Reporter",
+  "type": "BuiltInRole",
+  "description": "Allows access to create/report, read and delete impacts",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.Resources/subscriptions/resourceGroups/read"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-10-30T23:52:59.0542572Z",
+  "updatedOn": "2022-11-17T23:55:37.4137635Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

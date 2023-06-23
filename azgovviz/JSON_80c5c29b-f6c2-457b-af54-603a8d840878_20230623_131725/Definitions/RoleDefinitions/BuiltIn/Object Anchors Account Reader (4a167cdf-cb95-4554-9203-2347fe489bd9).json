@@ -1,0 +1,20 @@
+{
+  "roleName": "Object Anchors Account Reader",
+  "type": "BuiltInRole",
+  "description": "Lets you read ingestion jobs for an object anchors account.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-03-02T22:16:25.5431433Z",
+  "updatedOn": "2021-03-02T22:16:25.5431433Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

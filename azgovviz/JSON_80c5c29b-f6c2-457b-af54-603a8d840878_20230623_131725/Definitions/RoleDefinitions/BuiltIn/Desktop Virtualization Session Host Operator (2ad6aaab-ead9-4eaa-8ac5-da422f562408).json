@@ -1,0 +1,28 @@
+{
+  "roleName": "Desktop Virtualization Session Host Operator",
+  "type": "BuiltInRole",
+  "description": "Operator of the Desktop Virtualization Session Host.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.DesktopVirtualization/hostpools/read",
+        "Microsoft.DesktopVirtualization/hostpools/sessionhosts/*",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Resources/deployments/*",
+        "Microsoft.Authorization/*/read",
+        "Microsoft.Insights/alertRules/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-12-11T22:04:21.7245663Z",
+  "updatedOn": "2020-12-11T22:04:21.7245663Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

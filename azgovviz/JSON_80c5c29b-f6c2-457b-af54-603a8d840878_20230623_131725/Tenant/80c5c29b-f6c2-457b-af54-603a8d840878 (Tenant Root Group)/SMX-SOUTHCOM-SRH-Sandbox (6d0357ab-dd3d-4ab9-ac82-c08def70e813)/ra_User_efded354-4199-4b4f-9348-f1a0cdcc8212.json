@@ -1,0 +1,10 @@
+{
+  "RoleAssignmentId": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813/providers/microsoft.authorization/roleassignments/efded354-4199-4b4f-9348-f1a0cdcc8212",
+  "Scope": "/subscriptions/6d0357ab-dd3d-4ab9-ac82-c08def70e813",
+  "DisplayName": "Rich Posada (CSA)",
+  "SignInName": "richp@austinx.onmicrosoft.us",
+  "RoleDefinitionName": "Owner",
+  "RoleDefinitionId": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+  "ObjectId": "a2ace337-7e48-4958-955b-a8a7384a2f38",
+  "ObjectType": "User"
+}

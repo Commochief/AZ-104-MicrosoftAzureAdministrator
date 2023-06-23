@@ -1,0 +1,27 @@
+{
+  "roleName": "Log Analytics Reader",
+  "type": "BuiltInRole",
+  "description": "Log Analytics Reader can view and search all monitoring data as well as and view monitoring settings, including viewing the configuration of Azure diagnostics on all Azure resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.OperationalInsights/workspaces/analytics/query/action",
+        "Microsoft.OperationalInsights/workspaces/search/action",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [
+        "Microsoft.OperationalInsights/workspaces/sharedKeys/read"
+      ],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2017-10-24T02:16:57.1703591Z",
+  "updatedOn": "2020-06-22T20:23:20.4745846Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

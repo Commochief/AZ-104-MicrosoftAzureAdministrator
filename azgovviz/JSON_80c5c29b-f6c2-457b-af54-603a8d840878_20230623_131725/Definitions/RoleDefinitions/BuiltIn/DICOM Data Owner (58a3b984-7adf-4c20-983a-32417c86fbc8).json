@@ -1,0 +1,22 @@
+{
+  "roleName": "DICOM Data Owner",
+  "type": "BuiltInRole",
+  "description": "Full access to DICOM data.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [
+        "Microsoft.HealthcareApis/workspaces/dicomservices/resources/*"
+      ],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2021-06-21T01:07:22.3058313Z",
+  "updatedOn": "2021-06-21T01:07:22.3058313Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

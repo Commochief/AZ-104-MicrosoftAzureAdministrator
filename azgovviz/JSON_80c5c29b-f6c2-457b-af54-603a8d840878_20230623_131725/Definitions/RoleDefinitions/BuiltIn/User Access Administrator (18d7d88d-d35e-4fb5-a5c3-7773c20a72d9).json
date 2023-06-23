@@ -1,0 +1,24 @@
+{
+  "roleName": "User Access Administrator",
+  "type": "BuiltInRole",
+  "description": "Lets you manage user access to Azure resources.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "*/read",
+        "Microsoft.Authorization/*",
+        "Microsoft.Support/*"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T08:00:00Z",
+  "updatedOn": "2020-06-22T20:23:32.1324116Z",
+  "createdBy": null,
+  "updatedBy": "SYSTEM"
+}

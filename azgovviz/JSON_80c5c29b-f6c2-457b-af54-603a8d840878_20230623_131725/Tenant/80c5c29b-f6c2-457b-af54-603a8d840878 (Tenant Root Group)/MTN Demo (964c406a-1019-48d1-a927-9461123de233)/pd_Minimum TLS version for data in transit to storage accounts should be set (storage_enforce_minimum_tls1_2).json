@@ -1,0 +1,47 @@
+{
+  "displayName": "Minimum TLS version for data in transit to storage accounts should be set",
+  "policyType": "Custom",
+  "mode": "Indexed",
+  "description": "Storage Enforce Minimum Tls1 2",
+  "metadata": {
+    "category": "Storage",
+    "createdBy": "7bc6bc45-b256-407c-9d79-bde13dfb5639",
+    "createdOn": "2023-01-11T15:09:46.8767711Z",
+    "updatedBy": null,
+    "updatedOn": null
+  },
+  "parameters": {
+    "effect": {
+      "type": "String",
+      "metadata": {
+        "description": "The effect determines what happens when the policy rule is evaluated to match",
+        "displayName": "Effect"
+      },
+      "allowedValues": [
+        "Audit",
+        "Deny",
+        "Disabled"
+      ],
+      "defaultValue": "Deny"
+    }
+  },
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "equals": "Microsoft.Storage/storageAccounts",
+          "field": "type"
+        },
+        {
+          "not": {
+            "equals": "TLS1_2",
+            "field": "Microsoft.Storage/storageAccounts/minimumTlsVersion"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "[parameters('effect')]"
+    }
+  }
+}

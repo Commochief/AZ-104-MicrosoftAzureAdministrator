@@ -1,0 +1,25 @@
+{
+  "roleName": "Azure Kubernetes Service Cluster Admin Role",
+  "type": "BuiltInRole",
+  "description": "List cluster admin credential action.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.ContainerService/managedClusters/listClusterAdminCredential/action",
+        "Microsoft.ContainerService/managedClusters/accessProfiles/listCredential/action",
+        "Microsoft.ContainerService/managedClusters/read",
+        "Microsoft.ContainerService/managedClusters/runcommand/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2022-05-19T23:21:56.3984312Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

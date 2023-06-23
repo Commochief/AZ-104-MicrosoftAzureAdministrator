@@ -1,0 +1,20 @@
+{
+  "roleName": "Knowledge Consumer",
+  "type": "BuiltInRole",
+  "description": "Knowledge Read permission to consume Enterprise Graph Knowledge using entity search and graph query",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "0001-01-01T00:00:00Z",
+  "updatedOn": "2020-06-22T20:23:19.7193209Z",
+  "createdBy": "",
+  "updatedBy": "SYSTEM"
+}

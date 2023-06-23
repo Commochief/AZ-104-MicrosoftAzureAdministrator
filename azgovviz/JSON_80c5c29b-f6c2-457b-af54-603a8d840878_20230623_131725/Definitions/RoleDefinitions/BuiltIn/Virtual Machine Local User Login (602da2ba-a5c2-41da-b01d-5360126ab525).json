@@ -1,0 +1,23 @@
+{
+  "roleName": "Virtual Machine Local User Login",
+  "type": "BuiltInRole",
+  "description": "View Virtual Machines in the portal and login as a local user configured on the arc server",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [
+        "Microsoft.HybridCompute/machines/*/read",
+        "Microsoft.HybridConnectivity/endpoints/listCredentials/action"
+      ],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2022-04-10T23:15:32.0083979Z",
+  "updatedOn": "2022-07-13T23:31:45.6847101Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

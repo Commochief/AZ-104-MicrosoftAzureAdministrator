@@ -1,0 +1,20 @@
+{
+  "roleName": "Object Understanding Account Owner",
+  "type": "BuiltInRole",
+  "description": "Provides user with ingestion capabilities for Azure Object Understanding.",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-04-22T22:27:30.0900885Z",
+  "updatedOn": "2020-04-22T22:27:30.0900885Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}

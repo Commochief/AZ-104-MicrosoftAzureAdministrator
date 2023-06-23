@@ -1,0 +1,20 @@
+{
+  "roleName": "Experimentation Reader",
+  "type": "BuiltInRole",
+  "description": "Experimentation Reader",
+  "assignableScopes": [
+    "/"
+  ],
+  "permissions": [
+    {
+      "actions": [],
+      "notActions": [],
+      "dataActions": [],
+      "notDataActions": []
+    }
+  ],
+  "createdOn": "2020-03-25T18:39:33.3936468Z",
+  "updatedOn": "2020-04-22T22:27:29.7618862Z",
+  "createdBy": "SYSTEM",
+  "updatedBy": "SYSTEM"
+}
